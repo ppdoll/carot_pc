@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>중고 PC 견적 비교</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Admin</p>
+          <h1>중고 PC 견적 비교</h1>
+        </div>
+        <a class="secondary-link" href="/admin/snapshots">저장된 스냅샷</a>
+      </header>
+
+      <section class="panel">
+        {{#if error}}
+          <div class="alert">{{error}}</div>
+        {{/if}}
+
+        <form method="post" action="/admin/quotes/analyze" class="quote-form">
+          <label for="url">당근 판매글 URL</label>
+          <div class="input-row">
+            <input
+              id="url"
+              name="url"
+              type="url"
+              value="{{url}}"
+              placeholder="{{exampleUrl}}"
+              required
+            />
+            <button type="submit">분석 실행</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

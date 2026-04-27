@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>저장된 견적 스냅샷</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Admin</p>
+          <h1>저장된 견적 스냅샷</h1>
+        </div>
+        <a class="secondary-link" href="/admin/quotes">새 분석</a>
+      </header>
+
+      <section class="panel">
+        <form method="get" action="/admin/snapshots" class="quote-form">
+          <div class="input-row">
+            <label>CPU
+              <input name="cpu" type="text" list="cpu-options" value="{{filter.cpu}}" placeholder="예: i5-9400F" />
+            </label>
+            <label>메모리
+              <input name="ram" type="text" list="ram-options" value="{{filter.ram}}" placeholder="예: 16GB" />
+            </label>
+            <label>그래픽카드
+              <input name="gpu" type="text" list="gpu-options" value="{{filter.gpu}}" placeholder="예: RTX 2060" />
+            </label>
+            <button type="submit">필터</button>
+          </div>
+        </form>
+
+        <datalist id="cpu-options">
+          {{#each distinct.cpu}}<option value="{{this}}"></option>{{/each}}
+        </datalist>
+        <datalist id="ram-options">
+          {{#each distinct.ram}}<option value="{{this}}"></option>{{/each}}
+        </datalist>
+        <datalist id="gpu-options">
+          {{#each distinct.gpu}}<option value="{{this}}"></option>{{/each}}
+        </datalist>
+
+        <p class="muted">{{totalCount}}건{{#if hasFilter}} (필터 적용){{/if}}</p>
+      </section>
+
+      {{#each snapshots}}
+        <section class="panel">
+          <header class="listing">
+            <div>
+              <h2>{{title}}</h2>
+              <p class="muted">최근 확인: {{lastSeenAt}} · CPU: {{keys.cpuKey}} · RAM: {{keys.ramKey}} · GPU: {{keys.gpuKey}}</p>
+            </div>
+            <div>
+              <strong>{{money listingPrice}}</strong>
+              {{#if finalUrl}}
+                <a class="secondary-link" href="{{finalUrl}}" target="_blank" rel="noreferrer">원문</a>
+              {{/if}}
+            </div>
+          </header>
+
+          {{#if hasPriceHistory}}
+            <details class="snapshot-history">
+              <summary>가격 변동 이력 {{priceHistory.length}}건</summary>
+              <div class="table-wrap">
+                <table class="history-table">
+                  <thead>
+                    <tr>
+                      <th>시점</th>
+                      <th>가격</th>
+                      <th>변동</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {{#each priceHistory}}
+                      <tr>
+                        <td>{{capturedAt}}</td>
+                        <td class="price">{{money listingPrice}}</td>
+                        <td class="price">{{signedMoney delta}}</td>
+                      </tr>
+                    {{/each}}
+                  </tbody>
+                </table>
+              </div>
+            </details>
+          {{/if}}
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>부품</th>
+                  <th>추출값</th>
+                  <th>컴퓨존</th>
+                  <th>번개 평균</th>
+                  <th>중고나라 평균</th>
+                </tr>
+              </thead>
+              <tbody>
+                {{#each components}}
+                  <tr>
+                    <td class="strong">{{label}}</td>
+                    <td>{{rawValue}}<small>{{searchQuery}}</small></td>
+                    <td class="price">{{money compuzonePrice}}</td>
+                    <td class="price">
+                      {{#if bunjangSearchUrl}}
+                        <a href="{{bunjangSearchUrl}}" target="_blank" rel="noreferrer">{{money bunjangAverage}}</a>
+                      {{else}}
+                        {{money bunjangAverage}}
+                      {{/if}}
+                      <small>{{bunjangCount}}건</small>
+                    </td>
+                    <td class="price">
+                      {{#if joongnaSearchUrl}}
+                        <a href="{{joongnaSearchUrl}}" target="_blank" rel="noreferrer">{{money joongnaAverage}}</a>
+                      {{else}}
+                        {{money joongnaAverage}}
+                      {{/if}}
+                      <small>{{joongnaCount}}건</small>
+                    </td>
+                  </tr>
+                {{/each}}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      {{else}}
+        <section class="panel">
+          <p class="muted">저장된 스냅샷이 없습니다.</p>
+        </section>
+      {{/each}}
+    </main>
+  </body>
+</html>

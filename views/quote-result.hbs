@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>중고 PC 견적 비교 결과</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Admin</p>
+          <h1>중고 PC 견적 비교</h1>
+        </div>
+        <div>
+          <a class="secondary-link" href="/admin/snapshots">저장된 스냅샷</a>
+          <a class="secondary-link" href="/admin/quotes">다시 분석</a>
+        </div>
+      </header>
+
+      {{#if error}}
+        <section class="panel">
+          <div class="alert">{{error}}</div>
+          <form method="post" action="/admin/quotes/analyze" class="quote-form">
+            <label for="url">당근 판매글 URL</label>
+            <div class="input-row">
+              <input id="url" name="url" type="url" value="{{url}}" required />
+              <button type="submit">분석 실행</button>
+            </div>
+          </form>
+        </section>
+      {{else}}
+        <section class="summary-grid">
+          <div class="metric">
+            <span>판매가</span>
+            <strong>{{money analysis.totals.listingPrice}}</strong>
+          </div>
+          <div class="metric">
+            <span>컴퓨존 합계</span>
+            <strong>{{money analysis.totals.compuzoneComparableTotal}}</strong>
+          </div>
+          <div class="metric">
+            <span>차액</span>
+            <strong>{{signedMoney analysis.totals.priceGap}}</strong>
+          </div>
+          <div class="metric">
+            <span>가격 확인</span>
+            <strong>{{analysis.totals.pricedComponentCount}} / {{analysis.totals.detectedComponentCount}}</strong>
+          </div>
+        </section>
+
+        <section class="panel price-vote-panel" data-vote-panel>
+          <div class="price-vote-copy">
+            <details class="standard-price-details">
+              <summary>
+                <span>중고 검색되는 부품들 기준가</span>
+                <strong>{{money priceEvaluation.standardPrice}}</strong>
+                <small>{{priceEvaluation.basisText}}</small>
+              </summary>
+              <div class="standard-breakdown">
+                <p class="muted">{{priceEvaluation.formulaText}}</p>
+                <div class="table-wrap">
+                  <table class="standard-table">
+                    <thead>
+                      <tr>
+                        <th>부품</th>
+                        <th>검색어</th>
+                        <th>번개 평균</th>
+                        <th>중고나라 평균</th>
+                        <th>컴퓨존</th>
+                        <th>부품 기준가</th>
+                        <th>반영</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {{#each priceEvaluation.breakdownRows}}
+                        <tr>
+                          <td class="strong">
+                            {{label}}
+                            <small>{{rawValue}}</small>
+                          </td>
+                          <td>{{searchQuery}}</td>
+                          <td class="price">
+                            {{#if bunjangSearchUrl}}
+                              <a href="{{bunjangSearchUrl}}" target="_blank" rel="noreferrer">{{money bunjangAverage}}</a>
+                            {{else}}
+                              {{money bunjangAverage}}
+                            {{/if}}
+                            <small>{{bunjangCount}}건</small>
+                          </td>
+                          <td class="price">
+                            {{#if joongnaSearchUrl}}
+                              <a href="{{joongnaSearchUrl}}" target="_blank" rel="noreferrer">{{money joongnaAverage}}</a>
+                            {{else}}
+                              {{money joongnaAverage}}
+                            {{/if}}
+                            <small>{{joongnaCount}}건</small>
+                          </td>
+                          <td class="price">{{money compuzonePrice}}</td>
+                          <td class="price">
+                            {{money componentStandard}}
+                            <small>{{basisText}}</small>
+                          </td>
+                          <td><span class="badge">{{includedText}}</span></td>
+                        </tr>
+                      {{else}}
+                        <tr>
+                          <td colspan="7" class="muted">구체 모델명으로 확인된 기준가 항목이 없습니다.</td>
+                        </tr>
+                      {{/each}}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </details>
+          </div>
+
+          <div
+            class="vote-actions"
+            data-vote-actions
+            data-vote-api="/api/quotes/price-votes"
+            data-target-id="{{priceVote.targetId}}"
+            data-source-url="{{priceVote.sourceUrl}}"
+            data-final-url="{{priceVote.finalUrl}}"
+            data-title="{{priceVote.title}}"
+          >
+            
+            <button
+              type="button"
+              class="vote-button {{#if priceVote.userVoteGreat}}is-selected{{/if}}"
+              data-vote="great"
+              {{#if priceVote.hasUserVote}}disabled{{/if}}
+            >
+              best <strong data-count="great">{{priceVote.counts.great}}</strong>
+            </button>
+            <button
+              type="button"
+              class="vote-button {{#if priceVote.userVoteFair}}is-selected{{/if}}"
+              data-vote="fair"
+              {{#if priceVote.hasUserVote}}disabled{{/if}}
+            >
+              better <strong data-count="fair">{{priceVote.counts.fair}}</strong>
+            </button>
+            <button
+              type="button"
+              class="vote-button {{#if priceVote.userVoteExpensive}}is-selected{{/if}}"
+              data-vote="expensive"
+              {{#if priceVote.hasUserVote}}disabled{{/if}}
+            >
+              bad <strong data-count="expensive">{{priceVote.counts.expensive}}</strong>
+            </button>
+          </div>
+
+          <p class="muted vote-message" data-vote-message>
+            {{#if priceVote.hasUserVote}}
+              평가됨: {{priceVote.userVoteLabel}}
+            {{else}}
+              IP당 1회 집계
+            {{/if}}
+          </p>
+        </section>
+
+        <section class="panel listing">
+          <div>
+            <h2>{{analysis.listing.title}}</h2>
+            <p class="muted">{{analyzedAtText}}</p>
+          </div>
+          <a class="secondary-link" href="{{analysis.listing.finalUrl}}" target="_blank" rel="noreferrer">원문 열기</a>
+        </section>
+
+        <section class="panel">
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>부품</th>
+                  <th>추출값</th>
+                  <th>검색어</th>
+                  <th>대표 상품</th>
+                  <th>가격</th>
+                  <th>상태</th>
+                </tr>
+              </thead>
+              <tbody>
+                {{#each rows}}
+                  <tr>
+                    <td class="strong">{{label}}</td>
+                    <td>
+                      {{rawValue}}
+                      {{#if sourceLine}}
+                        <small>{{sourceLine}}</small>
+                      {{/if}}
+                    </td>
+                    <td>
+                      {{#if searchUrl}}
+                        <a href="{{searchUrl}}" target="_blank" rel="noreferrer">{{searchQuery}}</a>
+                      {{else}}
+                        {{searchQuery}}
+                      {{/if}}
+                      {{#if showFallbackLinks}}
+                        <small>
+                          {{#if danawaSearchUrl}}
+                            <a href="{{danawaSearchUrl}}" target="_blank" rel="noreferrer">다나와</a>
+                          {{/if}}
+                          {{#if naverSearchUrl}}
+                            · <a href="{{naverSearchUrl}}" target="_blank" rel="noreferrer">네이버</a>
+                          {{/if}}
+                        </small>
+                      {{/if}}
+                    </td>
+                    <td>
+                      {{#if selectedUrl}}
+                        <a href="{{selectedUrl}}" target="_blank" rel="noreferrer">{{selectedName}}</a>
+                        {{#if selectedSummary}}
+                          <small>{{selectedSummary}}</small>
+                        {{/if}}
+                      {{else}}
+                        {{selectedName}}
+                      {{/if}}
+                    </td>
+                    <td class="price">
+                      {{money selectedPrice}}
+                      {{#if usedMarket}}
+                        <small>
+                          번개 평균:
+                          {{#if usedMarket.bunjang.searchUrl}}
+                            <a href="{{usedMarket.bunjang.searchUrl}}" target="_blank" rel="noreferrer">{{money usedMarket.bunjang.averagePrice}}</a>
+                          {{else}}
+                            {{money usedMarket.bunjang.averagePrice}}
+                          {{/if}}
+                          ({{usedMarket.bunjang.sampleCount}}건)
+                        </small>
+                        <small>
+                          중고나라 평균:
+                          {{#if usedMarket.joongna.searchUrl}}
+                            <a href="{{usedMarket.joongna.searchUrl}}" target="_blank" rel="noreferrer">{{money usedMarket.joongna.averagePrice}}</a>
+                          {{else}}
+                            {{money usedMarket.joongna.averagePrice}}
+                          {{/if}}
+                          ({{usedMarket.joongna.sampleCount}}건)
+                        </small>
+                      {{/if}}
+                      {{#if usedMarketNote}}
+                        <small>{{usedMarketNote}}</small>
+                      {{/if}}
+                    </td>
+                    <td>
+                      <span class="badge">{{statusText}}</span>
+                      {{#if error}}
+                        <small>{{error}}</small>
+                      {{/if}}
+                    </td>
+                  </tr>
+                {{/each}}
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2>판매글 본문</h2>
+          <pre>{{analysis.listing.description}}</pre>
+        </section>
+      {{/if}}
+    </main>
+    <script>
+      (() => {
+        const panel = document.querySelector('[data-vote-panel]');
+        if (!panel) {
+          return;
+        }
+
+        const actions = panel.querySelector('[data-vote-actions]');
+        const buttons = [...panel.querySelectorAll('[data-vote]')];
+        const message = panel.querySelector('[data-vote-message]');
+        if (!actions || buttons.length === 0) {
+          return;
+        }
+
+        const setDisabled = (disabled) => {
+          for (const button of buttons) {
+            button.disabled = disabled;
+          }
+        };
+
+        const updateCounts = (counts) => {
+          for (const [key, value] of Object.entries(counts || {})) {
+            const count = panel.querySelector(`[data-count="${key}"]`);
+            if (count) {
+              count.textContent = String(value);
+            }
+          }
+        };
+
+        for (const button of buttons) {
+          button.addEventListener('click', async () => {
+            const vote = button.dataset.vote;
+            if (!vote || button.disabled) {
+              return;
+            }
+
+            setDisabled(true);
+            if (message) {
+              message.textContent = '저장 중...';
+            }
+
+            try {
+              const response = await fetch(actions.dataset.voteApi, {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                  targetId: actions.dataset.targetId,
+                  sourceUrl: actions.dataset.sourceUrl,
+                  finalUrl: actions.dataset.finalUrl,
+                  title: actions.dataset.title,
+                  vote,
+                }),
+              });
+              const result = await response.json();
+              if (!response.ok) {
+                throw new Error(result.message || '평가 저장에 실패했습니다.');
+              }
+
+              updateCounts(result.summary?.counts);
+              const userVote = result.summary?.userVote;
+              for (const other of buttons) {
+                other.classList.toggle('is-selected', other.dataset.vote === userVote);
+              }
+              if (message) {
+                message.textContent = result.accepted ? '평가가 반영되었습니다.' : '이미 이 IP에서 평가했습니다.';
+              }
+            } catch (error) {
+              setDisabled(false);
+              if (message) {
+                message.textContent = error instanceof Error ? error.message : '평가 저장에 실패했습니다.';
+              }
+            }
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>
