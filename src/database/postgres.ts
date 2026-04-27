@@ -120,5 +120,14 @@ async function createSchema(): Promise<void> {
 
     CREATE INDEX IF NOT EXISTS price_votes_target_idx
       ON price_votes (target_id);
+
+    CREATE TABLE IF NOT EXISTS quote_analysis_cache (
+      source_url TEXT PRIMARY KEY,
+      analysis JSONB NOT NULL,
+      captured_at TIMESTAMPTZ NOT NULL
+    );
+
+    CREATE INDEX IF NOT EXISTS quote_analysis_cache_captured_at_idx
+      ON quote_analysis_cache (captured_at DESC);
   `);
 }

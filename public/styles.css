@@ -161,6 +161,48 @@ button:hover {
   margin-bottom: 16px;
 }
 
+.share-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.share-info {
+  flex: 1 1 280px;
+  min-width: 0;
+}
+
+.share-info p {
+  margin: 4px 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.share-info .eyebrow {
+  margin-bottom: 4px;
+}
+
+.share-copy-button {
+  flex: 0 0 auto;
+  border: 1px solid var(--primary);
+  background: var(--primary);
+  color: #fff;
+  padding: 0 18px;
+  height: 40px;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.share-copy-button:hover {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
 .price-vote-panel {
   display: grid;
   grid-template-columns: minmax(0, 1fr);

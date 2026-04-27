@@ -18,7 +18,6 @@
     <main class="shell">
       <header class="topbar">
         <div>
-          <p class="eyebrow">Admin</p>
           <h1>중고 PC 견적 비교</h1>
         </div>
         <div>
@@ -30,7 +29,7 @@
       {{#if error}}
         <section class="panel">
           <div class="alert">{{error}}</div>
-          <form method="post" action="/daangn/quotes/analyze" class="quote-form">
+          <form method="get" action="/daangn/quotes/analyze" class="quote-form">
             <label for="url">당근 판매글 URL</label>
             <div class="input-row">
               <input id="url" name="url" type="url" value="{{url}}" required />
@@ -39,6 +38,17 @@
           </form>
         </section>
       {{else}}
+        {{#if share}}
+          <section class="panel share-panel" data-share-panel>
+            <div class="share-info">
+              <p class="eyebrow">공유</p>
+              <p>이 결과는 <strong>{{share.cacheTtlHours}}시간</strong> 동안 동일하게 유지됩니다 (분석 시각 {{share.cachedAtText}} → {{share.cachedUntilText}}까지).</p>
+              <p class="muted">아래 버튼으로 현재 페이지 주소를 복사해 공유하세요. 같은 링크로 접속하면 같은 결과를 빠르게 보여줍니다.</p>
+            </div>
+            <button type="button" class="share-copy-button" data-share-copy>주소 복사</button>
+          </section>
+        {{/if}}
+
         <section class="summary-grid">
           <div class="metric">
             <span>판매가</span>
@@ -348,6 +358,45 @@
             }
           });
         }
+      })();
+
+      (() => {
+        const button = document.querySelector('[data-share-copy]');
+        if (!button) {
+          return;
+        }
+
+        const original = button.textContent;
+        let resetTimer = null;
+
+        button.addEventListener('click', async () => {
+          const url = window.location.href;
+          try {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+              await navigator.clipboard.writeText(url);
+            } else {
+              const textarea = document.createElement('textarea');
+              textarea.value = url;
+              textarea.setAttribute('readonly', '');
+              textarea.style.position = 'absolute';
+              textarea.style.left = '-9999px';
+              document.body.appendChild(textarea);
+              textarea.select();
+              document.execCommand('copy');
+              document.body.removeChild(textarea);
+            }
+            button.textContent = '복사됨!';
+          } catch (error) {
+            button.textContent = '복사 실패';
+          }
+
+          if (resetTimer) {
+            clearTimeout(resetTimer);
+          }
+          resetTimer = setTimeout(() => {
+            button.textContent = original;
+          }, 2000);
+        });
       })();
     </script>
   </body>

@@ -1,4 +1,5 @@
 import { Injectable } from '@nestjs/common';
+import { ensurePostgresSchema, getPostgresPool, hasPostgresConfig } from '../database/postgres';
 import { BunjangClientService } from './bunjang-client.service';
 import { canonicalCpu, canonicalGpu, canonicalRam, ComponentKeys } from './component-key';
 import { ComponentExtractorService } from './component-extractor.service';
@@ -7,6 +8,14 @@ import { DaangnClientService } from './daangn-client.service';
 import { JoongnaClientService } from './joongna-client.service';
 import { SnapshotStoreService } from './snapshot-store.service';
 import { ComponentPriceEstimate, ExtractedComponent, PcQuoteAnalysis } from './types';
+
+export const ANALYSIS_CACHE_TTL_SECONDS = 24 * 60 * 60;
+
+export interface CachedAnalysis {
+  analysis: PcQuoteAnalysis;
+  capturedAt: Date;
+  fromCache: boolean;
+}
 
 @Injectable()
 export class QuoteService {
@@ -116,6 +125,57 @@ export class QuoteService {
       ramKey: canonicalRam(find('ram')),
       gpuKey: canonicalGpu(find('gpu')),
     };
+  }
+
+  async analyzeUrlCached(sourceUrl: string): Promise<CachedAnalysis> {
+    const cached = await this.loadCachedAnalysis(sourceUrl);
+    if (cached && Date.now() - cached.capturedAt.getTime() < ANALYSIS_CACHE_TTL_SECONDS * 1000) {
+      return { ...cached, fromCache: true };
+    }
+
+    const analysis = await this.analyzeUrl(sourceUrl);
+    const capturedAt = new Date(analysis.analyzedAt);
+    await this.storeCachedAnalysis(sourceUrl, analysis, capturedAt).catch(() => undefined);
+    return { analysis, capturedAt, fromCache: false };
+  }
+
+  private async loadCachedAnalysis(
+    sourceUrl: string,
+  ): Promise<{ analysis: PcQuoteAnalysis; capturedAt: Date } | null> {
+    if (!hasPostgresConfig()) {
+      return null;
+    }
+    await ensurePostgresSchema();
+    const pool = getPostgresPool();
+    const result = await pool.query<{ analysis: PcQuoteAnalysis; captured_at: Date }>(
+      'SELECT analysis, captured_at FROM quote_analysis_cache WHERE source_url = $1',
+      [sourceUrl],
+    );
+    const row = result.rows[0];
+    if (!row) {
+      return null;
+    }
+    return { analysis: row.analysis, capturedAt: new Date(row.captured_at) };
+  }
+
+  private async storeCachedAnalysis(
+    sourceUrl: string,
+    analysis: PcQuoteAnalysis,
+    capturedAt: Date,
+  ): Promise<void> {
+    if (!hasPostgresConfig()) {
+      return;
+    }
+    await ensurePostgresSchema();
+    const pool = getPostgresPool();
+    await pool.query(
+      `INSERT INTO quote_analysis_cache (source_url, analysis, captured_at)
+       VALUES ($1, $2, $3)
+       ON CONFLICT (source_url) DO UPDATE
+         SET analysis = EXCLUDED.analysis,
+             captured_at = EXCLUDED.captured_at`,
+      [sourceUrl, analysis, capturedAt.toISOString()],
+    );
   }
 
   private buildDanawaSearchUrl(query: string) {

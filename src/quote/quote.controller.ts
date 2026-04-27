@@ -1,4 +1,5 @@
-import { BadRequestException, Body, Controller, Get, Post, Render, Req } from '@nestjs/common';
+import { BadRequestException, Body, Controller, Get, Post, Query, Render, Req, Res } from '@nestjs/common';
+import type { Response } from 'express';
 import {
   isPriceVoteKind,
   PriceVoteKind,
@@ -6,7 +7,7 @@ import {
   PriceVoteSummary,
 } from './price-vote-store.service';
 import { hasPreciseUsedMarketModel } from './price-model-precision';
-import { QuoteService } from './quote.service';
+import { ANALYSIS_CACHE_TTL_SECONDS, QuoteService } from './quote.service';
 import { ComponentPriceEstimate, PcQuoteAnalysis } from './types';
 
 interface AnalyzeBody {
@@ -53,6 +54,12 @@ interface PriceEvaluationBreakdownRow {
   basisText: string;
 }
 
+interface ShareInfo {
+  cacheTtlHours: number;
+  cachedAtText: string;
+  cachedUntilText: string;
+}
+
 interface StandardPriceResult {
   price: number | null;
   basisText: string;
@@ -74,6 +81,42 @@ export class QuoteController {
       url: '',
       exampleUrl: 'https://www.daangn.com/articles/1156255068',
     };
+  }
+
+  @Get('daangn/quotes/analyze')
+  @Render('quote-result')
+  async analyzeForGet(
+    @Query('url') urlParam: string,
+    @Res({ passthrough: true }) response: Response,
+  ) {
+    const url = String(urlParam ?? '').trim();
+
+    if (!url) {
+      response.setHeader('Cache-Control', 'no-store');
+      return {
+        error: '당근 판매글 URL을 입력해 주세요.',
+        url,
+      };
+    }
+
+    try {
+      const { analysis, capturedAt } = await this.quoteService.analyzeUrlCached(url);
+      const voteTarget = this.voteTarget(analysis);
+      const voteSummary = await this.voteStore.summary(voteTarget.targetId);
+
+      response.setHeader(
+        'Cache-Control',
+        `public, s-maxage=${ANALYSIS_CACHE_TTL_SECONDS}, stale-while-revalidate=${ANALYSIS_CACHE_TTL_SECONDS * 7}`,
+      );
+
+      return this.toViewModel(analysis, voteSummary, this.buildShareInfo(capturedAt));
+    } catch (error) {
+      response.setHeader('Cache-Control', 'no-store');
+      return {
+        error: error instanceof Error ? error.message : '분석 중 오류가 발생했습니다.',
+        url,
+      };
+    }
   }
 
   @Post('daangn/quotes/analyze')
@@ -132,7 +175,7 @@ export class QuoteController {
     });
   }
 
-  private toViewModel(analysis: PcQuoteAnalysis, voteSummary: PriceVoteSummary) {
+  private toViewModel(analysis: PcQuoteAnalysis, voteSummary: PriceVoteSummary, share?: ShareInfo) {
     const evaluation = this.priceEvaluation(analysis);
     const voteTarget = this.voteTarget(analysis);
 
@@ -147,6 +190,21 @@ export class QuoteController {
         analysis.totals.priceGap !== null && analysis.totals.priceGap < 0 && analysis.totals.pricedComponentCount > 0,
       priceEvaluation: evaluation,
       priceVote: this.toVoteViewModel(voteTarget, voteSummary),
+      share: share ?? null,
+    };
+  }
+
+  private buildShareInfo(capturedAt: Date): ShareInfo {
+    const cachedUntil = new Date(capturedAt.getTime() + ANALYSIS_CACHE_TTL_SECONDS * 1000);
+    const formatter = new Intl.DateTimeFormat('ko-KR', {
+      timeZone: 'Asia/Seoul',
+      dateStyle: 'medium',
+      timeStyle: 'short',
+    });
+    return {
+      cacheTtlHours: Math.round(ANALYSIS_CACHE_TTL_SECONDS / 3600),
+      cachedAtText: formatter.format(capturedAt),
+      cachedUntilText: formatter.format(cachedUntil),
     };
   }
 
