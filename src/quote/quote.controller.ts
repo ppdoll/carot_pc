@@ -67,7 +67,7 @@ export class QuoteController {
     private readonly voteStore: PriceVoteStoreService,
   ) {}
 
-  @Get('admin/quotes')
+  @Get('daangn/quotes')
   @Render('quote-form')
   form() {
     return {
@@ -76,7 +76,7 @@ export class QuoteController {
     };
   }
 
-  @Post('admin/quotes/analyze')
+  @Post('daangn/quotes/analyze')
   @Render('quote-result')
   async analyzeForAdmin(@Body() body: AnalyzeBody, @Req() request: RequestLike) {
     const url = String(body.url ?? '').trim();

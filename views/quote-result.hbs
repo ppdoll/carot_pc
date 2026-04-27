@@ -22,15 +22,15 @@
           <h1>중고 PC 견적 비교</h1>
         </div>
         <div>
-          <a class="secondary-link" href="/admin/snapshots">저장된 스냅샷</a>
-          <a class="secondary-link" href="/admin/quotes">다시 분석</a>
+          <a class="secondary-link" href="/daangn/snapshots">저장된 스냅샷</a>
+          <a class="secondary-link" href="/daangn/quotes">다시 분석</a>
         </div>
       </header>
 
       {{#if error}}
         <section class="panel">
           <div class="alert">{{error}}</div>
-          <form method="post" action="/admin/quotes/analyze" class="quote-form">
+          <form method="post" action="/daangn/quotes/analyze" class="quote-form">
             <label for="url">당근 판매글 URL</label>
             <div class="input-row">
               <input id="url" name="url" type="url" value="{{url}}" required />

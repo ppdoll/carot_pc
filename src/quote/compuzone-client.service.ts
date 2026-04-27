@@ -5,7 +5,7 @@ import { ComponentType, CompuzoneProduct } from './types';
 export class CompuzoneClientService {
   private readonly origin = 'https://www.compuzone.co.kr';
   private readonly userAgent =
-    'Mozilla/5.0 (compatible; carrot-pc-estimator/0.1; +https://localhost/admin/quotes)';
+    'Mozilla/5.0 (compatible; carrot-pc-estimator/0.1; +https://localhost/daangn/quotes)';
 
   async searchProducts(componentType: ComponentType, query: string): Promise<CompuzoneProduct[]> {
     const controller = new AbortController();

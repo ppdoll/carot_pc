@@ -26,7 +26,7 @@ interface RawJoongnaItem {
 export class JoongnaClientService {
   private readonly origin = 'https://web.joongna.com';
   private readonly userAgent =
-    'Mozilla/5.0 (compatible; carrot-pc-estimator/0.1; +https://localhost/admin/quotes)';
+    'Mozilla/5.0 (compatible; carrot-pc-estimator/0.1; +https://localhost/daangn/quotes)';
 
   async fetchSummary(query: string): Promise<UsedMarketSummary> {
     const searchUrl = this.buildSearchPageUrl(query);

@@ -22,7 +22,7 @@ export class BunjangClientService {
   private readonly apiOrigin = 'https://api.bunjang.co.kr';
   private readonly webOrigin = 'https://m.bunjang.co.kr';
   private readonly userAgent =
-    'Mozilla/5.0 (compatible; carrot-pc-estimator/0.1; +https://localhost/admin/quotes)';
+    'Mozilla/5.0 (compatible; carrot-pc-estimator/0.1; +https://localhost/daangn/quotes)';
 
   async fetchSummary(query: string): Promise<UsedMarketSummary> {
     const searchUrl = this.buildSearchPageUrl(query);

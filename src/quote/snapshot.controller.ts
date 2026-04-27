@@ -7,7 +7,7 @@ interface SnapshotQuery {
   gpu?: string;
 }
 
-@Controller('admin/snapshots')
+@Controller('daangn/snapshots')
 export class SnapshotController {
   constructor(private readonly store: SnapshotStoreService) {}
 

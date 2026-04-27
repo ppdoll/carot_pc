@@ -17,7 +17,7 @@ interface ProductJsonLd {
 export class DaangnClientService {
   private readonly allowedHosts = new Set(['daangn.com', 'www.daangn.com']);
   private readonly userAgent =
-    'Mozilla/5.0 (compatible; carrot-pc-estimator/0.1; +https://localhost/admin/quotes)';
+    'Mozilla/5.0 (compatible; carrot-pc-estimator/0.1; +https://localhost/daangn/quotes)';
 
   async fetchListing(sourceUrl: string): Promise<ListingInfo> {
     const targetUrl = this.normalizeUrl(sourceUrl);
