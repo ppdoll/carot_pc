@@ -36,6 +36,9 @@ export function loadLocalEnv(): void {
   }
 }
 
+
+
+
 export function databaseUrl(): string | null {
   loadLocalEnv();
   if (process.env.DATABASE_URL) {

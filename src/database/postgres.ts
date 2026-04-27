@@ -16,15 +16,18 @@ export function getPostgresPool(): Pool {
 
   if (!pool) {
     pool = new Pool({
-      connectionString: url,
+      connectionString: normalizeSslMode(url),
       max: Number(process.env.POSTGRES_POOL_MAX ?? 3),
       idleTimeoutMillis: 30000,
       connectionTimeoutMillis: 10000,
-      ssl: /sslmode=require/i.test(url) ? { rejectUnauthorized: false } : undefined,
     });
   }
 
   return pool;
+}
+
+function normalizeSslMode(url: string): string {
+  return url.replace(/\bsslmode=(require|prefer|verify-ca)\b/gi, 'sslmode=verify-full');
 }
 
 export async function ensurePostgresSchema(): Promise<void> {
