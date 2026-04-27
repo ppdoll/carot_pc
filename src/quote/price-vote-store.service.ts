@@ -2,6 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { createHash } from 'node:crypto';
 import { mkdir, readFile, rename, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
+import { ensurePostgresSchema, getPostgresPool, hasPostgresConfig } from '../database/postgres';
 
 export const priceVoteKinds = ['great', 'fair', 'expensive'] as const;
 
@@ -70,10 +71,12 @@ export class PriceVoteStoreService {
   private filePath: string = join(process.cwd(), 'data', 'price-votes.json');
   private cache: StoreFile | null = null;
   private writeQueue: Promise<void> = Promise.resolve();
+  private forceJsonStore = false;
 
   configure(options: PriceVoteStoreOptions = {}): this {
     if (options.filePath) {
       this.filePath = options.filePath;
+      this.forceJsonStore = true;
     }
     this.cache = null;
     this.writeQueue = Promise.resolve();
@@ -81,6 +84,10 @@ export class PriceVoteStoreService {
   }
 
   async summary(targetId: string, clientIp?: string | null): Promise<PriceVoteSummary> {
+    if (this.shouldUsePostgres()) {
+      return this.summaryFromPostgres(targetId, clientIp);
+    }
+
     const normalizedTargetId = normalizeTargetId(targetId);
     const store = await this.load();
     const target = store.targets[normalizedTargetId];
@@ -89,6 +96,10 @@ export class PriceVoteStoreService {
   }
 
   async vote(input: RecordPriceVoteInput): Promise<PriceVoteResult> {
+    if (this.shouldUsePostgres()) {
+      return this.voteToPostgres(input);
+    }
+
     const normalizedTargetId = normalizeTargetId(input.targetId);
     const normalizedVote = normalizeVote(input.vote);
     const voterHash = hashVoter(normalizedTargetId, input.clientIp);
@@ -173,6 +184,73 @@ export class PriceVoteStoreService {
     );
     return next;
   }
+
+  private shouldUsePostgres(): boolean {
+    return !this.forceJsonStore && hasPostgresConfig();
+  }
+
+  private async summaryFromPostgres(targetId: string, clientIp?: string | null): Promise<PriceVoteSummary> {
+    await ensurePostgresSchema();
+    const normalizedTargetId = normalizeTargetId(targetId);
+    const voterHash = clientIp ? hashVoter(normalizedTargetId, clientIp) : null;
+    const pool = getPostgresPool();
+    const [counts, userVote] = await Promise.all([
+      pool.query<{ vote: PriceVoteKind; count: string }>(
+        `
+          SELECT vote, COUNT(*)::text AS count
+          FROM price_votes
+          WHERE target_id = $1
+          GROUP BY vote
+        `,
+        [normalizedTargetId],
+      ),
+      voterHash
+        ? pool.query<{ vote: PriceVoteKind }>(
+            'SELECT vote FROM price_votes WHERE target_id = $1 AND voter_hash = $2 LIMIT 1',
+            [normalizedTargetId, voterHash],
+          )
+        : Promise.resolve({ rows: [] } as { rows: { vote: PriceVoteKind }[] }),
+    ]);
+
+    return summaryFromVoteRows(
+      normalizedTargetId,
+      counts.rows,
+      userVote.rows[0]?.vote ?? null,
+    );
+  }
+
+  private async voteToPostgres(input: RecordPriceVoteInput): Promise<PriceVoteResult> {
+    await ensurePostgresSchema();
+    const normalizedTargetId = normalizeTargetId(input.targetId);
+    const normalizedVote = normalizeVote(input.vote);
+    const voterHash = hashVoter(normalizedTargetId, input.clientIp);
+    const pool = getPostgresPool();
+    const inserted = await pool.query(
+      `
+        INSERT INTO price_votes (
+          target_id, voter_hash, vote, voted_at, source_url, final_url, title
+        )
+        VALUES ($1, $2, $3, $4, $5, $6, $7)
+        ON CONFLICT (target_id, voter_hash) DO NOTHING
+      `,
+      [
+        normalizedTargetId,
+        voterHash,
+        normalizedVote,
+        new Date().toISOString(),
+        input.sourceUrl ?? null,
+        input.finalUrl ?? null,
+        input.title ?? null,
+      ],
+    );
+    const summary = await this.summaryFromPostgres(normalizedTargetId, input.clientIp);
+
+    return {
+      accepted: inserted.rowCount === 1,
+      alreadyVoted: inserted.rowCount !== 1,
+      summary,
+    };
+  }
 }
 
 export function isPriceVoteKind(value: unknown): value is PriceVoteKind {
@@ -236,6 +314,24 @@ function toSummary(targetId: string, target: StoredTarget | undefined, voterHash
         userVote = voter.vote;
       }
     }
+  }
+
+  return {
+    targetId,
+    counts,
+    total: counts.great + counts.fair + counts.expensive,
+    userVote,
+  };
+}
+
+function summaryFromVoteRows(
+  targetId: string,
+  rows: { vote: PriceVoteKind; count: string }[],
+  userVote: PriceVoteKind | null,
+): PriceVoteSummary {
+  const counts = { ...EMPTY_COUNTS };
+  for (const row of rows) {
+    counts[row.vote] = Number(row.count);
   }
 
   return {
