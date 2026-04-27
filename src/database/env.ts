@@ -38,13 +38,21 @@ export function loadLocalEnv(): void {
 
 export function databaseUrl(): string | null {
   loadLocalEnv();
-  return (
-    process.env.DATABASE_URL ||
-    process.env.POSTGRES_URL ||
-    process.env.carrot_DATABASE_URL ||
-    process.env.carrot_POSTGRES_URL ||
-    null
-  );
+  if (process.env.DATABASE_URL) {
+    return process.env.DATABASE_URL;
+  }
+  if (process.env.POSTGRES_URL) {
+    return process.env.POSTGRES_URL;
+  }
+  for (const [key, value] of Object.entries(process.env)) {
+    if (!value) {
+      continue;
+    }
+    if (/^.+_DATABASE_URL$/.test(key) || /^.+_POSTGRES_URL$/.test(key)) {
+      return value;
+    }
+  }
+  return null;
 }
 
 function unquote(value: string): string {
