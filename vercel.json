@@ -1,9 +1,3 @@
 {
-  "regions": ["sin1"],
-  "functions": {
-    "dist/main.js": {
-      "memory": 512,
-      "maxDuration": 30
-    }
-  }
+  "regions": ["sin1"]
 }
