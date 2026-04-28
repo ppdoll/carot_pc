@@ -77,9 +77,10 @@ export class DaangnClientService {
   }
 
   private normalizeUrl(sourceUrl: string) {
+    const candidate = this.extractFirstHttpsUrl(sourceUrl);
     let parsed: URL;
     try {
-      parsed = new URL(sourceUrl);
+      parsed = new URL(candidate);
     } catch {
       throw new Error('올바른 URL 형식이 아닙니다.');
     }
@@ -93,6 +94,12 @@ export class DaangnClientService {
     }
 
     return parsed.toString();
+  }
+
+  private extractFirstHttpsUrl(value: string) {
+    const trimmed = value.trim();
+    const match = trimmed.match(/https:\/\/[^\s]+/i);
+    return match?.[0] ?? trimmed;
   }
 
   private findProductJsonLd(html: string): ProductJsonLd | null {
