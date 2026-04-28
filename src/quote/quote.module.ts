@@ -1,4 +1,6 @@
 import { Module } from '@nestjs/common';
+import { BenchmarkClientService } from './benchmark-client.service';
+import { BenchmarkStoreService } from './benchmark-store.service';
 import { BunjangClientService } from './bunjang-client.service';
 import { ComponentExtractorService } from './component-extractor.service';
 import { CompuzoneClientService } from './compuzone-client.service';
@@ -15,6 +17,8 @@ import { SnapshotStoreService } from './snapshot-store.service';
   providers: [
     QuoteService,
     DaangnClientService,
+    BenchmarkClientService,
+    BenchmarkStoreService,
     ComponentExtractorService,
     CompuzoneClientService,
     BunjangClientService,

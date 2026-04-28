@@ -196,6 +196,7 @@
                   <th>추출값</th>
                   <th>검색어</th>
                   <th>대표 상품</th>
+                  <th>Benchmark</th>
                   <th>가격</th>
                   <th>상태</th>
                 </tr>
@@ -235,6 +236,29 @@
                         {{/if}}
                       {{else}}
                         {{selectedName}}
+                      {{/if}}
+                    </td>
+                    <td class="benchmark-cell">
+                      {{#if benchmark}}
+                        <a href="{{benchmark.url}}" target="_blank" rel="noreferrer">PassMark</a>
+                        {{#if benchmark.hasDetails}}
+                          {{#if benchmark.rankDisplay}}
+                            <small>Rank {{benchmark.rankDisplay}}</small>
+                          {{/if}}
+                          {{#if benchmark.scoreDisplay}}
+                            <small>{{benchmark.scoreDisplay}}</small>
+                          {{/if}}
+                          {{#if benchmark.category}}
+                            <small>{{benchmark.category}}</small>
+                          {{/if}}
+                          {{#if benchmark.samplesDisplay}}
+                            <small>{{benchmark.samplesDisplay}}</small>
+                          {{/if}}
+                        {{else}}
+                          <small>1000위권 밖입니다</small>
+                        {{/if}}
+                      {{else}}
+                        1000위권 밖입니다
                       {{/if}}
                     </td>
                     <td class="price">

@@ -6,8 +6,10 @@
     "build": "tsc -p tsconfig.build.json",
     "start": "node dist/main.js",
     "start:dev": "ts-node --files src/main.ts",
+    "benchmarks:fetch": "ts-node --files src/scripts/fetch-benchmarks.ts",
+    "benchmarks:fetch:all": "npm run build && node dist/scripts/fetch-benchmarks.js --source=all --limit=1000",
     "db:import-json": "ts-node --files src/scripts/import-json-to-postgres.ts",
-    "test": "npm run build && node --test dist/quote/component-extractor.service.spec.js dist/quote/compuzone-client.service.spec.js dist/quote/daangn-client.service.spec.js dist/quote/bunjang-client.service.spec.js dist/quote/joongna-client.service.spec.js dist/quote/component-key.spec.js dist/quote/snapshot-store.service.spec.js dist/quote/price-vote-store.service.spec.js dist/quote/price-model-precision.spec.js",
+    "test": "npm run build && node --test dist/quote/component-extractor.service.spec.js dist/quote/compuzone-client.service.spec.js dist/quote/daangn-client.service.spec.js dist/quote/bunjang-client.service.spec.js dist/quote/joongna-client.service.spec.js dist/quote/component-key.spec.js dist/quote/snapshot-store.service.spec.js dist/quote/price-vote-store.service.spec.js dist/quote/price-model-precision.spec.js dist/quote/benchmark-client.service.spec.js",
     "lint": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {

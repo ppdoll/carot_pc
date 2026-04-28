@@ -391,7 +391,7 @@ button:hover {
 
 table {
   width: 100%;
-  min-width: 960px;
+  min-width: 1080px;
   border-collapse: collapse;
 }
 
@@ -423,6 +423,14 @@ td small {
 
 .price {
   white-space: nowrap;
+  font-weight: 700;
+}
+
+.benchmark-cell {
+  min-width: 150px;
+}
+
+.benchmark-cell a {
   font-weight: 700;
 }
 

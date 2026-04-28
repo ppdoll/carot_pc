@@ -35,12 +35,27 @@ export interface CompuzoneProduct {
   score: number;
 }
 
+export interface BenchmarkInfo {
+  provider: 'PassMark';
+  url: string;
+  name: string | null;
+  rank: number | null;
+  rankTotal: number | null;
+  rankText: string | null;
+  score: number | null;
+  scoreLabel: string;
+  category: string | null;
+  samples: number | null;
+  status: 'ok' | 'not_found' | 'error';
+}
+
 export interface ComponentPriceEstimate {
   component: ExtractedComponent;
   status: 'skipped' | 'ok' | 'not_found' | 'error';
   searchUrl?: string;
   danawaSearchUrl?: string;
   naverSearchUrl?: string;
+  benchmark?: BenchmarkInfo;
   selectedProduct?: CompuzoneProduct;
   products: CompuzoneProduct[];
   usedMarket?: {

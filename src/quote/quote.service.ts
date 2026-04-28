@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { ensurePostgresSchema, getPostgresPool, hasPostgresConfig } from '../database/postgres';
+import { BenchmarkClientService } from './benchmark-client.service';
 import { BunjangClientService } from './bunjang-client.service';
 import { canonicalCpu, canonicalGpu, canonicalRam, ComponentKeys } from './component-key';
 import { ComponentExtractorService } from './component-extractor.service';
@@ -22,6 +23,7 @@ export class QuoteService {
   constructor(
     private readonly daangnClient: DaangnClientService,
     private readonly componentExtractor: ComponentExtractorService,
+    private readonly benchmarkClient: BenchmarkClientService,
     private readonly compuzoneClient: CompuzoneClientService,
     private readonly bunjangClient: BunjangClientService,
     private readonly joongnaClient: JoongnaClientService,
@@ -46,7 +48,7 @@ export class QuoteService {
         const danawaSearchUrl = this.buildDanawaSearchUrl(component.searchQuery);
         const naverSearchUrl = this.buildNaverSearchUrl(component.searchQuery);
 
-        const [compuzoneResult, bunjangSummary, joongnaSummary] = await Promise.all([
+        const [compuzoneResult, bunjangSummary, joongnaSummary, benchmark] = await Promise.all([
           this.compuzoneClient
             .searchProducts(component.type, component.searchQuery)
             .then((products) => ({ products, error: null as Error | null }))
@@ -56,6 +58,7 @@ export class QuoteService {
             })),
           this.bunjangClient.fetchSummary(component.searchQuery),
           this.joongnaClient.fetchSummary(component.searchQuery),
+          this.benchmarkClient.fetchBenchmark(component.type, component.rawValue),
         ]);
 
         const usedMarket = { bunjang: bunjangSummary, joongna: joongnaSummary };
@@ -69,6 +72,7 @@ export class QuoteService {
             status: 'error',
             products: [],
             usedMarket,
+            benchmark,
             error: compuzoneResult.error.message,
           };
         }
@@ -84,6 +88,7 @@ export class QuoteService {
           selectedProduct,
           products: compuzoneResult.products,
           usedMarket,
+          benchmark,
         };
       }),
     );
@@ -155,7 +160,19 @@ export class QuoteService {
     if (!row) {
       return null;
     }
+    if (this.needsBenchmarkRefresh(row.analysis)) {
+      return null;
+    }
     return { analysis: row.analysis, capturedAt: new Date(row.captured_at) };
+  }
+
+  private needsBenchmarkRefresh(analysis: PcQuoteAnalysis): boolean {
+    return analysis.components.some(
+      (estimate) =>
+        (estimate.component.type === 'cpu' || estimate.component.type === 'gpu') &&
+        estimate.component.detected &&
+        !estimate.benchmark,
+    );
   }
 
   private async storeCachedAnalysis(

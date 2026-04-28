@@ -221,6 +221,15 @@ export class QuoteController {
       searchUrl: estimate.searchUrl,
       danawaSearchUrl: estimate.danawaSearchUrl,
       naverSearchUrl: estimate.naverSearchUrl,
+      benchmark: estimate.benchmark
+        ? {
+            ...estimate.benchmark,
+            rankDisplay: this.benchmarkRankDisplay(estimate.benchmark.rank, estimate.benchmark.rankTotal),
+            scoreDisplay: this.benchmarkScoreDisplay(estimate.benchmark.score, estimate.benchmark.scoreLabel),
+            samplesDisplay: this.benchmarkSamplesDisplay(estimate.benchmark.samples),
+            hasDetails: estimate.benchmark.status === 'ok',
+          }
+        : null,
       showFallbackLinks: estimate.status !== 'ok',
       usedMarket: this.hasPreciseMarketModel(estimate) ? estimate.usedMarket : null,
       usedMarketNote:
@@ -250,6 +259,27 @@ export class QuoteController {
     }
 
     return '가격 확인';
+  }
+
+  private benchmarkRankDisplay(rank: number | null, total: number | null) {
+    if (!rank) {
+      return null;
+    }
+    return total ? `#${rank.toLocaleString('ko-KR')} / ${total.toLocaleString('ko-KR')}` : `#${rank.toLocaleString('ko-KR')}`;
+  }
+
+  private benchmarkScoreDisplay(score: number | null, label: string) {
+    if (!score) {
+      return null;
+    }
+    return `${label} ${score.toLocaleString('ko-KR')}`;
+  }
+
+  private benchmarkSamplesDisplay(samples: number | null) {
+    if (!samples) {
+      return null;
+    }
+    return `${samples.toLocaleString('ko-KR')} samples`;
   }
 
   private priceEvaluation(analysis: PcQuoteAnalysis): PriceEvaluation {

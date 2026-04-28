@@ -3,5 +3,8 @@ dist/
 *.tsbuildinfo
 .env*
 *.log
-data/
+data/*
+!data/benchmarks/
+data/benchmarks/*
+!data/benchmarks/*.json
 .claude/
