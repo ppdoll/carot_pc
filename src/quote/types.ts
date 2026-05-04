@@ -1,6 +1,6 @@
 import { UsedMarketSummary } from './used-market';
 
-export const componentTypes = ['cpu', 'gpu', 'ram', 'ssd', 'power', 'case'] as const;
+export const componentTypes = ['cpu', 'gpu', 'ram', 'ssd', 'power', 'case', 'motherboard', 'cooler'] as const;
 
 export type ComponentType = (typeof componentTypes)[number];
 

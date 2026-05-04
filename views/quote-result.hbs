@@ -255,10 +255,10 @@
                             <small>{{benchmark.samplesDisplay}}</small>
                           {{/if}}
                         {{else}}
-                          <small>1000위권 밖입니다</small>
+                          <small>{{benchmarkFallbackText}}</small>
                         {{/if}}
                       {{else}}
-                        1000위권 밖입니다
+                        {{benchmarkFallbackText}}
                       {{/if}}
                     </td>
                     <td class="price">

@@ -230,6 +230,7 @@ export class QuoteController {
             hasDetails: estimate.benchmark.status === 'ok',
           }
         : null,
+      benchmarkFallbackText: this.benchmarkFallbackText(estimate),
       showFallbackLinks: estimate.status !== 'ok',
       usedMarket: this.hasPreciseMarketModel(estimate) ? estimate.usedMarket : null,
       usedMarketNote:
@@ -280,6 +281,14 @@ export class QuoteController {
       return null;
     }
     return `${samples.toLocaleString('ko-KR')} samples`;
+  }
+
+  private benchmarkFallbackText(estimate: ComponentPriceEstimate) {
+    if (estimate.component.type !== 'cpu' && estimate.component.type !== 'gpu') {
+      return '- 집계하지 않습니다.';
+    }
+
+    return '1000위권 밖입니다';
   }
 
   private priceEvaluation(analysis: PcQuoteAnalysis): PriceEvaluation {

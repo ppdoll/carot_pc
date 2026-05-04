@@ -174,25 +174,29 @@ export class CompuzoneClientService {
       gpu: [/그래픽|지포스|geforce|radeon|라데온|\brtx\b|\bgtx\b|\brx\s*\d/i],
       ram: [/메모리|\bram\b|\bddr[345]\b/i],
       ssd: [/\bssd\b|\bnvme\b|\bm\.?2\b/i],
-      power: [/파워|power|psu|정격|80\s*(?:plus|플러스)|\d{3,4}\s*w/i],
-      case: [/케이스|case|미들타워|빅타워|어항/i],
+      power: [/파워|power|psu|정격|80\s*(?:plus|브론즈|골드)|\d{3,4}\s*w/i],
+      case: [/케이스|case|미들\s*타워|빅\s*타워|어항/i],
+      motherboard: [/motherboard|mainboard|\bboard\b|\bmb\b|메인보드|보드|\b(?:h|b|z|x|a)\d{3,4}\b|\blga\s*\d+\b|\bam[45]\b/i],
+      cooler: [/cooler|cpu\s*cooler|aio|air\s*cooler|radiator|heatsink|수냉|공랭|쿨러/i],
     };
 
     return patterns[componentType].some((pattern) => pattern.test(haystack)) ? 5 : -3;
   }
 
   private looksLikeCompletePc(haystack: string) {
-    return /조립pc|추천 조립|게이밍\s*pc|본체|데스크탑|desktop|아이웍스|리오나인|프리미엄pc/i.test(haystack);
+    return /조립pc|추천\s*조립|게이밍\s*pc|본체|데스크탑|desktop|워크스테이션|프리미엄pc/i.test(haystack);
   }
 
   private looksLikeAccessory(componentType: ComponentType, haystack: string) {
     const patterns: Record<ComponentType, RegExp> = {
       cpu: /쿨러|써멀|브라켓|가이드|cooler|thermal|bracket/i,
       gpu: /지지대|라이저|케이블|쿨러|백플레이트|support|riser|cable/i,
-      ram: /usb\s*메모리|usb메모리|메모리카드|sd카드|방열판|쿨러|heatsink|cooler/i,
-      ssd: /외장\s*케이스|인클로저|컨버터|어댑터|가이드|방열판|enclosure|adapter|converter|heatsink/i,
+      ram: /usb\s*메모리|메모리카드|sd카드|방열판|쿨러|heatsink|cooler/i,
+      ssd: /외장\s*케이스|클로저|컨버터|어댑터|가이드|방열판|enclosure|adapter|converter|heatsink/i,
       power: /케이블|연장|커넥터|cable|connector/i,
-      case: /라이저|받침대|먼지필터|riser|stand|filter/i,
+      case: /라이저|받침대|먼지\s*필터|riser|stand|filter/i,
+      motherboard: /io\s*shield|back\s*panel|wifi\s*antenna|sata\s*cable|extension|브라켓|백패널|안테나|케이블/i,
+      cooler: /thermal\s*paste|써멀|bracket|mount|mounting|fan\s*clip|클립|브라켓|가이드/i,
     };
 
     return patterns[componentType].test(haystack);

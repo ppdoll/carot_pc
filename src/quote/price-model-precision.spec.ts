@@ -10,12 +10,22 @@ test('price model precision accepts identifiable CPU, GPU, and branded memory mo
 
 test('price model precision rejects generic category descriptions', () => {
   assert.equal(hasPreciseUsedMarketModel('case', '어항케이스'), false);
-  assert.equal(hasPreciseUsedMarketModel('power', '정격 500W 80 플러스'), false);
+  assert.equal(hasPreciseUsedMarketModel('power', '정격 500W 80 브론즈'), false);
   assert.equal(hasPreciseUsedMarketModel('ssd', 'M.2 NVME 256GB(신형)'), false);
 });
 
 test('price model precision accepts branded or coded case, power, and storage values', () => {
-  assert.equal(hasPreciseUsedMarketModel('case', '아이구주 VENTI PM50'), true);
+  assert.equal(hasPreciseUsedMarketModel('case', 'ABKO VENTI PM50'), true);
   assert.equal(hasPreciseUsedMarketModel('power', '마이크로닉스 Classic II 500W'), true);
   assert.equal(hasPreciseUsedMarketModel('ssd', 'WD SN530 M.2 NVMe SSD 256GB'), true);
+});
+
+test('price model precision accepts identifiable motherboard and cooler models', () => {
+  assert.equal(hasPreciseUsedMarketModel('motherboard', 'ASUS B650M-A WIFI'), true);
+  assert.equal(hasPreciseUsedMarketModel('cooler', 'DEEPCOOL AG400'), true);
+});
+
+test('price model precision rejects generic motherboard and cooler labels', () => {
+  assert.equal(hasPreciseUsedMarketModel('motherboard', '메인보드'), false);
+  assert.equal(hasPreciseUsedMarketModel('cooler', '쿨러'), false);
 });

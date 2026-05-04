@@ -13,13 +13,12 @@ const specs: ComponentSpec[] = [
   {
     type: 'cpu',
     label: 'CPU',
-    aliases: [/cpu/i, /씨피유/i, /프로세서/i],
+    aliases: [/cpu/i, /프로세서/i],
     fallbackPatterns: [
       /인텔\s*i[3579][-\s]?\d{4,5}[a-z]{0,2}\b/i,
       /\b(?:intel\s*)?(?:core\s*)?i[3579][-\s]?\d{4,5}[a-z]{0,2}\b/i,
       /\bxeon\s+[a-z]?\d[-\s]?\d{4}\s*v\d\b/i,
-      /라이젠\s*\d?\s*(?:[3579])?\s*[가-힣a-z]*\s*\d{4}[a-z0-9]*/i,
-      /\bryzen\s*[3579]\s*\d{4}[a-z0-9]*/i,
+      /\b(?:ryzen|라이젠)\s*[3579]?\s*\d{4}[a-z0-9]*\b/i,
     ],
   },
   {
@@ -34,7 +33,7 @@ const specs: ComponentSpec[] = [
   {
     type: 'ram',
     label: 'RAM',
-    aliases: [/ram/i, /램/i, /메모리/i],
+    aliases: [/ram/i, /메모리/i],
     fallbackPatterns: [/\bddr[345]\s*\d+\s*g(?:b)?\b/i],
     searchSuffix: '메모리',
   },
@@ -49,7 +48,7 @@ const specs: ComponentSpec[] = [
     type: 'power',
     label: '파워',
     aliases: [/파워/i, /power/i, /psu/i],
-    fallbackPatterns: [/정격\s*\d{3,4}\s*w/i, /\d{3,4}\s*w\s*(?:80\s*plus|80\s*플러스)/i],
+    fallbackPatterns: [/정격\s*\d{3,4}\s*w/i, /\d{3,4}\s*w\s*(?:80\s*plus|80\s*브론즈|80\s*골드)?/i],
     searchSuffix: '파워',
   },
   {
@@ -58,6 +57,23 @@ const specs: ComponentSpec[] = [
     aliases: [/케이스/i, /case/i],
     fallbackPatterns: [/어항\s*케이스/i, /미들\s*타워/i, /빅\s*타워/i],
     searchSuffix: '케이스',
+  },
+  {
+    type: 'motherboard',
+    label: 'MB',
+    aliases: [/motherboard/i, /\bmainboard\b/i, /\bboard\b/i, /\bmb\b/i, /메인보드/i, /보드/i],
+    fallbackPatterns: [/\b(?:h|b|z|x|a)\d{3,4}(?:[a-z]{0,3})\b/i, /\b(?:lga\s*\d+|am[45])\b/i],
+    searchSuffix: 'motherboard',
+  },
+  {
+    type: 'cooler',
+    label: 'Cooler',
+    aliases: [/cpu\s*cooler/i, /cooler/i, /aio/i, /수냉/i, /공랭/i, /쿨러/i],
+    fallbackPatterns: [
+      /\b(?:ag|ak|pa|nh|kraken|gammaxx|phantom|trinity|ls|le|ml)\s*[a-z0-9-]{2,}\b/i,
+      /\b\d{2,3}\s*mm\s*(?:aio|cooler|radiator)\b/i,
+    ],
+    searchSuffix: 'cooler',
   },
 ];
 
@@ -119,12 +135,12 @@ export class ComponentExtractorService {
     }
 
     const before = line.slice(0, match.index).trim();
-    if (before && !/^[-•*·\s]*$/.test(before)) {
+    if (before && !/^[-*•\s]*$/.test(before)) {
       return null;
     }
 
     const after = line.slice(match.index + match[0].length).trim();
-    const cleaned = this.cleanValue(after.replace(/^[:：;,\-\s]+/, '').trim());
+    const cleaned = this.cleanValue(after.replace(/^[:|,\-\s]+/, '').trim());
     return cleaned ? this.truncateAtCommentary(cleaned) : null;
   }
 
@@ -192,18 +208,16 @@ export class ComponentExtractorService {
       return true;
     }
 
-    const specKeywords =
-      /신형|구형|어항|미들|빅|타워|케이스|코어|스레드|쓰레드|정격|플러스|단일|듀얼|쿼드|옥타|수냉|공랭|저소음|고급/;
-    return specKeywords.test(token);
+    return /신형|구형|어항|미들|빅|타워|코어|쓰레드|정격|브론즈|골드|실버|화이트|블랙|공랭|수냉|저소음/.test(token);
   }
 
   private stripBullet(line: string) {
-    return line.replace(/^[-•*·\s]+/, '').trim();
+    return line.replace(/^[-*•\s]+/, '').trim();
   }
 
   private cleanValue(value: string) {
     const cleaned = value
-      .replace(/^[:：;,\-\s]+/, '')
+      .replace(/^[:|,\-\s]+/, '')
       .replace(/\s+/g, ' ')
       .trim();
 
@@ -225,9 +239,7 @@ export class ComponentExtractorService {
     }
 
     if (type === 'gpu') {
-      normalized = normalized
-        .replace(/^지포스\s+/i, 'GeForce ')
-        .replace(/^gaming\s+geforce\s+/i, 'GeForce ');
+      normalized = normalized.replace(/^지포스\s+/i, 'GeForce ').replace(/^gaming\s+geforce\s+/i, 'GeForce ');
     }
 
     if (type === 'ram') {
