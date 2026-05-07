@@ -89,3 +89,16 @@ test('extracts motherboard and cooler from labeled lines', () => {
   assert.equal(byLabel.cooler.rawValue, 'DEEPCOOL AG400');
   assert.equal(byLabel.cooler.searchQuery, 'DEEPCOOL AG400 cooler');
 });
+
+test('keeps model identifiers around Korean codename tokens for motherboard search', () => {
+  const service = new ComponentExtractorService();
+  const result = service.extract(`
+보드: msi 프로젝트 제로 b650 btf
+쿨러: MSI MAG B760M 박격포 WIFI
+  `);
+
+  const byLabel = Object.fromEntries(result.map((component) => [component.type, component]));
+
+  assert.equal(byLabel.motherboard.searchQuery, 'msi b650 btf motherboard');
+  assert.equal(byLabel.cooler.searchQuery, 'MSI MAG B760M WIFI cooler');
+});

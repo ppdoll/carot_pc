@@ -193,11 +193,12 @@ export class ComponentExtractorService {
     const tokens = value.split(/\s+/);
     const kept: string[] = [];
     for (const token of tokens) {
+      if (this.isProseToken(token)) {
+        break;
+      }
       if (this.isSpecToken(token)) {
         kept.push(token);
-        continue;
       }
-      break;
     }
     const truncated = kept.join(' ').trim();
     return truncated || value;
@@ -208,7 +209,11 @@ export class ComponentExtractorService {
       return true;
     }
 
-    return /신형|구형|어항|미들|빅|타워|코어|쓰레드|정격|브론즈|골드|실버|화이트|블랙|공랭|수냉|저소음/.test(token);
+    return /신형|구형|어항|미들|빅|타워|코어|쓰레드|정격|브론즈|골드|실버|화이트|블랙|공랭|수냉|저소음|지포스|라데온|라이젠|인텔|엔비디아/.test(token);
+  }
+
+  private isProseToken(token: string) {
+    return /(?:다|요|음|임|입니다|세요|네요|어요|아요)$/.test(token);
   }
 
   private stripBullet(line: string) {
