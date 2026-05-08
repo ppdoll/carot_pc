@@ -1,30 +1,45 @@
 :root {
   color-scheme: light;
-  --bg: #f6f7f9;
+  --bg: #fbfaf5;
+  --bg-soft: #f3efe5;
   --panel: #ffffff;
-  --line: #d8dde5;
-  --text: #171b22;
-  --muted: #647084;
-  --primary: #175cd3;
-  --primary-dark: #0f3f9a;
-  --danger-bg: #fff2f0;
-  --danger: #a32016;
+  --line: #dde2e8;
+  --text: #24272d;
+  --muted: #68717c;
+  --primary: #2d323a;
+  --primary-dark: #1f242b;
+  --accent: #d8a24b;
+  --accent-soft: #f7ead1;
+  --ring: #c9b385;
+  --danger-bg: #fdf4f5;
+  --danger: #8f3550;
+  --danger-line: #e7cfd4;
+  --ok: #dcefe3;
+  --table-head: #f7f8fa;
 }
 
 * {
   box-sizing: border-box;
 }
 
+html,
 body {
   margin: 0;
-  background: var(--bg);
+  padding: 0;
+}
+
+body {
+  background:
+    radial-gradient(circle at top, rgba(216, 162, 75, 0.08), transparent 28rem),
+    linear-gradient(180deg, var(--bg) 0%, var(--bg-soft) 100%);
   color: var(--text);
-  font-family: Arial, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  font-family: "Segoe UI", "Noto Sans KR", "Malgun Gothic", sans-serif;
 }
 
 a {
-  color: var(--primary);
+  color: #3e4d62;
   text-decoration: none;
+  text-underline-offset: 0.18em;
 }
 
 a:hover {
@@ -34,7 +49,7 @@ a:hover {
 .shell {
   width: min(1180px, calc(100vw - 32px));
   margin: 0 auto;
-  padding: 32px 0 56px;
+  padding: 28px 0 56px;
 }
 
 .topbar {
@@ -43,13 +58,41 @@ a:hover {
   justify-content: space-between;
   gap: 16px;
   margin-bottom: 20px;
+  padding: 20px 22px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--panel);
+  box-shadow: 0 8px 20px rgba(17, 24, 39, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.topbar::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(135deg, rgba(216, 162, 75, 0.07), transparent 38%);
+}
+
+.topbar > * {
+  position: relative;
+  z-index: 1;
+}
+
+.topbar > div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .eyebrow {
   margin: 0 0 6px;
-  color: var(--muted);
-  font-size: 13px;
+  color: #857455;
+  font-size: 12px;
   font-weight: 700;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
@@ -57,21 +100,23 @@ h1,
 h2 {
   margin: 0;
   line-height: 1.25;
+  letter-spacing: -0.02em;
 }
 
 h1 {
-  font-size: 28px;
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 1.05rem;
 }
 
 .panel,
 .metric {
   background: var(--panel);
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(17, 24, 39, 0.05);
 }
 
 .panel {
@@ -94,11 +139,18 @@ h2 {
 
 input {
   width: 100%;
-  height: 44px;
+  height: 46px;
   border: 1px solid var(--line);
-  border-radius: 6px;
-  padding: 0 12px;
+  border-radius: 10px;
+  padding: 0 13px;
   font-size: 15px;
+  color: var(--text);
+  background: #fff;
+}
+
+input:focus {
+  outline: 2px solid var(--ring);
+  outline-offset: 1px;
 }
 
 button,
@@ -107,17 +159,18 @@ button,
   align-items: center;
   justify-content: center;
   min-height: 40px;
-  border-radius: 6px;
+  border-radius: 10px;
   font-size: 14px;
   font-weight: 700;
 }
 
 button {
-  border: 0;
+  border: 1px solid var(--primary);
   background: var(--primary);
   color: #fff;
   padding: 0 18px;
   cursor: pointer;
+  box-shadow: 0 8px 18px rgba(36, 39, 45, 0.1);
 }
 
 button:hover {
@@ -125,9 +178,9 @@ button:hover {
 }
 
 .secondary-link {
-  border: 1px solid var(--line);
-  background: #fff;
-  color: var(--text);
+  border: 1px solid #ccb07b;
+  background: #fff7e8;
+  color: #5f4a21;
   padding: 0 14px;
 }
 
@@ -192,7 +245,7 @@ button:hover {
   color: #fff;
   padding: 0 18px;
   height: 40px;
-  border-radius: 6px;
+  border-radius: 10px;
   font-weight: 700;
   cursor: pointer;
   white-space: nowrap;
@@ -224,9 +277,9 @@ button:hover {
 
 .price-warning {
   margin: 8px 0 0;
-  border-left: 3px solid #d97706;
-  background: #fff7ed;
-  color: #7c2d12;
+  border-left: 3px solid var(--accent);
+  background: #fff8ec;
+  color: #7c5a19;
   padding: 9px 10px;
   font-size: 13px;
   font-weight: 700;
@@ -255,12 +308,12 @@ button:hover {
   content: "상세";
   display: inline-flex;
   align-items: center;
-  min-height: 24px;
-  border: 1px solid var(--line);
+  min-height: 26px;
+  border: 1px solid #ccb07b;
   border-radius: 999px;
-  padding: 0 8px;
-  background: #f9fafb;
-  color: var(--text);
+  padding: 0 10px;
+  background: var(--accent-soft);
+  color: #5f4a21;
   font-size: 12px;
   font-weight: 700;
 }
@@ -297,11 +350,11 @@ button:hover {
   display: inline-flex;
   align-items: center;
   min-height: 32px;
-  border: 1px solid var(--line);
+  border: 1px solid #ccb07b;
   border-radius: 999px;
   padding: 0 12px;
-  background: #f9fafb;
-  color: var(--text);
+  background: var(--accent-soft);
+  color: #5f4a21;
   cursor: pointer;
   font-size: 13px;
   font-weight: 700;
@@ -327,12 +380,13 @@ button:hover {
   padding: 0 12px;
   white-space: nowrap;
   text-transform: lowercase;
+  box-shadow: none;
 }
 
 .vote-button:hover {
-  border-color: var(--primary);
-  background: #eef4ff;
-  color: var(--primary-dark);
+  border-color: #ccb07b;
+  background: var(--accent-soft);
+  color: #5f4a21;
 }
 
 .vote-button.is-selected,
@@ -354,7 +408,7 @@ button:hover {
   min-width: 24px;
   height: 24px;
   border-radius: 999px;
-  background: #edf2f7;
+  background: #edf1f5;
   color: var(--text);
   font-size: 12px;
 }
@@ -375,8 +429,8 @@ button:hover {
 
 .alert {
   margin-bottom: 18px;
-  border: 1px solid #ffb3ad;
-  border-radius: 6px;
+  border: 1px solid var(--danger-line);
+  border-radius: 12px;
   background: var(--danger-bg);
   color: var(--danger);
   padding: 12px;
@@ -408,6 +462,7 @@ th {
   color: var(--muted);
   font-size: 12px;
   text-transform: uppercase;
+  background: var(--table-head);
 }
 
 td small {
@@ -438,10 +493,10 @@ td small {
   display: inline-flex;
   align-items: center;
   min-height: 24px;
-  border: 1px solid var(--line);
+  border: 1px solid #d2d9e2;
   border-radius: 999px;
   padding: 0 10px;
-  background: #f9fafb;
+  background: #f8f9fb;
   color: var(--muted);
   font-size: 12px;
   font-weight: 700;
