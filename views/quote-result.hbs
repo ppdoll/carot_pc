@@ -37,6 +37,15 @@
               <button type="submit">분석 실행</button>
             </div>
           </form>
+          {{#if text}}
+            <form method="post" action="/daangn/quotes/analyze" class="quote-form">
+              <label for="text">부품 스펙 텍스트</label>
+              <textarea id="text" name="text" rows="12" required>{{text}}</textarea>
+              <div class="input-row">
+                <button type="submit">스펙 텍스트로 분석</button>
+              </div>
+            </form>
+          {{/if}}
         </section>
       {{else}}
         {{#if share}}
@@ -71,7 +80,7 @@
 
         <section class="panel price-vote-panel" data-vote-panel>
           <div class="price-vote-copy">
-            <details class="standard-price-details">
+            <details class="standard-price-details" {{#unless showVote}}open{{/unless}}>
               <summary>
                 <span>중고 검색되는 부품들 기준가</span>
                 <strong>{{money priceEvaluation.standardPrice}}</strong>
@@ -135,49 +144,50 @@
             </details>
           </div>
 
-          <div
-            class="vote-actions"
-            data-vote-actions
-            data-vote-api="/api/quotes/price-votes"
-            data-target-id="{{priceVote.targetId}}"
-            data-source-url="{{priceVote.sourceUrl}}"
-            data-final-url="{{priceVote.finalUrl}}"
-            data-title="{{priceVote.title}}"
-          >
-            
-            <button
-              type="button"
-              class="vote-button {{#if priceVote.userVoteGreat}}is-selected{{/if}}"
-              data-vote="great"
-              {{#if priceVote.hasUserVote}}disabled{{/if}}
+          {{#if showVote}}
+            <div
+              class="vote-actions"
+              data-vote-actions
+              data-vote-api="/api/quotes/price-votes"
+              data-target-id="{{priceVote.targetId}}"
+              data-source-url="{{priceVote.sourceUrl}}"
+              data-final-url="{{priceVote.finalUrl}}"
+              data-title="{{priceVote.title}}"
             >
-              best <strong data-count="great">{{priceVote.counts.great}}</strong>
-            </button>
-            <button
-              type="button"
-              class="vote-button {{#if priceVote.userVoteFair}}is-selected{{/if}}"
-              data-vote="fair"
-              {{#if priceVote.hasUserVote}}disabled{{/if}}
-            >
-              better <strong data-count="fair">{{priceVote.counts.fair}}</strong>
-            </button>
-            <button
-              type="button"
-              class="vote-button {{#if priceVote.userVoteExpensive}}is-selected{{/if}}"
-              data-vote="expensive"
-              {{#if priceVote.hasUserVote}}disabled{{/if}}
-            >
-              bad <strong data-count="expensive">{{priceVote.counts.expensive}}</strong>
-            </button>
-          </div>
+              <button
+                type="button"
+                class="vote-button {{#if priceVote.userVoteGreat}}is-selected{{/if}}"
+                data-vote="great"
+                {{#if priceVote.hasUserVote}}disabled{{/if}}
+              >
+                best <strong data-count="great">{{priceVote.counts.great}}</strong>
+              </button>
+              <button
+                type="button"
+                class="vote-button {{#if priceVote.userVoteFair}}is-selected{{/if}}"
+                data-vote="fair"
+                {{#if priceVote.hasUserVote}}disabled{{/if}}
+              >
+                better <strong data-count="fair">{{priceVote.counts.fair}}</strong>
+              </button>
+              <button
+                type="button"
+                class="vote-button {{#if priceVote.userVoteExpensive}}is-selected{{/if}}"
+                data-vote="expensive"
+                {{#if priceVote.hasUserVote}}disabled{{/if}}
+              >
+                bad <strong data-count="expensive">{{priceVote.counts.expensive}}</strong>
+              </button>
+            </div>
 
-          <p class="muted vote-message" data-vote-message>
-            {{#if priceVote.hasUserVote}}
-              평가됨: {{priceVote.userVoteLabel}}
-            {{else}}
-              IP당 1회 집계
-            {{/if}}
-          </p>
+            <p class="muted vote-message" data-vote-message>
+              {{#if priceVote.hasUserVote}}
+                평가됨: {{priceVote.userVoteLabel}}
+              {{else}}
+                IP당 1회 집계
+              {{/if}}
+            </p>
+          {{/if}}
         </section>
 
         <section class="panel listing">
@@ -185,7 +195,9 @@
             <h2>{{analysis.listing.title}}</h2>
             <p class="muted">{{analyzedAtText}}</p>
           </div>
-          <a class="secondary-link" href="{{analysis.listing.finalUrl}}" target="_blank" rel="noreferrer">원문 열기</a>
+          {{#if hasSource}}
+            <a class="secondary-link" href="{{analysis.listing.finalUrl}}" target="_blank" rel="noreferrer">원문 열기</a>
+          {{/if}}
         </section>
 
         <section class="panel">
@@ -198,7 +210,7 @@
                   <th>검색어</th>
                   <th>대표 상품</th>
                   <th>Benchmark</th>
-                  <th>가격</th>
+                  <th>평균 가격</th>
                   <th>상태</th>
                 </tr>
               </thead>
@@ -264,6 +276,16 @@
                     </td>
                     <td class="price">
                       {{money selectedPrice}}
+                      {{#if compuzone}}
+                        <small>컴퓨존 {{compuzone.sampleCount}}건 평균</small>
+                      {{/if}}
+                      {{#if danawa}}
+                        <small>
+                          다나와 평균:
+                          <a href="{{danawa.searchUrl}}" target="_blank" rel="noreferrer">{{money danawa.averagePrice}}</a>
+                          ({{danawa.sampleCount}}건)
+                        </small>
+                      {{/if}}
                       {{#if usedMarket}}
                         <small>
                           번개 평균:
@@ -302,7 +324,7 @@
         </section>
 
         <section class="panel">
-          <h2>판매글 본문</h2>
+          <h2>{{#if hasSource}}판매글 본문{{else}}입력한 스펙{{/if}}</h2>
           <pre>{{analysis.listing.description}}</pre>
         </section>
       {{/if}}

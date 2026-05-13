@@ -102,3 +102,99 @@ test('keeps model identifiers around Korean codename tokens for motherboard sear
   assert.equal(byLabel.motherboard.searchQuery, 'msi b650 btf motherboard');
   assert.equal(byLabel.cooler.searchQuery, 'MSI MAG B760M WIFI cooler');
 });
+
+test('parses Format 2 with section headers on their own line', () => {
+  const service = new ComponentExtractorService();
+  const result = service.extract(`CPU
+
+·AMD Ryzen ™ 7 7800X3D (4.2GHz, 최대 5.0 GHz)
+
+CPU쿨러
+
+OH'S CV-620 (블랙)
+
+메인보드
+
+· 기가바이트 B650M K
+
+메모리
+
+. Reletech DDR5-5600 16GB
+
+그래픽
+
+· GIGABYTE 라데온 RX 9060 XT Gaming OC D6 16GB
+
+저장장치
+
+· 마이크론 Crucial E100 M.2 NVMe 1TB
+
+전원장치
+
+· 잘만 DecaMax ET 700W 80PLUS스탠다드
+
+케이스
+
+· 잘만 N6 백사십 (블랙)
+220(W)×375(D) ×460(H) mm
+쿨링팬 : 후면 140mm LED×1, 전면 : 120mm LED ×3, 상단 : 120mm×2
+HDD 베이 : 8.9cm(3.5) HDD x 2 MAX SSD베이 : 6.4cm(2.5) SSD x2 MAX`);
+
+  const byLabel = Object.fromEntries(result.map((component) => [component.type, component]));
+
+  assert.equal(byLabel.cpu.detected, true);
+  assert.ok(byLabel.cpu.rawValue?.includes('Ryzen 7 7800X3D'));
+  assert.equal(byLabel.cooler.detected, true);
+  assert.ok(byLabel.cooler.rawValue?.includes('CV-620'));
+  assert.equal(byLabel.motherboard.detected, true);
+  assert.equal(byLabel.motherboard.rawValue, '기가바이트 B650M K');
+  assert.equal(byLabel.ram.detected, true);
+  assert.equal(byLabel.ram.rawValue, 'Reletech DDR5-5600 16GB');
+  assert.equal(byLabel.gpu.detected, true);
+  assert.ok(byLabel.gpu.rawValue?.includes('RX 9060 XT'));
+  assert.equal(byLabel.ssd.detected, true);
+  assert.equal(byLabel.ssd.rawValue, '마이크론 Crucial E100 M.2 NVMe 1TB');
+  assert.equal(byLabel.power.detected, true);
+  assert.ok(byLabel.power.rawValue?.includes('700W'));
+  assert.equal(byLabel.case.detected, true);
+  assert.ok(byLabel.case.rawValue?.includes('N6'));
+});
+
+test('classifies Format 1 unlabeled lines by content patterns', () => {
+  const service = new ComponentExtractorService();
+  const result = service.extract(`AMD Ryzen 7 7800X3D (4.2GHz, 최대 5.0 GHz)
+기가바이트 B650M K
+Reletech DDR5-5600 16GB
+GIGABYTE 라데온 RX 9060 XT Gaming OC D6 16GB
+마이크론 Crucial E100 M.2 NVMe 1TB
+잘만 DecaMax ET 700W 80PLUS스탠다드
+220(W)×375(D) ×460(H) mm
+쿨링팬 : 후면 140mm LED×1, 전면 : 120mm LED ×3
+HDD 베이 : 8.9cm(3.5) HDD x 2 MAX SSD베이 : 6.4cm(2.5) SSD x2 MAX`);
+
+  const byLabel = Object.fromEntries(result.map((component) => [component.type, component]));
+
+  assert.equal(byLabel.cpu.detected, true);
+  assert.ok(byLabel.cpu.rawValue?.includes('Ryzen 7 7800X3D'));
+  assert.equal(byLabel.motherboard.detected, true);
+  assert.ok(byLabel.motherboard.rawValue?.includes('B650M'));
+  assert.equal(byLabel.ram.detected, true);
+  assert.equal(byLabel.ram.rawValue, 'Reletech DDR5-5600 16GB');
+  assert.equal(byLabel.gpu.detected, true);
+  assert.ok(byLabel.gpu.rawValue?.includes('RX 9060 XT'));
+  assert.equal(byLabel.ssd.detected, true);
+  assert.ok(byLabel.ssd.rawValue?.includes('M.2 NVMe 1TB'));
+  assert.equal(byLabel.power.detected, true);
+  assert.ok(byLabel.power.rawValue?.includes('700W'));
+});
+
+test('ignores dimension, cooling-fan, and HDD/SSD bay metadata lines', () => {
+  const service = new ComponentExtractorService();
+  const result = service.extract(`220(W)×375(D) ×460(H) mm
+쿨링팬 : 후면 140mm LED×1, 전면 : 120mm LED ×3
+HDD 베이 : 8.9cm(3.5) HDD x 2 MAX SSD베이 : 6.4cm(2.5) SSD x2 MAX`);
+
+  for (const component of result) {
+    assert.equal(component.detected, false, `${component.type} should not be detected from metadata lines`);
+  }
+});

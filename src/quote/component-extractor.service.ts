@@ -6,6 +6,7 @@ interface ComponentSpec {
   label: string;
   aliases: RegExp[];
   fallbackPatterns: RegExp[];
+  classifyPatterns?: RegExp[];
   searchSuffix?: string;
 }
 
@@ -20,6 +21,7 @@ const specs: ComponentSpec[] = [
       /\bxeon\s+[a-z]?\d[-\s]?\d{4}\s*v\d\b/i,
       /\b(?:ryzen|라이젠)\s*[3579]?\s*\d{4}[a-z0-9]*\b/i,
     ],
+    classifyPatterns: [/\b(?:ryzen|xeon|intel|core)\b/i, /라이젠|인텔/, /\bi[3579][-\s]?\d{3,5}\b/i],
   },
   {
     type: 'gpu',
@@ -29,12 +31,14 @@ const specs: ComponentSpec[] = [
       /\b(?:geforce\s*)?(?:rtx|gtx)\s*\d{3,4}(?:\s*(?:ti|super))?(?:\s*\d{1,2}\s*g(?:b)?)?\b/i,
       /\b(?:radeon\s*)?rx\s*\d{4}(?:\s*xt)?\b/i,
     ],
+    classifyPatterns: [/\b(?:rtx|gtx|radeon|geforce)\b/i, /지포스|라데온/, /\brx\s*\d{3,4}\b/i],
   },
   {
     type: 'ram',
     label: 'RAM',
     aliases: [/ram/i, /메모리/i],
-    fallbackPatterns: [/\bddr[345]\s*\d+\s*g(?:b)?\b/i],
+    fallbackPatterns: [/\bddr[345][-\s]*\d{3,5}\s*\d+\s*g(?:b)?\b/i, /\bddr[345]\s*\d+\s*g(?:b)?\b/i],
+    classifyPatterns: [/\bddr[345]\b/i],
     searchSuffix: '메모리',
   },
   {
@@ -42,13 +46,15 @@ const specs: ComponentSpec[] = [
     label: 'SSD',
     aliases: [/ssd/i, /저장소/i, /저장장치/i, /스토리지/i],
     fallbackPatterns: [/\b(?:m\.?2\s*)?(?:nvme\s*)?ssd\s*\d+\s*(?:tb|gb|t|g)\b/i],
+    classifyPatterns: [/\b(?:m\.?2|nvme|ssd)\b.*\b\d+\s*(?:tb|gb|t|g)\b/i],
     searchSuffix: 'SSD',
   },
   {
     type: 'power',
     label: '파워',
-    aliases: [/파워/i, /power/i, /psu/i],
+    aliases: [/파워/i, /power/i, /psu/i, /전원장치/i],
     fallbackPatterns: [/정격\s*\d{3,4}\s*w/i, /\d{3,4}\s*w\s*(?:80\s*plus|80\s*브론즈|80\s*골드)?/i],
+    classifyPatterns: [/\b\d{3,4}\s*w\b/i, /\b80\s*plus\b/i, /정격|psu/i],
     searchSuffix: '파워',
   },
   {
@@ -56,6 +62,7 @@ const specs: ComponentSpec[] = [
     label: '케이스',
     aliases: [/케이스/i, /case/i],
     fallbackPatterns: [/어항\s*케이스/i, /미들\s*타워/i, /빅\s*타워/i],
+    classifyPatterns: [/어항|미들\s*타워|빅\s*타워/],
     searchSuffix: '케이스',
   },
   {
@@ -63,24 +70,35 @@ const specs: ComponentSpec[] = [
     label: 'MB',
     aliases: [/motherboard/i, /\bmainboard\b/i, /\bboard\b/i, /\bmb\b/i, /메인보드/i, /보드/i],
     fallbackPatterns: [/\b(?:h|b|z|x|a)\d{3,4}(?:[a-z]{0,3})\b/i, /\b(?:lga\s*\d+|am[45])\b/i],
+    classifyPatterns: [/\b(?:h|b|z|x|a)\d{3,4}[a-z]{0,3}\b/i],
     searchSuffix: 'motherboard',
   },
   {
     type: 'cooler',
     label: 'Cooler',
-    aliases: [/cpu\s*cooler/i, /cooler/i, /aio/i, /수냉/i, /공랭/i, /쿨러/i],
+    aliases: [/cpu\s*cooler/i, /cpu\s*쿨러/i, /cooler/i, /aio/i, /수냉/i, /공랭/i, /쿨러/i],
     fallbackPatterns: [
       /\b(?:ag|ak|pa|nh|kraken|gammaxx|phantom|trinity|ls|le|ml)\s*[a-z0-9-]{2,}\b/i,
       /\b\d{2,3}\s*mm\s*(?:aio|cooler|radiator)\b/i,
     ],
+    classifyPatterns: [/\b(?:aio|cooler)\b|수냉|공랭|\bcpu\s*쿨러\b/i],
     searchSuffix: 'cooler',
   },
+];
+
+const SECTION_HEADER_PATTERN = /^(?:cpu(?:\s*쿨러|\s*cooler)?|쿨러|cooler|gpu|vga|그래픽카드|그래픽|글카|ram|메모리|ssd|저장소|저장장치|스토리지|파워|power|psu|전원장치|case|케이스|motherboard|메인보드|보드|mainboard|board|mb)$/i;
+const NOISE_LINE_PATTERNS = [
+  /\(\s*[WDHwdh]\s*\).*\(\s*[WDHwdh]\s*\)/, // dimensions like 220(W)×375(D)
+  /^쿨링팬\s*[:：]/, // 쿨링팬 : 후면 140mm...
+  /(?:HDD|SSD)\s*베이/i, // HDD 베이 :, SSD 베이
 ];
 
 @Injectable()
 export class ComponentExtractorService {
   extract(description: string): ExtractedComponent[] {
-    const lines = this.toLines(description);
+    const preprocessed = this.preprocessText(description);
+    const lines = this.toLines(preprocessed);
+    const assignedLines = new Set<string>();
 
     return componentTypes.map((type) => {
       const spec = specs.find((candidate) => candidate.type === type);
@@ -90,11 +108,19 @@ export class ComponentExtractorService {
 
       const labeled = this.extractByLabel(spec, lines);
       if (labeled) {
+        assignedLines.add(labeled.line);
         return this.toComponent(spec, labeled.value, 'high', labeled.line);
       }
 
-      const fallback = this.extractByFallback(spec, lines);
+      const classified = this.extractByLineClassification(spec, lines, assignedLines);
+      if (classified) {
+        assignedLines.add(classified.line);
+        return this.toComponent(spec, classified.value, 'medium', classified.line);
+      }
+
+      const fallback = this.extractByFallback(spec, lines, assignedLines);
       if (fallback) {
+        assignedLines.add(fallback.line);
         return this.toComponent(spec, fallback.value, 'medium', fallback.line);
       }
 
@@ -107,6 +133,50 @@ export class ComponentExtractorService {
         confidence: 'low',
       };
     });
+  }
+
+  private preprocessText(description: string): string {
+    const cleaned = description.replace(/\r\n/g, '\n').replace(/[™®©]/g, '');
+    const rawLines = cleaned.split('\n');
+    const result: string[] = [];
+
+    let i = 0;
+    while (i < rawLines.length) {
+      const trimmed = this.stripBullet(rawLines[i]);
+
+      if (this.isSectionHeader(trimmed)) {
+        let j = i + 1;
+        while (j < rawLines.length && rawLines[j].trim() === '') {
+          j++;
+        }
+
+        if (j < rawLines.length && !this.isSectionHeader(this.stripBullet(rawLines[j]))) {
+          const valueLine = this.stripBullet(rawLines[j]);
+          result.push(`${trimmed}: ${valueLine}`);
+          i = j + 1;
+          continue;
+        }
+
+        i++;
+        continue;
+      }
+
+      result.push(rawLines[i]);
+      i++;
+    }
+
+    return result.join('\n');
+  }
+
+  private isSectionHeader(line: string): boolean {
+    if (!line) {
+      return false;
+    }
+    return SECTION_HEADER_PATTERN.test(line.trim());
+  }
+
+  private isNoiseLine(line: string): boolean {
+    return NOISE_LINE_PATTERNS.some((pattern) => pattern.test(line));
   }
 
   private extractByLabel(spec: ComponentSpec, lines: string[]) {
@@ -144,9 +214,12 @@ export class ComponentExtractorService {
     return cleaned ? this.truncateAtCommentary(cleaned) : null;
   }
 
-  private extractByFallback(spec: ComponentSpec, lines: string[]) {
+  private extractByFallback(spec: ComponentSpec, lines: string[], assignedLines: Set<string>) {
     for (const line of lines) {
       const stripped = this.stripBullet(line);
+      if (assignedLines.has(stripped) || this.isNoiseLine(stripped)) {
+        continue;
+      }
       for (const pattern of spec.fallbackPatterns) {
         const match = stripped.match(pattern);
         if (match?.[0]) {
@@ -158,6 +231,28 @@ export class ComponentExtractorService {
       }
     }
 
+    return null;
+  }
+
+  private extractByLineClassification(spec: ComponentSpec, lines: string[], assignedLines: Set<string>) {
+    if (!spec.classifyPatterns?.length) {
+      return null;
+    }
+    for (const line of lines) {
+      const stripped = this.stripBullet(line);
+      if (assignedLines.has(stripped) || this.isNoiseLine(stripped)) {
+        continue;
+      }
+      for (const pattern of spec.classifyPatterns) {
+        if (pattern.test(stripped)) {
+          const truncated = this.truncateAtCommentary(stripped);
+          return {
+            value: this.cleanValue(truncated),
+            line: stripped,
+          };
+        }
+      }
+    }
     return null;
   }
 
@@ -209,7 +304,9 @@ export class ComponentExtractorService {
       return true;
     }
 
-    return /신형|구형|어항|미들|빅|타워|코어|쓰레드|정격|브론즈|골드|실버|화이트|블랙|공랭|수냉|저소음|지포스|라데온|라이젠|인텔|엔비디아/.test(token);
+    return /신형|구형|어항|미들|빅|타워|코어|쓰레드|정격|브론즈|골드|실버|화이트|블랙|공랭|수냉|저소음|지포스|라데온|라이젠|인텔|엔비디아|잘만|마이크론|기가바이트|마이크로닉스|시소닉|쿠거|다크플래시|페가서스|텍셀|크루셜|커세어|삼성|하이닉스|에이수스|에이즈락|에이서|기성/.test(
+      token,
+    );
   }
 
   private isProseToken(token: string) {
@@ -217,7 +314,7 @@ export class ComponentExtractorService {
   }
 
   private stripBullet(line: string) {
-    return line.replace(/^[-*•\s]+/, '').trim();
+    return line.replace(/^[-*•·.\s]+/, '').trim();
   }
 
   private cleanValue(value: string) {

@@ -62,7 +62,15 @@ export interface ComponentPriceEstimate {
     bunjang: UsedMarketSummary;
     joongna: UsedMarketSummary;
   };
+  compuzone?: RetailMarketSummary;
+  danawa?: RetailMarketSummary;
   error?: string;
+}
+
+export interface RetailMarketSummary {
+  searchUrl: string;
+  averagePrice: number | null;
+  sampleCount: number;
 }
 
 export interface PcQuoteAnalysis {

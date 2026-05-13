@@ -35,6 +35,27 @@
           </div>
         </form>
       </section>
+
+      <section class="panel">
+        <p class="muted">
+          당근글이 아닌 쇼핑몰 스펙 페이지의 텍스트를 그대로 붙여넣어 분석할 수도 있습니다.
+          <code>CPU: ...</code> 형식, 또는 헤더와 값이 줄로 나뉜 형식 둘 다 인식합니다.
+        </p>
+        <form method="post" action="/daangn/quotes/analyze" class="quote-form">
+          <label for="text">부품 스펙</label>
+          <textarea
+            id="text"
+            name="text"
+            rows="12"
+            placeholder="{{exampleText}}"
+            required
+          >{{text}}</textarea>
+          <div class="input-row">
+            <button type="submit">스펙 분석</button>
+          </div>
+        </form>
+      </section>
+
       <section class="panel">
         <p>
           <a class="secondary-link" href="/about.html">서비스 소개</a>

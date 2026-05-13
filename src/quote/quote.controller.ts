@@ -12,7 +12,29 @@ import { ComponentPriceEstimate, PcQuoteAnalysis } from './types';
 
 interface AnalyzeBody {
   url?: string;
+  text?: string;
 }
+
+const TEXT_EXAMPLE = `CPU
+·AMD Ryzen 7 7800X3D (4.2GHz, 최대 5.0 GHz)
+
+메인보드
+· 기가바이트 B650M K
+
+메모리
+· Reletech DDR5-5600 16GB
+
+그래픽
+· GIGABYTE 라데온 RX 9060 XT Gaming OC D6 16GB
+
+저장장치
+· 마이크론 Crucial E100 M.2 NVMe 1TB
+
+전원장치
+· 잘만 DecaMax ET 700W 80PLUS스탠다드
+
+케이스
+· 잘만 N6 백사십 (블랙)`;
 
 interface PriceVoteBody {
   targetId?: string;
@@ -79,7 +101,9 @@ export class QuoteController {
   form() {
     return {
       url: '',
+      text: '',
       exampleUrl: 'https://www.daangn.com/articles/1156255068',
+      exampleText: TEXT_EXAMPLE,
     };
   }
 
@@ -123,11 +147,26 @@ export class QuoteController {
   @Render('quote-result')
   async analyzeForAdmin(@Body() body: AnalyzeBody, @Req() request: RequestLike) {
     const url = String(body.url ?? '').trim();
+    const text = String(body.text ?? '').trim();
+
+    if (text && !url) {
+      try {
+        const analysis = await this.quoteService.analyzeText(text);
+        return this.toViewModel(analysis, emptyVoteSummary, undefined, { showVote: false });
+      } catch (error) {
+        return {
+          error: error instanceof Error ? error.message : '분석 중 오류가 발생했습니다.',
+          url: '',
+          text,
+        };
+      }
+    }
 
     if (!url) {
       return {
-        error: '당근 판매글 URL을 입력해 주세요.',
+        error: '당근 판매글 URL이나 스펙 텍스트를 입력해 주세요.',
         url,
+        text,
       };
     }
 
@@ -140,6 +179,7 @@ export class QuoteController {
       return {
         error: error instanceof Error ? error.message : '분석 중 오류가 발생했습니다.',
         url,
+        text,
       };
     }
   }
@@ -175,9 +215,16 @@ export class QuoteController {
     });
   }
 
-  private toViewModel(analysis: PcQuoteAnalysis, voteSummary: PriceVoteSummary, share?: ShareInfo) {
+  private toViewModel(
+    analysis: PcQuoteAnalysis,
+    voteSummary: PriceVoteSummary,
+    share?: ShareInfo,
+    options: { showVote?: boolean } = {},
+  ) {
     const evaluation = this.priceEvaluation(analysis);
     const voteTarget = this.voteTarget(analysis);
+    const showVote = options.showVote ?? true;
+    const hasSource = Boolean(analysis.listing.sourceUrl || analysis.listing.finalUrl);
 
     return {
       analysis,
@@ -191,6 +238,8 @@ export class QuoteController {
       priceEvaluation: evaluation,
       priceVote: this.toVoteViewModel(voteTarget, voteSummary),
       share: share ?? null,
+      showVote,
+      hasSource,
     };
   }
 
@@ -233,6 +282,8 @@ export class QuoteController {
       benchmarkFallbackText: this.benchmarkFallbackText(estimate),
       showFallbackLinks: estimate.status !== 'ok',
       usedMarket: this.hasPreciseMarketModel(estimate) ? estimate.usedMarket : null,
+      compuzone: estimate.compuzone ?? null,
+      danawa: estimate.danawa && estimate.danawa.sampleCount > 0 ? estimate.danawa : null,
       usedMarketNote:
         estimate.component.detected && !this.hasPreciseMarketModel(estimate)
           ? '모델명이 구체적이지 않아 중고 시세를 기준가에서 제외했습니다.'
@@ -447,6 +498,13 @@ const voteLabels: Record<PriceVoteKind, string> = {
   great: 'best',
   fair: 'better',
   expensive: 'bad',
+};
+
+const emptyVoteSummary: PriceVoteSummary = {
+  targetId: '',
+  counts: { great: 0, fair: 0, expensive: 0 },
+  total: 0,
+  userVote: null,
 };
 
 function stringOrNull(value: unknown): string | null {

@@ -157,6 +157,10 @@ export class CompuzoneClientService {
       score -= 8;
     }
 
+    if (this.looksLikeBundle(haystack)) {
+      score -= 12;
+    }
+
     if (this.looksLikeAccessory(componentType, haystack)) {
       score -= 7;
     }
@@ -184,7 +188,13 @@ export class CompuzoneClientService {
   }
 
   private looksLikeCompletePc(haystack: string) {
-    return /조립pc|추천\s*조립|게이밍\s*pc|본체|데스크탑|desktop|워크스테이션|프리미엄pc/i.test(haystack);
+    return /조립pc|추천\s*조립|게이밍\s*pc|본체|데스크탑|desktop|워크스테이션|프리미엄pc|완본체|완성품/i.test(haystack);
+  }
+
+  private looksLikeBundle(haystack: string) {
+    const hasCpu = /\b(?:ryzen|i[3579]-?\d{3,5}|xeon|core\s*i\d)\b|라이젠/i.test(haystack);
+    const hasGpu = /\b(?:rtx|gtx)\s*\d{3,4}\b|\brx\s*\d{4}\b|geforce|radeon|지포스|라데온/i.test(haystack);
+    return hasCpu && hasGpu;
   }
 
   private looksLikeAccessory(componentType: ComponentType, haystack: string) {

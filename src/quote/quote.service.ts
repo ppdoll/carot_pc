@@ -6,9 +6,10 @@ import { canonicalCpu, canonicalGpu, canonicalRam, ComponentKeys } from './compo
 import { ComponentExtractorService } from './component-extractor.service';
 import { CompuzoneClientService } from './compuzone-client.service';
 import { DaangnClientService } from './daangn-client.service';
+import { DanawaClientService } from './danawa-client.service';
 import { JoongnaClientService } from './joongna-client.service';
 import { SnapshotStoreService } from './snapshot-store.service';
-import { ComponentPriceEstimate, ExtractedComponent, PcQuoteAnalysis } from './types';
+import { ComponentPriceEstimate, ExtractedComponent, ListingInfo, PcQuoteAnalysis } from './types';
 
 export const ANALYSIS_CACHE_TTL_SECONDS = 24 * 60 * 60;
 
@@ -17,6 +18,7 @@ export interface CachedAnalysis {
   capturedAt: Date;
   fromCache: boolean;
 }
+
 
 @Injectable()
 export class QuoteService {
@@ -27,11 +29,30 @@ export class QuoteService {
     private readonly compuzoneClient: CompuzoneClientService,
     private readonly bunjangClient: BunjangClientService,
     private readonly joongnaClient: JoongnaClientService,
+    private readonly danawaClient: DanawaClientService,
     private readonly snapshotStore: SnapshotStoreService,
   ) {}
 
   async analyzeUrl(sourceUrl: string): Promise<PcQuoteAnalysis> {
     const listing = await this.daangnClient.fetchListing(sourceUrl);
+    return this.runAnalysis(listing, { saveSnapshot: true });
+  }
+
+  async analyzeText(text: string): Promise<PcQuoteAnalysis> {
+    const listing: ListingInfo = {
+      sourceUrl: '',
+      finalUrl: '',
+      title: '직접 입력한 스펙',
+      description: text,
+      price: null,
+    };
+    return this.runAnalysis(listing, { saveSnapshot: false });
+  }
+
+  private async runAnalysis(
+    listing: ListingInfo,
+    options: { saveSnapshot: boolean },
+  ): Promise<PcQuoteAnalysis> {
     const components = this.componentExtractor.extract(listing.description);
 
     const estimates = await Promise.all(
@@ -48,7 +69,7 @@ export class QuoteService {
         const danawaSearchUrl = this.buildDanawaSearchUrl(component.searchQuery);
         const naverSearchUrl = this.buildNaverSearchUrl(component.searchQuery);
 
-        const [compuzoneResult, bunjangSummary, joongnaSummary, benchmark] = await Promise.all([
+        const [compuzoneResult, bunjangSummary, joongnaSummary, benchmark, danawaSummary] = await Promise.all([
           this.compuzoneClient
             .searchProducts(component.type, component.searchQuery)
             .then((products) => ({ products, error: null as Error | null }))
@@ -59,9 +80,17 @@ export class QuoteService {
           this.bunjangClient.fetchSummary(component.searchQuery),
           this.joongnaClient.fetchSummary(component.searchQuery),
           this.benchmarkClient.fetchBenchmark(component.type, component.rawValue),
+          this.danawaClient
+            .fetchSummary(component.type, component.searchQuery)
+            .catch(() => ({ searchUrl: danawaSearchUrl, samples: [], averagePrice: null, sampleCount: 0 })),
         ]);
 
         const usedMarket = { bunjang: bunjangSummary, joongna: joongnaSummary };
+        const danawa = {
+          searchUrl: danawaSummary.searchUrl,
+          averagePrice: danawaSummary.averagePrice,
+          sampleCount: danawaSummary.sampleCount,
+        };
 
         if (compuzoneResult.error) {
           return {
@@ -72,12 +101,21 @@ export class QuoteService {
             status: 'error',
             products: [],
             usedMarket,
+            danawa,
             benchmark,
             error: compuzoneResult.error.message,
           };
         }
 
-        const selectedProduct = compuzoneResult.products[0];
+        const representative = this.pickRepresentative(compuzoneResult.products);
+        const selectedProduct = representative?.product;
+        const compuzone = representative && representative.averagedSampleCount > 1
+          ? {
+              searchUrl,
+              averagePrice: selectedProduct?.price ?? null,
+              sampleCount: representative.averagedSampleCount,
+            }
+          : undefined;
 
         return {
           component,
@@ -88,6 +126,8 @@ export class QuoteService {
           selectedProduct,
           products: compuzoneResult.products,
           usedMarket,
+          compuzone,
+          danawa,
           benchmark,
         };
       }),
@@ -114,13 +154,49 @@ export class QuoteService {
       analyzedAt: new Date().toISOString(),
     };
 
-    const keys = this.deriveKeys(components);
-    if (keys.cpuKey || keys.ramKey || keys.gpuKey) {
-      const snapshot = SnapshotStoreService.fromAnalysis(analysis, keys);
-      this.snapshotStore.save(snapshot).catch(() => undefined);
+    if (options.saveSnapshot) {
+      const keys = this.deriveKeys(components);
+      if (keys.cpuKey || keys.ramKey || keys.gpuKey) {
+        const snapshot = SnapshotStoreService.fromAnalysis(analysis, keys);
+        this.snapshotStore.save(snapshot).catch(() => undefined);
+      }
     }
 
     return analysis;
+  }
+
+  private pickRepresentative<T extends { price: number | null }>(
+    products: T[],
+  ): { product: T; averagedSampleCount: number } | undefined {
+    if (products.length === 0) {
+      return undefined;
+    }
+
+    const pricedProducts = products.filter(
+      (product): product is T & { price: number } => typeof product.price === 'number' && product.price > 0,
+    );
+
+    if (pricedProducts.length < 2) {
+      return { product: products[0], averagedSampleCount: 0 };
+    }
+
+    const average = Math.round(
+      pricedProducts.reduce((sum, product) => sum + product.price, 0) / pricedProducts.length,
+    );
+    let closest = pricedProducts[0];
+    let smallestDiff = Math.abs(closest.price - average);
+    for (const product of pricedProducts.slice(1)) {
+      const diff = Math.abs(product.price - average);
+      const tiebreakerPrefersCheaper = diff === smallestDiff && product.price < closest.price;
+      if (diff < smallestDiff || tiebreakerPrefersCheaper) {
+        smallestDiff = diff;
+        closest = product;
+      }
+    }
+    return {
+      product: { ...closest, price: average },
+      averagedSampleCount: pricedProducts.length,
+    };
   }
 
   private deriveKeys(components: ExtractedComponent[]): ComponentKeys {
