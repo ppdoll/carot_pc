@@ -141,11 +141,6 @@ h2 {
   width: 100%;
 }
 
-.ad-desktop-vertical,
-.ad-mobile-only {
-  display: none;
-}
-
 .quote-form label {
   display: block;
   margin-bottom: 10px;
@@ -577,25 +572,4 @@ pre {
     width: 100%;
   }
 
-  .ad-default,
-  .ad-desktop-vertical {
-    display: none;
-  }
-
-  .ad-mobile-only {
-    display: flex;
-  }
-}
-
-@media (min-width: 761px) {
-  .ad-default {
-    display: flex;
-  }
-}
-
-@media (min-width: 1100px) {
-  .ad-desktop-vertical {
-    display: flex;
-    width: auto;
-  }
 }

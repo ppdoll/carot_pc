@@ -330,39 +330,72 @@
 
         <section class="panel ad-panel">
           <div class="ad-slots">
-            <div class="ad-slot ad-default">
-              <ins
-                class="kakao_ad_area"
-                style="display:none;"
-                data-ad-unit="DAN-J9hgvTxvzgstoydr"
-                data-ad-width="300"
-                data-ad-height="250"
-              ></ins>
-            </div>
-            <div class="ad-slot ad-desktop-vertical">
-              <ins
-                class="kakao_ad_area"
-                style="display:none;"
-                data-ad-unit="DAN-rLxDqF6ZOAufoZc4"
-                data-ad-width="160"
-                data-ad-height="600"
-              ></ins>
-            </div>
-            <div class="ad-slot ad-mobile-only">
-              <ins
-                class="kakao_ad_area"
-                style="display:none;"
-                data-ad-unit="DAN-AlXb06IWlDddaBRT"
-                data-ad-width="320"
-                data-ad-height="480"
-              ></ins>
-            </div>
+            <div
+              class="ad-slot"
+              data-adfit-slot
+              data-unit-default="DAN-J9hgvTxvzgstoydr"
+              data-width-default="300"
+              data-height-default="250"
+              data-unit-desktop="DAN-rLxDqF6ZOAufoZc4"
+              data-width-desktop="160"
+              data-height-desktop="600"
+              data-unit-mobile="DAN-AlXb06IWlDddaBRT"
+              data-width-mobile="320"
+              data-height-mobile="480"
+            ></div>
           </div>
-          <script type="text/javascript" src="//t1.kakaocdn.net/kas/static/ba.min.js" async></script>
         </section>
       {{/if}}
     </main>
     <script>
+      (() => {
+        const scriptSrc = '//t1.kakaocdn.net/kas/static/ba.min.js';
+        const loadScript = () => {
+          if (document.querySelector(`script[src="${scriptSrc}"]`)) {
+            return;
+          }
+          const script = document.createElement('script');
+          script.type = 'text/javascript';
+          script.src = scriptSrc;
+          script.async = true;
+          document.body.appendChild(script);
+        };
+
+        for (const slot of document.querySelectorAll('[data-adfit-slot]')) {
+          const width = window.innerWidth;
+          const useMobile = width <= 760;
+          const useDesktopVertical = width >= 1100;
+
+          const unit = useMobile
+            ? slot.dataset.unitMobile
+            : useDesktopVertical
+              ? slot.dataset.unitDesktop
+              : slot.dataset.unitDefault;
+          const adWidth = useMobile
+            ? slot.dataset.widthMobile
+            : useDesktopVertical
+              ? slot.dataset.widthDesktop
+              : slot.dataset.widthDefault;
+          const adHeight = useMobile
+            ? slot.dataset.heightMobile
+            : useDesktopVertical
+              ? slot.dataset.heightDesktop
+              : slot.dataset.heightDefault;
+
+          slot.innerHTML = `
+            <ins
+              class="kakao_ad_area"
+              style="display:none;"
+              data-ad-unit="${unit}"
+              data-ad-width="${adWidth}"
+              data-ad-height="${adHeight}"
+            ></ins>
+          `;
+        }
+
+        loadScript();
+      })();
+
       (() => {
         const panel = document.querySelector('[data-vote-panel]');
         if (!panel) {
