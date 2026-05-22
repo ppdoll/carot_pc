@@ -1,4 +1,5 @@
 import { Injectable } from '@nestjs/common';
+import { HospitalCacheService } from './hospital-cache.service';
 
 const SERVICE_KEY = '18d9b856fdfa9b9d33e494e66cb981bd9ff4f7bbc61d281293ef8fdafec6fc52';
 const BASE = 'https://apis.data.go.kr/B551182';
@@ -40,6 +41,8 @@ export interface DiseaseInfo {
 
 @Injectable()
 export class HospitalClientService {
+  constructor(private readonly cache: HospitalCacheService) {}
+
   async searchHospitals(params: {
     sidoCd?: string;
     sgguCdNm?: string;
@@ -49,6 +52,10 @@ export class HospitalClientService {
     pageNo?: number;
     numOfRows?: number;
   }): Promise<{ hospitals: Hospital[]; totalCount: number }> {
+    const cacheKey = `search:${JSON.stringify(params)}`;
+    const cached = this.cache.get<{ hospitals: Hospital[]; totalCount: number }>(cacheKey);
+    if (cached) return cached;
+
     const q = new URLSearchParams({
       ServiceKey: SERVICE_KEY,
       _type: 'json',
@@ -93,10 +100,16 @@ export class HospitalClientService {
       hasSpecialist: Number(item.mdeptSdrCnt ?? 0) > 0,
     }));
 
-    return { hospitals, totalCount };
+    const result = { hospitals, totalCount };
+    this.cache.set(cacheKey, result);
+    return result;
   }
 
   async getDrugInfo(ykiho: string): Promise<DrugInfo> {
+    const cacheKey = `drug:${ykiho}`;
+    const cached = this.cache.get<DrugInfo>(cacheKey);
+    if (cached) return cached;
+
     const q = new URLSearchParams({
       ServiceKey: SERVICE_KEY,
       _type: 'json',
@@ -114,12 +127,14 @@ export class HospitalClientService {
       const item = data?.response?.body?.items?.item;
       const first = Array.isArray(item) ? item[0] : item;
 
-      return {
+      const result: DrugInfo = {
         ykiho,
         antibioticRate: first?.antibioticRate != null ? Number(first.antibioticRate) : null,
         injectionRate: first?.injectionRate != null ? Number(first.injectionRate) : null,
         drugItemCnt: first?.drugItemCnt != null ? Number(first.drugItemCnt) : null,
       };
+      this.cache.set(cacheKey, result);
+      return result;
     } catch {
       return emptyDrug(ykiho);
     }
@@ -153,6 +168,10 @@ export class HospitalClientService {
   }
 
   async getHospAsmInfo(ykiho: string): Promise<AsmInfo> {
+    const cacheKey = `asm:${ykiho}`;
+    const cached = this.cache.get<AsmInfo>(cacheKey);
+    if (cached) return cached;
+
     const q = new URLSearchParams({
       ServiceKey: SERVICE_KEY,
       _type: 'json',
@@ -167,12 +186,14 @@ export class HospitalClientService {
       const data: any = await res.json();
       const item = data?.response?.body?.items?.item;
       const first = Array.isArray(item) ? item[0] : item;
-      return {
+      const result: AsmInfo = {
         ykiho,
         asmGrd07: first?.asmGrd07 ? String(first.asmGrd07) : null,
         asmGrd08: first?.asmGrd08 ? String(first.asmGrd08) : null,
         asmGrd09: first?.asmGrd09 ? String(first.asmGrd09) : null,
       };
+      this.cache.set(cacheKey, result);
+      return result;
     } catch {
       return emptyAsm(ykiho);
     }
