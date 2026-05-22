@@ -22,6 +22,7 @@ export interface ExtractedComponent {
   detected: boolean;
   confidence: 'high' | 'medium' | 'low';
   sourceLine?: string;
+  quantity: number;
 }
 
 export interface CompuzoneProduct {

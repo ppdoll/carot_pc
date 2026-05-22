@@ -14,6 +14,8 @@ export interface SnapshotComponent {
   searchQuery: string | null;
   compuzonePrice: number | null;
   compuzoneName: string | null;
+  danawaPrice: number | null;
+  quantity: number;
   bunjang: UsedMarketSummary | null;
   joongna: UsedMarketSummary | null;
 }
@@ -315,6 +317,8 @@ interface PostgresComponentRow {
   search_query: string | null;
   compuzone_price: number | null;
   compuzone_name: string | null;
+  danawa_price: number | null;
+  quantity: number | null;
   bunjang: UsedMarketSummary | null;
   joongna: UsedMarketSummary | null;
 }
@@ -333,6 +337,8 @@ function toSnapshotComponent(estimate: ComponentPriceEstimate): SnapshotComponen
     searchQuery: estimate.component.searchQuery,
     compuzonePrice: estimate.selectedProduct?.price ?? null,
     compuzoneName: estimate.selectedProduct?.name ?? null,
+    danawaPrice: estimate.danawa?.averagePrice ?? null,
+    quantity: estimate.component.quantity,
     bunjang: estimate.usedMarket?.bunjang ?? null,
     joongna: estimate.usedMarket?.joongna ?? null,
   };
@@ -527,9 +533,9 @@ async function replacePostgresComponents(
       `
         INSERT INTO quote_snapshot_components (
           snapshot_id, component_order, type, label, raw_value, search_query,
-          compuzone_price, compuzone_name, bunjang, joongna
+          compuzone_price, compuzone_name, danawa_price, quantity, bunjang, joongna
         )
-        VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9::jsonb, $10::jsonb)
+        VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11::jsonb, $12::jsonb)
       `,
       [
         snapshotId,
@@ -540,6 +546,8 @@ async function replacePostgresComponents(
         component.searchQuery,
         component.compuzonePrice,
         component.compuzoneName,
+        component.danawaPrice,
+        component.quantity,
         jsonParam(component.bunjang),
         jsonParam(component.joongna),
       ],
@@ -619,6 +627,8 @@ function snapshotFromPostgres(
         searchQuery: component.search_query,
         compuzonePrice: component.compuzone_price,
         compuzoneName: component.compuzone_name,
+        danawaPrice: component.danawa_price,
+        quantity: component.quantity ?? 1,
         bunjang: component.bunjang,
         joongna: component.joongna,
       })),

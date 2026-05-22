@@ -133,11 +133,14 @@ export class QuoteService {
       }),
     );
 
-    const pricedProducts = estimates
-      .map((estimate) => estimate.selectedProduct)
-      .filter((product): product is NonNullable<typeof product> => Boolean(product?.price));
-
-    const compuzoneComparableTotal = pricedProducts.reduce((sum, product) => sum + Number(product.price), 0);
+    const compuzoneComparableTotal = estimates.reduce((sum, estimate) => {
+      const price = estimate.selectedProduct?.price ?? estimate.danawa?.averagePrice ?? null;
+      if (!price) return sum;
+      return sum + price * estimate.component.quantity;
+    }, 0);
+    const pricedComponentCount = estimates.filter(
+      (estimate) => Boolean(estimate.selectedProduct?.price ?? estimate.danawa?.averagePrice),
+    ).length;
     const detectedComponentCount = components.filter((component) => component.detected).length;
     const priceGap = listing.price == null ? null : listing.price - compuzoneComparableTotal;
 
@@ -147,7 +150,7 @@ export class QuoteService {
       totals: {
         listingPrice: listing.price,
         compuzoneComparableTotal,
-        pricedComponentCount: pricedProducts.length,
+        pricedComponentCount,
         detectedComponentCount,
         priceGap,
       },

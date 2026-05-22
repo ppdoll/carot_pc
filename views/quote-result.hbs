@@ -65,8 +65,27 @@
             <strong>{{money analysis.totals.listingPrice}}</strong>
           </div>
           <div class="metric">
-            <span>컴퓨존 합계</span>
-            <strong>{{money analysis.totals.compuzoneComparableTotal}}</strong>
+            <span>총 예상 합계</span>
+            <details class="metric-details">
+              <summary><strong>{{money analysis.totals.compuzoneComparableTotal}}</strong></summary>
+              <div class="metric-details-content">
+                {{#each totalBreakdownItems}}
+                  <div class="breakdown-item">
+                    <span class="breakdown-label">
+                      {{label}}
+                      <small>{{rawValue}}</small>
+                    </span>
+                    <span class="breakdown-price">
+                      {{money unitPrice}}
+                      {{#if quantityLabel}}<small>{{quantityLabel}} = {{money total}}</small>{{/if}}
+                      <small class="badge">{{sourceLabel}}</small>
+                    </span>
+                  </div>
+                {{else}}
+                  <p class="muted">가격 확인된 부품 없음</p>
+                {{/each}}
+              </div>
+            </details>
           </div>
           <div class="metric">
             <span>차액</span>
@@ -276,6 +295,12 @@
                     </td>
                     <td class="price">
                       {{money selectedPrice}}
+                      {{#if usedDanawaFallback}}
+                        <small>(다나와 기준)</small>
+                      {{/if}}
+                      {{#if totalPrice}}
+                        <small>×{{quantity}} = {{money totalPrice}}</small>
+                      {{/if}}
                       {{#if compuzone}}
                         <small>컴퓨존 {{compuzone.sampleCount}}건 평균</small>
                       {{/if}}

@@ -60,8 +60,23 @@
               <h2>{{title}}</h2>
               <p class="muted">최근 확인: {{lastSeenAt}} · CPU: {{keys.cpuKey}} · RAM: {{keys.ramKey}} · GPU: {{keys.gpuKey}}</p>
             </div>
-            <div>
-              <strong>{{money listingPrice}}</strong>
+            <div class="snapshot-prices">
+              <div>
+                <span class="muted" style="font-size:12px">판매가</span>
+                <strong>{{money listingPrice}}</strong>
+              </div>
+              {{#if snapshotTotal}}
+              <div>
+                <span class="muted" style="font-size:12px">총 예상</span>
+                <strong>{{money snapshotTotal}}</strong>
+              </div>
+              {{/if}}
+              {{#if priceGap}}
+              <div>
+                <span class="muted" style="font-size:12px">차액</span>
+                <strong>{{signedMoney priceGap}}</strong>
+              </div>
+              {{/if}}
               {{#if finalUrl}}
                 <a class="secondary-link" href="{{finalUrl}}" target="_blank" rel="noreferrer">원문</a>
               {{/if}}
@@ -100,7 +115,7 @@
                 <tr>
                   <th>부품</th>
                   <th>추출값</th>
-                  <th>컴퓨존</th>
+                  <th>컴퓨존/다나와</th>
                   <th>번개 평균</th>
                   <th>중고나라 평균</th>
                 </tr>
@@ -110,7 +125,11 @@
                   <tr>
                     <td class="strong">{{label}}</td>
                     <td>{{rawValue}}<small>{{searchQuery}}</small></td>
-                    <td class="price">{{money compuzonePrice}}</td>
+                    <td class="price">
+                      {{money effectivePrice}}
+                      {{#if totalPrice}}<small>×{{quantity}} = {{money totalPrice}}</small>{{/if}}
+                      {{#if priceSource}}<small class="badge">{{priceSource}}</small>{{/if}}
+                    </td>
                     <td class="price">
                       {{#if bunjangSearchUrl}}
                         <a href="{{bunjangSearchUrl}}" target="_blank" rel="noreferrer">{{money bunjangAverage}}</a>
@@ -130,6 +149,15 @@
                   </tr>
                 {{/each}}
               </tbody>
+              {{#if snapshotTotal}}
+              <tfoot>
+                <tr class="snapshot-total-row">
+                  <td colspan="2" class="strong">총 예상 합계</td>
+                  <td class="price"><strong>{{money snapshotTotal}}</strong></td>
+                  <td colspan="2"></td>
+                </tr>
+              </tfoot>
+              {{/if}}
             </table>
           </div>
         </section>

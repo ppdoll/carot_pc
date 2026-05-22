@@ -63,6 +63,7 @@ interface PriceEvaluationBreakdownRow {
   label: string;
   rawValue: string;
   searchQuery: string;
+  quantity: number;
   bunjangAverage: number | null;
   bunjangCount: number;
   bunjangSearchUrl: string | null;
@@ -74,6 +75,16 @@ interface PriceEvaluationBreakdownRow {
   included: boolean;
   includedText: string;
   basisText: string;
+}
+
+interface TotalBreakdownItem {
+  label: string;
+  rawValue: string;
+  unitPrice: number;
+  quantity: number;
+  total: number;
+  sourceLabel: string;
+  quantityLabel: string;
 }
 
 interface ShareInfo {
@@ -229,6 +240,7 @@ export class QuoteController {
     return {
       analysis,
       rows: analysis.components.map((estimate) => this.toRow(estimate)),
+      totalBreakdownItems: this.buildTotalBreakdown(analysis.components),
       analyzedAtText: new Date(analysis.analyzedAt).toLocaleString('ko-KR', {
         timeZone: 'Asia/Seoul',
       }),
@@ -257,8 +269,33 @@ export class QuoteController {
     };
   }
 
+  private buildTotalBreakdown(estimates: ComponentPriceEstimate[]): TotalBreakdownItem[] {
+    return estimates
+      .filter((est) => Boolean(est.selectedProduct?.price ?? est.danawa?.averagePrice))
+      .map((est) => {
+        const compuzonePrice = validPrice(est.selectedProduct?.price);
+        const unitPrice = compuzonePrice ?? validPrice(est.danawa?.averagePrice) ?? 0;
+        const quantity = est.component.quantity;
+        return {
+          label: est.component.label,
+          rawValue: est.component.rawValue ?? '',
+          unitPrice,
+          quantity,
+          total: unitPrice * quantity,
+          sourceLabel: compuzonePrice ? '컴퓨존' : '다나와',
+          quantityLabel: quantity > 1 ? `×${quantity}` : '',
+        };
+      });
+  }
+
   private toRow(estimate: ComponentPriceEstimate) {
     const selected = estimate.selectedProduct;
+    const quantity = estimate.component.quantity;
+    const compuzoneUnitPrice = selected?.price ?? null;
+    const danawaFallbackPrice = !compuzoneUnitPrice ? validPrice(estimate.danawa?.averagePrice) : null;
+    const unitPrice = compuzoneUnitPrice ?? danawaFallbackPrice;
+    const usedDanawaFallback = danawaFallbackPrice !== null;
+    const totalPrice = unitPrice !== null && quantity > 1 ? unitPrice * quantity : null;
 
     return {
       label: estimate.component.label,
@@ -266,10 +303,13 @@ export class QuoteController {
       searchQuery: estimate.component.searchQuery ?? '-',
       sourceLine: estimate.component.sourceLine,
       confidence: estimate.component.confidence,
-      statusText: this.statusText(estimate),
+      statusText: unitPrice !== null ? '가격 확인' : this.statusText(estimate),
       searchUrl: estimate.searchUrl,
       danawaSearchUrl: estimate.danawaSearchUrl,
       naverSearchUrl: estimate.naverSearchUrl,
+      quantity,
+      totalPrice,
+      usedDanawaFallback,
       benchmark: estimate.benchmark
         ? {
             ...estimate.benchmark,
@@ -291,7 +331,7 @@ export class QuoteController {
       selectedName: selected?.name ?? '-',
       selectedSummary: selected?.summary ?? '',
       selectedUrl: selected?.url,
-      selectedPrice: selected?.price ?? null,
+      selectedPrice: unitPrice,
       products: estimate.products.slice(0, 3),
       error: estimate.error,
     };
@@ -398,14 +438,16 @@ export class QuoteController {
   }
 
   private toUsedMarketBreakdownRow(estimate: ComponentPriceEstimate): PriceEvaluationBreakdownRow {
+    const quantity = estimate.component.quantity;
     const compuzonePrice = validPrice(estimate.selectedProduct?.price);
     const bunjangAverage = validPrice(estimate.usedMarket?.bunjang.averagePrice);
     const joongnaAverage = validPrice(estimate.usedMarket?.joongna.averagePrice);
     const usableBunjang = isUsableUsedPrice(bunjangAverage, compuzonePrice) ? bunjangAverage : null;
     const usableJoongna = isUsableUsedPrice(joongnaAverage, compuzonePrice) ? joongnaAverage : null;
     const prices = [usableBunjang, usableJoongna].filter((price): price is number => price !== null);
-    const componentStandard =
+    const unitStandard =
       prices.length > 0 ? Math.round(prices.reduce((sum, price) => sum + price, 0) / prices.length) : null;
+    const componentStandard = unitStandard !== null ? unitStandard * quantity : null;
     const hasAnyUsedAverage = bunjangAverage !== null || joongnaAverage !== null;
     const droppedAboveCompuzone =
       componentStandard === null && hasAnyUsedAverage && compuzonePrice !== null;
@@ -414,6 +456,7 @@ export class QuoteController {
       label: estimate.component.label,
       rawValue: estimate.component.rawValue ?? '-',
       searchQuery: estimate.component.searchQuery ?? '-',
+      quantity,
       bunjangAverage,
       bunjangCount: estimate.usedMarket?.bunjang.sampleCount ?? 0,
       bunjangSearchUrl: estimate.usedMarket?.bunjang.searchUrl ?? null,
@@ -426,7 +469,7 @@ export class QuoteController {
       includedText: componentStandard !== null ? '포함' : '제외',
       basisText:
         componentStandard !== null
-          ? `${prices.length}개 중고 시세 평균`
+          ? `${prices.length}개 중고 시세 평균${quantity > 1 ? ` ×${quantity}` : ''}`
           : droppedAboveCompuzone
             ? '중고가가 컴퓨존가보다 높아 제외'
             : '중고 시세 없음',
@@ -434,12 +477,15 @@ export class QuoteController {
   }
 
   private toCompuzoneBreakdownRow(estimate: ComponentPriceEstimate): PriceEvaluationBreakdownRow {
+    const quantity = estimate.component.quantity;
     const compuzonePrice = validPrice(estimate.selectedProduct?.price);
+    const componentStandard = compuzonePrice !== null ? compuzonePrice * quantity : null;
 
     return {
       label: estimate.component.label,
       rawValue: estimate.component.rawValue ?? '-',
       searchQuery: estimate.component.searchQuery ?? '-',
+      quantity,
       bunjangAverage: validPrice(estimate.usedMarket?.bunjang.averagePrice),
       bunjangCount: estimate.usedMarket?.bunjang.sampleCount ?? 0,
       bunjangSearchUrl: estimate.usedMarket?.bunjang.searchUrl ?? null,
@@ -447,10 +493,12 @@ export class QuoteController {
       joongnaCount: estimate.usedMarket?.joongna.sampleCount ?? 0,
       joongnaSearchUrl: estimate.usedMarket?.joongna.searchUrl ?? null,
       compuzonePrice,
-      componentStandard: compuzonePrice,
-      included: compuzonePrice !== null,
-      includedText: compuzonePrice !== null ? '포함' : '제외',
-      basisText: compuzonePrice !== null ? '컴퓨존 대표 상품가' : '컴퓨존 가격 없음',
+      componentStandard,
+      included: componentStandard !== null,
+      includedText: componentStandard !== null ? '포함' : '제외',
+      basisText: componentStandard !== null
+        ? `컴퓨존 대표 상품가${quantity > 1 ? ` ×${quantity}` : ''}`
+        : '컴퓨존 가격 없음',
     };
   }
 

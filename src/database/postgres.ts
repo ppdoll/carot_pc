@@ -100,6 +100,10 @@ async function createSchema(): Promise<void> {
       PRIMARY KEY (snapshot_id, component_order)
     );
 
+    ALTER TABLE quote_snapshot_components
+      ADD COLUMN IF NOT EXISTS danawa_price INTEGER,
+      ADD COLUMN IF NOT EXISTS quantity INTEGER NOT NULL DEFAULT 1;
+
     CREATE TABLE IF NOT EXISTS quote_price_history (
       snapshot_id TEXT NOT NULL REFERENCES quote_snapshots(id) ON DELETE CASCADE,
       captured_at TIMESTAMPTZ NOT NULL,

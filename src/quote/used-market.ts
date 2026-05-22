@@ -21,7 +21,7 @@ export interface UsedMarketSummary {
 export function tokenizeQuery(query: string): string[] {
   return query
     .toLowerCase()
-    .split(/[\s/()[\],]+/)
+    .split(/[\s/\-()[\],]+/)
     .filter((token) => token.length >= 2);
 }
 

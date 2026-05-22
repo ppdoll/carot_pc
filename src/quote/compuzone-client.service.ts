@@ -139,7 +139,7 @@ export class CompuzoneClientService {
     const haystack = `${product.name} ${product.summary}`.toLowerCase();
     const queryTokens = query
       .toLowerCase()
-      .split(/[\s/()[\],]+/)
+      .split(/[\s/\-()[\],]+/)
       .filter((token) => token.length >= 2);
 
     let score = 0;

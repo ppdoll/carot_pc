@@ -13,6 +13,8 @@ function makeComponent(rawValue = 'RTX 2060') {
     searchQuery: `${rawValue} 6GB`,
     compuzonePrice: 200000,
     compuzoneName: rawValue,
+    danawaPrice: null,
+    quantity: 1,
     bunjang: null,
     joongna: null,
   };

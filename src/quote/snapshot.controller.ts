@@ -41,6 +41,41 @@ export class SnapshotController {
     });
     const priceHistory = this.toPriceHistory(snapshot);
 
+    const components = snapshot.components.map((component) => {
+      const compuzonePrice = component.compuzonePrice ?? null;
+      const danawaPrice = component.danawaPrice ?? null;
+      const effectivePrice = compuzonePrice ?? danawaPrice;
+      const quantity = component.quantity ?? 1;
+      const totalPrice = effectivePrice !== null && quantity > 1 ? effectivePrice * quantity : null;
+      const priceSource = compuzonePrice != null ? '컴퓨존' : (danawaPrice != null ? '다나와' : null);
+
+      return {
+        label: component.label,
+        rawValue: component.rawValue ?? '-',
+        searchQuery: component.searchQuery ?? '-',
+        effectivePrice,
+        totalPrice,
+        quantity,
+        priceSource,
+        bunjangAverage: component.bunjang?.averagePrice ?? null,
+        bunjangCount: component.bunjang?.sampleCount ?? 0,
+        bunjangSearchUrl: component.bunjang?.searchUrl ?? null,
+        joongnaAverage: component.joongna?.averagePrice ?? null,
+        joongnaCount: component.joongna?.sampleCount ?? 0,
+        joongnaSearchUrl: component.joongna?.searchUrl ?? null,
+      };
+    });
+
+    const snapshotTotal = components.reduce((sum, c) => {
+      const price = c.totalPrice ?? c.effectivePrice;
+      return price != null ? sum + price : sum;
+    }, 0);
+
+    const priceGap =
+      snapshot.listingPrice != null && snapshotTotal > 0
+        ? snapshot.listingPrice - snapshotTotal
+        : null;
+
     return {
       id: snapshot.id,
       capturedAt,
@@ -49,21 +84,12 @@ export class SnapshotController {
       finalUrl: snapshot.finalUrl,
       title: snapshot.title,
       listingPrice: snapshot.listingPrice,
+      snapshotTotal: snapshotTotal > 0 ? snapshotTotal : null,
+      priceGap,
       priceHistory,
       hasPriceHistory: priceHistory.length > 1,
       keys: snapshot.keys,
-      components: snapshot.components.map((component) => ({
-        label: component.label,
-        rawValue: component.rawValue ?? '-',
-        searchQuery: component.searchQuery ?? '-',
-        compuzonePrice: component.compuzonePrice,
-        bunjangAverage: component.bunjang?.averagePrice ?? null,
-        bunjangCount: component.bunjang?.sampleCount ?? 0,
-        bunjangSearchUrl: component.bunjang?.searchUrl ?? null,
-        joongnaAverage: component.joongna?.averagePrice ?? null,
-        joongnaCount: component.joongna?.sampleCount ?? 0,
-        joongnaSearchUrl: component.joongna?.searchUrl ?? null,
-      })),
+      components,
     };
   }
 

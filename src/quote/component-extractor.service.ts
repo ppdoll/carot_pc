@@ -131,6 +131,7 @@ export class ComponentExtractorService {
         searchQuery: null,
         detected: false,
         confidence: 'low',
+        quantity: 1,
       };
     });
   }
@@ -263,16 +264,54 @@ export class ComponentExtractorService {
     sourceLine: string,
   ): ExtractedComponent {
     const normalized = this.normalizeComponentValue(spec.type, rawValue);
+    const { quantity, stripped } = this.extractQuantity(normalized);
 
     return {
       type: spec.type,
       label: spec.label,
       rawValue: normalized,
-      searchQuery: this.toSearchQuery(spec, normalized),
+      searchQuery: this.toSearchQuery(spec, stripped),
       detected: Boolean(normalized),
       confidence,
       sourceLine,
+      quantity,
     };
+  }
+
+  private extractQuantity(value: string): { quantity: number; stripped: string } {
+    // "2개" — Korean unit marker preceded by whitespace
+    const gaeMatch = value.match(/\s+(\d+)\s*개(?=\s|$)/);
+    if (gaeMatch) {
+      const qty = parseInt(gaeMatch[1], 10);
+      if (qty >= 2 && qty <= 8) {
+        let stripped = value.replace(/\s+\d+\s*개(?=\s|$)/, ' ');
+        // Strip total-capacity hint that often follows (e.g., "32기가" after "2개")
+        stripped = stripped.replace(/\s+\d+\s*기가바이트?(?=\s|$)/g, ' ').replace(/\s+\d+\s*테라바이트?(?=\s|$)/g, ' ');
+        return { quantity: qty, stripped: stripped.replace(/\s+/g, ' ').trim() };
+      }
+    }
+
+    // " x2", " ×2", " *2" — symbol then number, preceded by whitespace
+    const symMatch = value.match(/\s+[×xX*]\s*(\d+)(?=\s|$)/);
+    if (symMatch) {
+      const qty = parseInt(symMatch[1], 10);
+      if (qty >= 2 && qty <= 8) {
+        const stripped = value.replace(/\s+[×xX*]\s*\d+(?=\s|$)/, ' ').replace(/\s+/g, ' ').trim();
+        return { quantity: qty, stripped };
+      }
+    }
+
+    // " 2x", " 2×" — number then symbol, preceded by whitespace and followed by space/end
+    const numSymMatch = value.match(/\s+(\d+)\s*[×xX](?=\s|$)/);
+    if (numSymMatch) {
+      const qty = parseInt(numSymMatch[1], 10);
+      if (qty >= 2 && qty <= 8) {
+        const stripped = value.replace(/\s+\d+\s*[×xX](?=\s|$)/, ' ').replace(/\s+/g, ' ').trim();
+        return { quantity: qty, stripped };
+      }
+    }
+
+    return { quantity: 1, stripped: value };
   }
 
   private toLines(description: string) {
@@ -381,7 +420,10 @@ export class ComponentExtractorService {
   }
 
   private sanitizeForSearch(type: ComponentType, value: string) {
-    let cleaned = value.replace(/\([^)]*\)/g, ' ').replace(/\[[^\]]*\]/g, ' ');
+    let cleaned = value
+      .replace(/\([^)]*\)/g, ' ')  // strip complete (...)
+      .replace(/\[[^\]]*\]/g, ' ') // strip complete [...]
+      .replace(/\([^)]*$/, ' ');   // strip unclosed paren left by truncateAtCommentary
 
     if (type === 'gpu') {
       cleaned = cleaned.replace(/\b(?:geforce|radeon|nvidia)\b/gi, ' ');
