@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>병원 검색</title>
+    <meta name="description" content="지역·진료과목으로 병원을 검색하고 전문의·항생제 처방률을 확인합니다." />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+      .hospital-form .input-row {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      }
+      .hospital-form select {
+        width: 100%;
+        height: 46px;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 0 13px;
+        font-size: 15px;
+        color: var(--text);
+        background: #fff;
+        appearance: auto;
+      }
+      .hospital-form select:focus {
+        outline: 2px solid var(--ring);
+        outline-offset: 1px;
+      }
+      .specialist-yes {
+        color: #1a6e38;
+        font-weight: 700;
+      }
+      .specialist-no {
+        color: var(--muted);
+      }
+      .rate-high { color: #8f3550; font-weight: 700; }
+      .rate-mid  { color: #7c5a19; }
+      .rate-low  { color: #1a6e38; }
+      .grade-badge {
+        display: inline-flex; align-items: center; justify-content: center;
+        min-width: 28px; height: 22px; border-radius: 6px;
+        font-size: 12px; font-weight: 700; padding: 0 6px;
+      }
+      .grade-1 { background: #d4edda; color: #155724; }
+      .grade-2 { background: #d6f0e0; color: #1e5c33; }
+      .grade-3 { background: #fff3cd; color: #856404; }
+      .grade-4 { background: #fde8b0; color: #7c5a19; }
+      .grade-5 { background: #fde8e8; color: #8f3550; }
+      .grade-excluded { background: #f0f0f0; color: #888; }
+      .hospital-name-link {
+        font-weight: 700;
+        cursor: pointer;
+        color: #3e4d62;
+        text-decoration: none;
+        border-bottom: 1px dashed #aab;
+      }
+      .hospital-name-link:hover { color: var(--text); text-decoration: none; }
+      .map-modal {
+        display: none;
+        position: fixed;
+        inset: 0;
+        z-index: 1000;
+        background: rgba(0,0,0,0.55);
+        align-items: center;
+        justify-content: center;
+      }
+      .map-modal.is-open { display: flex; }
+      .map-box {
+        background: #fff;
+        border-radius: 16px;
+        overflow: hidden;
+        width: min(700px, calc(100vw - 32px));
+        max-height: calc(100vh - 64px);
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 24px 60px rgba(0,0,0,0.3);
+      }
+      .map-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 18px;
+        border-bottom: 1px solid var(--line);
+        gap: 12px;
+      }
+      .map-header h2 { font-size: 15px; margin: 0; }
+      .map-close {
+        background: none;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        color: var(--muted);
+        padding: 0 4px;
+        box-shadow: none;
+        min-height: auto;
+      }
+      .map-close:hover { color: var(--text); }
+      #map { height: 420px; }
+      .pagination {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-top: 6px;
+      }
+      .disease-hint {
+        font-size: 13px;
+        color: var(--muted);
+        margin: 6px 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">KR Tools · Carot PC</p>
+          <h1>병원 검색</h1>
+        </div>
+        <a class="secondary-link" href="/daangn/quotes">PC 견적 분석</a>
+      </header>
+
+      <section class="panel">
+        <form method="get" action="/hospital" class="quote-form hospital-form">
+          <div class="input-row">
+            <label>시/도
+              <select name="sidoCd">
+                <option value="">전체</option>
+                {{#each sidoCodes}}
+                  <option value="{{code}}"{{#if selected}} selected{{/if}}>{{name}}</option>
+                {{/each}}
+              </select>
+            </label>
+            <label>구/군
+              <input name="sgguCdNm" type="text" value="{{filter.sgguCdNm}}" placeholder="예: 강남구" />
+            </label>
+            <label>동
+              <input name="emdongNm" type="text" value="{{filter.emdongNm}}" placeholder="예: 역삼동" />
+            </label>
+            <label>진료과목
+              <select name="dgsbjtCd">
+                {{#each dgsbjtOptions}}
+                  <option value="{{code}}"{{#if selected}} selected{{/if}}>{{name}}</option>
+                {{/each}}
+              </select>
+            </label>
+            <label style="align-self:end">
+              <button type="submit">검색</button>
+            </label>
+          </div>
+        </form>
+
+        <div id="disease-search" style="margin-top:12px">
+        </div>
+
+        {{#if errorMessage}}
+          <div class="alert" style="margin-top:12px">{{errorMessage}} — 잠시 후 다시 시도해 주세요.</div>
+        {{else if hasSearch}}
+          <p class="muted" style="margin-top:12px">총 {{totalCount}}건 · 현재 페이지 {{hospitals.length}}건 표시</p>
+        {{/if}}
+      </section>
+
+      {{#if hasSearch}}
+        {{#if hospitals.length}}
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px;flex-wrap:wrap">
+            {{#if selectedDgsbjtName}}
+              <label style="display:flex;align-items:center;gap:6px;font-size:14px;font-weight:700;cursor:pointer">
+                <input type="checkbox" id="filter-specialty" style="width:16px;height:16px;cursor:pointer" />
+                병원명에 <span class="badge" style="margin:0 2px">{{selectedDgsbjtName}}</span> 포함만 보기 (해당 과목 전문의 있는 병원)
+              </label>
+              <span id="filter-count" class="muted" style="font-size:13px"></span>
+            {{/if}}
+          </div>
+          <section class="panel" style="padding:0">
+            <div class="table-wrap">
+              <table id="hospital-table" class="standard-table" style="min-width:860px">
+                <thead>
+                  <tr>
+                    <th>병원명</th>
+                    <th>주소</th>
+                    <th>종별</th>
+                    <th style="text-align:center">총 의사</th>
+                    <th style="text-align:center">전문의 (전체과목)</th>
+                    <th style="text-align:center">항생제 처방률<br><small style="font-weight:400;font-size:10px">평가등급</small></th>
+                    <th style="text-align:center">주사제 처방률<br><small style="font-weight:400;font-size:10px">평가등급</small></th>
+                    <th style="text-align:center">약품목수<br><small style="font-weight:400;font-size:10px">평가등급</small></th>
+                    <th>전화</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {{#each hospitals}}
+                    <tr data-hname="{{yadmNm}}">
+                      <td>
+                        {{#if hasMapCoords}}
+                          <a class="hospital-name-link" data-lat="{{yPos}}" data-lng="{{xPos}}" data-name="{{yadmNm}}" data-addr="{{addr}}">{{yadmNm}}</a>
+                        {{else}}
+                          <span class="strong">{{yadmNm}}</span>
+                        {{/if}}
+                        <small>{{clCdNm}}</small>
+                      </td>
+                      <td style="font-size:13px">{{addr}}</td>
+                      <td><span class="badge">{{clCdNm}}</span></td>
+                      <td style="text-align:center">{{drTotCnt}}명</td>
+                      <td style="text-align:center">
+                        {{#if hasSpecialist}}
+                          <span class="specialist-yes">✓ {{mdeptSdrCnt}}명</span>
+                        {{else}}
+                          <span class="specialist-no">-</span>
+                        {{/if}}
+                      </td>
+                      <td style="text-align:center">
+                        {{#if asmGrd07}}
+                          <span class="grade-badge {{asmGrd07Class}}">{{asmGrd07}}등급</span>
+                        {{else}}
+                          <span class="specialist-no">-</span>
+                        {{/if}}
+                      </td>
+                      <td style="text-align:center">
+                        {{#if asmGrd08}}
+                          <span class="grade-badge {{asmGrd08Class}}">{{asmGrd08}}등급</span>
+                        {{else}}
+                          <span class="specialist-no">-</span>
+                        {{/if}}
+                      </td>
+                      <td style="text-align:center">
+                        {{#if asmGrd09}}
+                          <span class="grade-badge {{asmGrd09Class}}">{{asmGrd09}}등급</span>
+                        {{else}}
+                          <span class="specialist-no">-</span>
+                        {{/if}}
+                      </td>
+                      <td style="font-size:13px">{{telno}}</td>
+                    </tr>
+                  {{/each}}
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          {{#if hasPagination}}
+            <div class="pagination">
+              {{#if prevPage}}
+                <a class="secondary-link" href="/hospital?{{filterQs}}&pageNo={{prevPage}}">이전</a>
+              {{/if}}
+              <span class="muted">{{pageNo}} / {{totalPages}}</span>
+              {{#if nextPage}}
+                <a class="secondary-link" href="/hospital?{{filterQs}}&pageNo={{nextPage}}">다음</a>
+              {{/if}}
+            </div>
+          {{/if}}
+        {{else}}
+          <section class="panel">
+            <p class="muted">검색 결과가 없습니다.</p>
+          </section>
+        {{/if}}
+      {{/if}}
+    </main>
+
+    <div class="map-modal" id="map-modal">
+      <div class="map-box">
+        <div class="map-header">
+          <h2 id="map-title">병원 위치</h2>
+          <button class="map-close" id="map-close" type="button">✕</button>
+        </div>
+        <div id="map"></div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+      let map = null;
+      let marker = null;
+
+      function openMap(lat, lng, name, addr) {
+        const modal = document.getElementById('map-modal');
+        document.getElementById('map-title').textContent = name;
+        modal.classList.add('is-open');
+
+        if (!map) {
+          map = L.map('map').setView([lat, lng], 16);
+          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+            maxZoom: 19,
+          }).addTo(map);
+          marker = L.marker([lat, lng]).addTo(map).bindPopup(`<b>${name}</b><br>${addr}`).openPopup();
+        } else {
+          map.setView([lat, lng], 16);
+          marker.setLatLng([lat, lng]);
+          marker.setPopupContent(`<b>${name}</b><br>${addr}`);
+          marker.openPopup();
+        }
+        setTimeout(() => map.invalidateSize(), 50);
+      }
+
+      document.querySelectorAll('.hospital-name-link').forEach(function(el) {
+        el.addEventListener('click', function() {
+          openMap(
+            parseFloat(this.dataset.lat),
+            parseFloat(this.dataset.lng),
+            this.dataset.name,
+            this.dataset.addr
+          );
+        });
+      });
+
+      document.getElementById('map-close').addEventListener('click', function() {
+        document.getElementById('map-modal').classList.remove('is-open');
+      });
+
+      document.getElementById('map-modal').addEventListener('click', function(e) {
+        if (e.target === this) this.classList.remove('is-open');
+      });
+
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') document.getElementById('map-modal').classList.remove('is-open');
+      });
+
+      (function() {
+        const checkbox = document.getElementById('filter-specialty');
+        if (!checkbox) return;
+        const specialtyName = checkbox.closest('label').querySelector('.badge').textContent.trim();
+        const countEl = document.getElementById('filter-count');
+
+        function applyFilter() {
+          const active = checkbox.checked;
+          const rows = document.querySelectorAll('#hospital-table tbody tr');
+          let visible = 0;
+          rows.forEach(function(row) {
+            const name = row.dataset.hname || '';
+            const show = !active || name.includes(specialtyName);
+            row.style.display = show ? '' : 'none';
+            if (show) visible++;
+          });
+          countEl.textContent = active ? visible + '건 표시 중' : '';
+        }
+
+        checkbox.addEventListener('change', applyFilter);
+      })();
+
+      document.getElementById('disease-btn').addEventListener('click', async function() {
+        const q = document.getElementById('disease-input').value.trim();
+        if (!q) return;
+        const res = await fetch('/hospital/diseases?q=' + encodeURIComponent(q));
+        const data = await res.json();
+        const list = document.getElementById('disease-results');
+        if (!data.length) {
+          list.innerHTML = '<li style="color:var(--muted)">결과 없음</li>';
+          return;
+        }
+        list.innerHTML = data.slice(0, 10).map(function(d) {
+          return '<li style="padding:3px 0">' +
+            '<span class="badge" style="margin-right:6px">' + d.diseaseCode + '</span>' +
+            d.diseaseNm +
+          '</li>';
+        }).join('');
+      });
+
+      document.getElementById('disease-input').addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          document.getElementById('disease-btn').click();
+        }
+      });
+    </script>
+  </body>
+</html>
