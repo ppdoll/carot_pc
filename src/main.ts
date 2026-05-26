@@ -13,6 +13,7 @@ async function bootstrap() {
   app.useStaticAssets(join(__dirname, '..', 'public'));
   app.setBaseViewsDir(join(__dirname, '..', 'views'));
   app.setViewEngine('hbs');
+  (hbs as any).registerPartials(join(__dirname, '..', 'views', 'partials'));
 
   hbs.registerHelper('money', (value: unknown) => {
     const number = Number(value);

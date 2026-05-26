@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <main class="shell">
+    <div class="layout-outer">
+      <aside class="ad-sidebar" data-adfit="sidebar"></aside>
+      <main class="shell">
       <header class="topbar">
         <div>
           <p class="eyebrow">KR Tools · Carot PC</p>
@@ -23,6 +25,8 @@
         </div>
         <a class="secondary-link" href="/daangn/quotes">새 분석</a>
       </header>
+
+      <div class="adfit-slot adfit-title" data-adfit="title"></div>
 
       <section class="panel">
         <form method="get" action="/daangn/snapshots" class="quote-form">
@@ -166,6 +170,11 @@
           <p class="muted">저장된 스냅샷이 없습니다.</p>
         </section>
       {{/each}}
+
+      <div class="adfit-slot adfit-bottom" data-adfit="bottom"></div>
     </main>
+    <aside class="ad-sidebar" data-adfit="sidebar"></aside>
+    </div>
+    {{> adfit}}
   </body>
 </html>

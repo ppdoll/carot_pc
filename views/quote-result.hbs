@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <main class="shell">
+    <div class="layout-outer">
+      <aside class="ad-sidebar" data-adfit="sidebar"></aside>
+      <main class="shell">
       <header class="topbar">
         <div>
           <p class="eyebrow">KR Tools · Carot PC</p>
@@ -26,6 +28,8 @@
           <a class="secondary-link" href="/daangn/quotes">다시 분석</a>
         </div>
       </header>
+
+      <div class="adfit-slot adfit-title" data-adfit="title"></div>
 
       {{#if error}}
         <section class="panel">
@@ -353,73 +357,13 @@
           <pre>{{analysis.listing.description}}</pre>
         </section>
 
-        <section class="panel ad-panel">
-          <div class="ad-slots">
-            <div
-              class="ad-slot"
-              data-adfit-slot
-              data-unit-default="DAN-J9hgvTxvzgstoydr"
-              data-width-default="300"
-              data-height-default="250"
-              data-unit-desktop="DAN-rLxDqF6ZOAufoZc4"
-              data-width-desktop="160"
-              data-height-desktop="600"
-              data-unit-mobile="DAN-AlXb06IWlDddaBRT"
-              data-width-mobile="320"
-              data-height-mobile="480"
-            ></div>
-          </div>
-        </section>
       {{/if}}
+
+      <div class="adfit-slot adfit-bottom" data-adfit="bottom"></div>
     </main>
+    <aside class="ad-sidebar" data-adfit="sidebar"></aside>
+    </div>
     <script>
-      (() => {
-        const scriptSrc = '//t1.kakaocdn.net/kas/static/ba.min.js';
-        const loadScript = () => {
-          if (document.querySelector(`script[src="${scriptSrc}"]`)) {
-            return;
-          }
-          const script = document.createElement('script');
-          script.type = 'text/javascript';
-          script.src = scriptSrc;
-          script.async = true;
-          document.body.appendChild(script);
-        };
-
-        for (const slot of document.querySelectorAll('[data-adfit-slot]')) {
-          const width = window.innerWidth;
-          const useMobile = width <= 760;
-          const useDesktopVertical = width >= 1100;
-
-          const unit = useMobile
-            ? slot.dataset.unitMobile
-            : useDesktopVertical
-              ? slot.dataset.unitDesktop
-              : slot.dataset.unitDefault;
-          const adWidth = useMobile
-            ? slot.dataset.widthMobile
-            : useDesktopVertical
-              ? slot.dataset.widthDesktop
-              : slot.dataset.widthDefault;
-          const adHeight = useMobile
-            ? slot.dataset.heightMobile
-            : useDesktopVertical
-              ? slot.dataset.heightDesktop
-              : slot.dataset.heightDefault;
-
-          slot.innerHTML = `
-            <ins
-              class="kakao_ad_area"
-              style="display:none;"
-              data-ad-unit="${unit}"
-              data-ad-width="${adWidth}"
-              data-ad-height="${adHeight}"
-            ></ins>
-          `;
-        }
-
-        loadScript();
-      })();
 
       (() => {
         const panel = document.querySelector('[data-vote-panel]');
@@ -537,5 +481,6 @@
         });
       })();
     </script>
+    {{> adfit}}
   </body>
 </html>

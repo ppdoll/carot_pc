@@ -111,7 +111,9 @@
     </style>
   </head>
   <body>
-    <main class="shell">
+    <div class="layout-outer">
+      <aside class="ad-sidebar" data-adfit="sidebar"></aside>
+      <main class="shell">
       <header class="topbar">
         <div>
           <p class="eyebrow">KR Tools · Carot PC</p>
@@ -119,6 +121,8 @@
         </div>
         <a class="secondary-link" href="/daangn/quotes">PC 견적 분석</a>
       </header>
+
+      <div class="adfit-slot adfit-title" data-adfit="title"></div>
 
       <section class="panel">
         <form method="get" action="/hospital" class="quote-form hospital-form">
@@ -254,7 +258,11 @@
           </section>
         {{/if}}
       {{/if}}
+
+      <div class="adfit-slot adfit-bottom" data-adfit="bottom"></div>
     </main>
+    <aside class="ad-sidebar" data-adfit="sidebar"></aside>
+    </div>
 
     <div class="map-modal" id="map-modal">
       <div class="map-box">
@@ -362,5 +370,6 @@
         }
       });
     </script>
+    {{> adfit}}
   </body>
 </html>
