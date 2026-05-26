@@ -1,0 +1,23 @@
+<nav class="sitenav">
+  <div class="sitenav-inner">
+    <a class="sitenav-brand" href="https://krtools.cloud/">KR Tools</a>
+    <a href="https://navi-cp.krtools.cloud/">길찾기 비교</a>
+    <a href="https://navi-cp.krtools.cloud/festival">전국 공연</a>
+    <a href="/daangn/quotes">PC 견적 비교</a>
+    <a href="/hospital">병원 검색</a>
+  </div>
+</nav>
+<script>
+  (function() {
+    var path = window.location.pathname;
+    var links = document.querySelectorAll('.sitenav a:not(.sitenav-brand)');
+    links.forEach(function(a) {
+      try {
+        var url = new URL(a.href);
+        if (url.hostname === window.location.hostname && url.pathname === path) {
+          a.classList.add('is-current');
+        }
+      } catch(e) {}
+    });
+  })();
+</script>

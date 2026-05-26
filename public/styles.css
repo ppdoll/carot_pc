@@ -22,6 +22,67 @@
   box-sizing: border-box;
 }
 
+.sitenav {
+  background: var(--primary);
+}
+
+.sitenav-inner {
+  width: min(1180px, calc(100vw - 32px));
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 6px 0;
+  flex-wrap: wrap;
+}
+
+.sitenav-brand {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  margin-right: 4px;
+  text-decoration: none;
+}
+
+.sitenav-brand:hover {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+.sitenav a:not(.sitenav-brand) {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.sitenav a:not(.sitenav-brand):hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+  text-decoration: none;
+}
+
+.sitenav a.is-current {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+@media (max-width: 760px) {
+  .sitenav-inner {
+    gap: 0;
+    padding: 4px 0;
+  }
+  .sitenav a:not(.sitenav-brand) {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}
+
 html,
 body {
   margin: 0;
