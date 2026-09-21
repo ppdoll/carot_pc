@@ -2,8 +2,8 @@
   "kind": "cpu",
   "source": "PassMark",
   "chart": "high_end_multithread",
-  "capturedAt": "2026-09-14T08:44:00.192Z",
-  "updatedAtText": "14th of September 2026",
+  "capturedAt": "2026-09-21T08:45:43.771Z",
+  "updatedAtText": "16th of September 2026",
   "itemCount": 1000,
   "items": [
     {
@@ -99,7 +99,7 @@
     {
       "rank": 11,
       "name": "AMD Ryzen Threadripper 9980X",
-      "score": 142893,
+      "score": 143198,
       "relativeScore": 72,
       "priceUsd": "$4,399.99*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+Threadripper+9980X&id=6670",
@@ -155,7 +155,7 @@
       "name": "AMD EPYC 9745",
       "score": 130698,
       "relativeScore": 66,
-      "priceUsd": "$12,141.00*",
+      "priceUsd": "$9,950.00",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+EPYC+9745&id=6320",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -909,7 +909,7 @@
     {
       "rank": 101,
       "name": "AMD Ryzen Threadripper PRO 5975WX",
-      "score": 75026,
+      "score": 75035,
       "relativeScore": 38,
       "priceUsd": "$3,399.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+Threadripper+PRO+5975WX&id=4776",
@@ -938,7 +938,7 @@
       "name": "AMD EPYC 9354P",
       "score": 74813,
       "relativeScore": 37,
-      "priceUsd": "$3,275.65",
+      "priceUsd": "$3,361.98",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+EPYC+9354P&id=5173",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -1001,7 +1001,7 @@
       "name": "AMD EPYC 9354",
       "score": 73240,
       "relativeScore": 37,
-      "priceUsd": "$2,335.28",
+      "priceUsd": "$2,291.45",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+EPYC+9354&id=5625",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -1053,7 +1053,7 @@
     {
       "rank": 117,
       "name": "AMD Ryzen 9 9950X3D2",
-      "score": 72030,
+      "score": 72046,
       "relativeScore": 36,
       "priceUsd": "$889.00",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+9+9950X3D2&id=7115",
@@ -1116,9 +1116,9 @@
     {
       "rank": 124,
       "name": "AMD Ryzen 9 9950X3D",
-      "score": 70099,
+      "score": 70096,
       "relativeScore": 35,
-      "priceUsd": "$659.00",
+      "priceUsd": "$649.00",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+9+9950X3D&id=6549",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -1127,7 +1127,7 @@
       "name": "AMD EPYC 7H12",
       "score": 69633,
       "relativeScore": 35,
-      "priceUsd": "$1,549.95",
+      "priceUsd": "$1,449.00",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+EPYC+7H12&id=3618",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -1136,7 +1136,7 @@
       "name": "AMD EPYC 7742",
       "score": 69502,
       "relativeScore": 35,
-      "priceUsd": "$1,290.00",
+      "priceUsd": "$1,285.00",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+EPYC+7742&id=3547",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -1179,7 +1179,7 @@
     {
       "rank": 131,
       "name": "Intel Core Ultra 7 270K Plus",
-      "score": 68424,
+      "score": 68421,
       "relativeScore": 34,
       "priceUsd": "$309.95",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+7+270K+Plus&id=7114",
@@ -1224,7 +1224,7 @@
     {
       "rank": 136,
       "name": "Intel Core Ultra 9 285K",
-      "score": 67232,
+      "score": 67233,
       "relativeScore": 34,
       "priceUsd": "$524.99",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+9+285K&id=6296",
@@ -1296,7 +1296,7 @@
     {
       "rank": 144,
       "name": "AMD Ryzen 9 9950X",
-      "score": 65706,
+      "score": 65707,
       "relativeScore": 33,
       "priceUsd": "$499.99",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+9+9950X&id=6211",
@@ -1422,7 +1422,7 @@
     {
       "rank": 158,
       "name": "AMD Ryzen Threadripper 3970X",
-      "score": 62901,
+      "score": 62902,
       "relativeScore": 31,
       "priceUsd": "$1,800.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+Threadripper+3970X&id=3623",
@@ -1467,7 +1467,7 @@
     {
       "rank": 163,
       "name": "AMD Ryzen 9 9955HX3D",
-      "score": 62338,
+      "score": 62333,
       "relativeScore": 31,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+9+9955HX3D&id=6641",
@@ -1487,7 +1487,7 @@
       "name": "AMD Ryzen 9 7950X3D",
       "score": 62297,
       "relativeScore": 31,
-      "priceUsd": "$431.13",
+      "priceUsd": "$393.16",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+9+7950X3D&id=5234",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -1496,7 +1496,7 @@
       "name": "AMD Ryzen 9 7950X",
       "score": 62130,
       "relativeScore": 31,
-      "priceUsd": "$459.08",
+      "priceUsd": "$438.22",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+9+7950X&id=5031",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -1593,7 +1593,7 @@
     {
       "rank": 177,
       "name": "Intel Core i9-13900KS",
-      "score": 60397,
+      "score": 60395,
       "relativeScore": 30,
       "priceUsd": "$669.99",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-13900KS&id=5160",
@@ -1629,7 +1629,7 @@
     {
       "rank": 181,
       "name": "Intel Core i9-14900KS",
-      "score": 59914,
+      "score": 59921,
       "relativeScore": 30,
       "priceUsd": "$579.99",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-14900KS&id=5957",
@@ -1664,15 +1664,6 @@
     },
     {
       "rank": 185,
-      "name": "Intel Core Ultra 9 290HX Plus",
-      "score": 58881,
-      "relativeScore": 29,
-      "priceUsd": "NA",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+9+290HX+Plus&id=7148",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
-      "rank": 186,
       "name": "AMD EPYC 7513",
       "score": 58869,
       "relativeScore": 29,
@@ -1681,7 +1672,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 187,
+      "rank": 186,
       "name": "AMD EPYC 7K62",
       "score": 58812,
       "relativeScore": 29,
@@ -1690,12 +1681,21 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 188,
+      "rank": 187,
       "name": "Intel Xeon Gold 6421N",
       "score": 58797,
       "relativeScore": 29,
       "priceUsd": "$2,368.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Xeon+Gold+6421N&id=5669",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
+      "rank": 188,
+      "name": "Intel Core Ultra 9 290HX Plus",
+      "score": 58687,
+      "relativeScore": 29,
+      "priceUsd": "NA",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+9+290HX+Plus&id=7148",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
@@ -1710,7 +1710,7 @@
     {
       "rank": 190,
       "name": "Intel Core Ultra 7 265K",
-      "score": 58582,
+      "score": 58581,
       "relativeScore": 29,
       "priceUsd": "$335.30",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+7+265K&id=6326",
@@ -1728,7 +1728,7 @@
     {
       "rank": 192,
       "name": "Intel Core Ultra 7 265KF",
-      "score": 58474,
+      "score": 58465,
       "relativeScore": 29,
       "priceUsd": "$319.15",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+7+265KF&id=6338",
@@ -1737,7 +1737,7 @@
     {
       "rank": 193,
       "name": "Intel Core i9-14900K",
-      "score": 58226,
+      "score": 58221,
       "relativeScore": 29,
       "priceUsd": "$469.99",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-14900K&id=5717",
@@ -1755,16 +1755,16 @@
     {
       "rank": 195,
       "name": "Intel Core i9-13900K",
-      "score": 58075,
+      "score": 58076,
       "relativeScore": 29,
-      "priceUsd": "$589.99",
+      "priceUsd": "$629.99",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-13900K&id=5022",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
       "rank": 196,
       "name": "Intel Core i9-14900KF",
-      "score": 58068,
+      "score": 58069,
       "relativeScore": 29,
       "priceUsd": "$449.00",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-14900KF&id=5684",
@@ -1781,15 +1781,6 @@
     },
     {
       "rank": 198,
-      "name": "Intel Core Ultra 9 285",
-      "score": 57721,
-      "relativeScore": 29,
-      "priceUsd": "$660.00",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+9+285&id=6443",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
-      "rank": 199,
       "name": "AMD Ryzen 9 7945HX3D",
       "score": 57717,
       "relativeScore": 29,
@@ -1798,16 +1789,16 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 200,
-      "name": "Intel Xeon w7-2495X",
-      "score": 57522,
+      "rank": 199,
+      "name": "Intel Core Ultra 9 285",
+      "score": 57717,
       "relativeScore": 29,
-      "priceUsd": "$2,904.60*",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Xeon+w7-2495X&id=5326",
+      "priceUsd": "$660.00",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+9+285&id=6443",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 201,
+      "rank": 200,
       "name": "Apple M5 Max 18 Core",
       "score": 57513,
       "relativeScore": 29,
@@ -1816,7 +1807,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 202,
+      "rank": 201,
       "name": "Ampere ARM - 192 Core 3200 MHz",
       "score": 57444,
       "relativeScore": 29,
@@ -1825,7 +1816,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 203,
+      "rank": 202,
       "name": "Intel Core i9-13900KF",
       "score": 57439,
       "relativeScore": 29,
@@ -1834,7 +1825,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 204,
+      "rank": 203,
       "name": "Intel Xeon Gold 6423N",
       "score": 57434,
       "relativeScore": 29,
@@ -1843,12 +1834,21 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 205,
+      "rank": 204,
       "name": "AMD EPYC 7552",
       "score": 57414,
       "relativeScore": 29,
       "priceUsd": "$1,650.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+EPYC+7552&id=3822",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
+      "rank": 205,
+      "name": "Intel Xeon w7-2495X",
+      "score": 57400,
+      "relativeScore": 29,
+      "priceUsd": "$2,904.60*",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Xeon+w7-2495X&id=5326",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
@@ -1898,15 +1898,6 @@
     },
     {
       "rank": 211,
-      "name": "AMD EPYC 9135",
-      "score": 57170,
-      "relativeScore": 29,
-      "priceUsd": "$1,341.95*",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+EPYC+9135&id=6405",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
-      "rank": 212,
       "name": "Apple M5 Pro 18 Core",
       "score": 57131,
       "relativeScore": 29,
@@ -1915,7 +1906,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 213,
+      "rank": 212,
       "name": "AMD EPYC 8324P",
       "score": 57127,
       "relativeScore": 29,
@@ -1924,12 +1915,21 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 214,
+      "rank": 213,
       "name": "AMD EPYC 7443P",
       "score": 56984,
       "relativeScore": 28,
       "priceUsd": "$1,050.00",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+EPYC+7443P&id=4391",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
+      "rank": 214,
+      "name": "AMD EPYC 9135",
+      "score": 56811,
+      "relativeScore": 28,
+      "priceUsd": "$1,341.95*",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+EPYC+9135&id=6405",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
@@ -1953,7 +1953,7 @@
     {
       "rank": 217,
       "name": "Intel Core Ultra 9 285HX",
-      "score": 56591,
+      "score": 56584,
       "relativeScore": 28,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+9+285HX&id=6608",
@@ -1980,7 +1980,7 @@
     {
       "rank": 220,
       "name": "AMD Ryzen 9 9955HX",
-      "score": 56300,
+      "score": 56302,
       "relativeScore": 28,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+9+9955HX&id=6664",
@@ -2009,7 +2009,7 @@
       "name": "AMD Ryzen 9 9900X3D",
       "score": 56053,
       "relativeScore": 28,
-      "priceUsd": "$520.00",
+      "priceUsd": "$513.97",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+9+9900X3D&id=6548",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -2034,7 +2034,7 @@
     {
       "rank": 226,
       "name": "Intel Core Ultra 9 275HX",
-      "score": 55729,
+      "score": 55709,
       "relativeScore": 28,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+9+275HX&id=6492",
@@ -2043,7 +2043,7 @@
     {
       "rank": 227,
       "name": "AMD Ryzen AI Max+ 395",
-      "score": 54900,
+      "score": 54901,
       "relativeScore": 27,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+AI+Max%2B+395&id=6403",
@@ -2052,7 +2052,7 @@
     {
       "rank": 228,
       "name": "AMD Ryzen Threadripper 3960X",
-      "score": 54761,
+      "score": 54752,
       "relativeScore": 27,
       "priceUsd": "$870.99*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+Threadripper+3960X&id=3617",
@@ -2070,9 +2070,9 @@
     {
       "rank": 230,
       "name": "AMD Ryzen 9 9900X",
-      "score": 54313,
+      "score": 54312,
       "relativeScore": 27,
-      "priceUsd": "$332.45",
+      "priceUsd": "$331.95",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+9+9900X&id=6171",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -2106,7 +2106,7 @@
     {
       "rank": 234,
       "name": "AMD Ryzen 9 7945HX",
-      "score": 53819,
+      "score": 53818,
       "relativeScore": 27,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+9+7945HX&id=5232",
@@ -2151,7 +2151,7 @@
     {
       "rank": 239,
       "name": "AMD Ryzen 9 7940HX",
-      "score": 53022,
+      "score": 53033,
       "relativeScore": 26,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+9+7940HX&id=5882",
@@ -2214,7 +2214,7 @@
     {
       "rank": 246,
       "name": "Intel Core Ultra 5 250K Plus",
-      "score": 51967,
+      "score": 51997,
       "relativeScore": 26,
       "priceUsd": "$219.00",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+5+250K+Plus&id=7221",
@@ -2223,16 +2223,16 @@
     {
       "rank": 247,
       "name": "Intel Core i7-14700KF",
-      "score": 51942,
+      "score": 51939,
       "relativeScore": 26,
-      "priceUsd": "$344.92",
+      "priceUsd": "$355.00",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-14700KF&id=5723",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
       "rank": 248,
       "name": "Intel Core i7-14700K",
-      "score": 51926,
+      "score": 51925,
       "relativeScore": 26,
       "priceUsd": "$365.99",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-14700K&id=5719",
@@ -2240,20 +2240,20 @@
     },
     {
       "rank": 249,
-      "name": "AMD EPYC 7502",
-      "score": 51871,
+      "name": "AMD Ryzen AI Max+ Pro 395",
+      "score": 51872,
       "relativeScore": 26,
-      "priceUsd": "$849.75",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+EPYC+7502&id=3880",
+      "priceUsd": "NA",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+AI+Max%2B+Pro+395&id=6400",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
       "rank": 250,
-      "name": "AMD Ryzen AI Max+ Pro 395",
-      "score": 51865,
+      "name": "AMD EPYC 7502",
+      "score": 51871,
       "relativeScore": 26,
-      "priceUsd": "NA",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+AI+Max%2B+Pro+395&id=6400",
+      "priceUsd": "$825.00",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+EPYC+7502&id=3880",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
@@ -2261,7 +2261,7 @@
       "name": "Intel Xeon Gold 6348 @ 2.60GHz",
       "score": 51843,
       "relativeScore": 26,
-      "priceUsd": "$2,200.00",
+      "priceUsd": "$2,200.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Xeon+Gold+6348+%40+2.60GHz&id=4494",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -2295,7 +2295,7 @@
     {
       "rank": 255,
       "name": "AMD Ryzen 9 8945HX",
-      "score": 51274,
+      "score": 51295,
       "relativeScore": 26,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+9+8945HX&id=6691",
@@ -2304,9 +2304,9 @@
     {
       "rank": 256,
       "name": "AMD Ryzen 9 7900X",
-      "score": 51224,
+      "score": 51222,
       "relativeScore": 26,
-      "priceUsd": "$315.00",
+      "priceUsd": "$296.66",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+9+7900X&id=5027",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -2331,7 +2331,7 @@
     {
       "rank": 259,
       "name": "Intel Core Ultra 5 250KF Plus",
-      "score": 50796,
+      "score": 50829,
       "relativeScore": 25,
       "priceUsd": "$199.99",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+5+250KF+Plus&id=7246",
@@ -2430,9 +2430,9 @@
     {
       "rank": 270,
       "name": "Intel Core Ultra 7 265",
-      "score": 49691,
+      "score": 49689,
       "relativeScore": 25,
-      "priceUsd": "$374.00",
+      "priceUsd": "$372.99",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+7+265&id=6423",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -2448,7 +2448,7 @@
     {
       "rank": 272,
       "name": "AMD Ryzen 9 8940HX",
-      "score": 49547,
+      "score": 49531,
       "relativeScore": 25,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+9+8940HX&id=6674",
@@ -2457,9 +2457,9 @@
     {
       "rank": 273,
       "name": "Intel Core Ultra 7 265F",
-      "score": 49445,
+      "score": 49458,
       "relativeScore": 25,
-      "priceUsd": "$359.99",
+      "priceUsd": "$359.99*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+7+265F&id=6558",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -2558,7 +2558,7 @@
       "name": "AMD Ryzen Threadripper PRO 5955WX",
       "score": 48842,
       "relativeScore": 24,
-      "priceUsd": "$764.99",
+      "priceUsd": "$759.99",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+Threadripper+PRO+5955WX&id=4767",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -2574,7 +2574,7 @@
     {
       "rank": 286,
       "name": "Apple M5 Pro 15 Core",
-      "score": 48730,
+      "score": 48736,
       "relativeScore": 24,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Apple+M5+Pro+15+Core&id=7230",
@@ -2637,16 +2637,16 @@
     {
       "rank": 293,
       "name": "AMD Ryzen 9 7900",
-      "score": 48022,
+      "score": 48020,
       "relativeScore": 24,
-      "priceUsd": "$379.98",
+      "priceUsd": "$377.95",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+9+7900&id=5167",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
       "rank": 294,
       "name": "Intel Core Ultra 7 255HX",
-      "score": 47993,
+      "score": 47996,
       "relativeScore": 24,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+7+255HX&id=6648",
@@ -2799,7 +2799,7 @@
     {
       "rank": 311,
       "name": "Intel Core i7-13700K",
-      "score": 45596,
+      "score": 45594,
       "relativeScore": 23,
       "priceUsd": "$449.00",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-13700K&id=5060",
@@ -2808,7 +2808,7 @@
     {
       "rank": 312,
       "name": "Intel Core i7-13700KF",
-      "score": 45535,
+      "score": 45531,
       "relativeScore": 23,
       "priceUsd": "$411.19*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-13700KF&id=5061",
@@ -2819,7 +2819,7 @@
       "name": "Intel Xeon W-3175X @ 3.10GHz",
       "score": 45520,
       "relativeScore": 23,
-      "priceUsd": "$2,899.00",
+      "priceUsd": "$2,899.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Xeon+W-3175X+%40+3.10GHz&id=3420",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -2853,7 +2853,7 @@
     {
       "rank": 317,
       "name": "Intel Core i9-13980HX",
-      "score": 45304,
+      "score": 45292,
       "relativeScore": 23,
       "priceUsd": "$668.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-13980HX&id=5201",
@@ -2862,9 +2862,9 @@
     {
       "rank": 318,
       "name": "AMD Ryzen 9 5950X",
-      "score": 45253,
+      "score": 45252,
       "relativeScore": 22,
-      "priceUsd": "$418.17",
+      "priceUsd": "$395.08",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+9+5950X&id=3862",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -2916,16 +2916,16 @@
     {
       "rank": 324,
       "name": "Intel Core i9-14900",
-      "score": 44556,
+      "score": 44548,
       "relativeScore": 22,
-      "priceUsd": "$631.08",
+      "priceUsd": "$612.19",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-14900&id=5886",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
       "rank": 325,
       "name": "Intel Core i9-13900",
-      "score": 44551,
+      "score": 44535,
       "relativeScore": 22,
       "priceUsd": "$639.22",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-13900&id=5176",
@@ -2934,7 +2934,7 @@
     {
       "rank": 326,
       "name": "AMD Ryzen 9 7845HX",
-      "score": 44397,
+      "score": 44375,
       "relativeScore": 22,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+9+7845HX&id=5196",
@@ -2961,7 +2961,7 @@
     {
       "rank": 329,
       "name": "Apple M4 Max 16 Core",
-      "score": 43908,
+      "score": 43911,
       "relativeScore": 22,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Apple+M4+Max+16+Core&id=6348",
@@ -2970,7 +2970,7 @@
     {
       "rank": 330,
       "name": "AMD Ryzen 9 5900XT",
-      "score": 43827,
+      "score": 43824,
       "relativeScore": 22,
       "priceUsd": "$311.00",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+9+5900XT&id=6187",
@@ -2997,7 +2997,7 @@
     {
       "rank": 333,
       "name": "Intel Core i9-14900HX",
-      "score": 43597,
+      "score": 43592,
       "relativeScore": 22,
       "priceUsd": "$679.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-14900HX&id=5867",
@@ -3006,9 +3006,9 @@
     {
       "rank": 334,
       "name": "Intel Core i9-12900KS",
-      "score": 43363,
+      "score": 43364,
       "relativeScore": 22,
-      "priceUsd": "$429.99",
+      "priceUsd": "$371.25",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-12900KS&id=4813",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -3033,7 +3033,7 @@
     {
       "rank": 337,
       "name": "Intel Core Ultra 5 245KF",
-      "score": 43073,
+      "score": 43070,
       "relativeScore": 21,
       "priceUsd": "$178.00",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+5+245KF&id=6336",
@@ -3042,7 +3042,7 @@
     {
       "rank": 338,
       "name": "Intel Core Ultra 5 245K",
-      "score": 43050,
+      "score": 43052,
       "relativeScore": 21,
       "priceUsd": "$189.99",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+5+245K&id=6324",
@@ -3053,26 +3053,26 @@
       "name": "AMD EPYC 9124",
       "score": 42982,
       "relativeScore": 21,
-      "priceUsd": "$1,034.96",
+      "priceUsd": "$1,021.30",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+EPYC+9124&id=5451",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
       "rank": 340,
-      "name": "Intel Core i9-13900T",
-      "score": 42962,
+      "name": "AMD Ryzen 7 8840HX",
+      "score": 42858,
       "relativeScore": 21,
-      "priceUsd": "$549.00*",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-13900T&id=5154",
+      "priceUsd": "NA",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+8840HX&id=6948",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
       "rank": 341,
-      "name": "AMD Ryzen 7 8840HX",
-      "score": 42857,
+      "name": "Intel Core i9-13900T",
+      "score": 42850,
       "relativeScore": 21,
-      "priceUsd": "NA",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+8840HX&id=6948",
+      "priceUsd": "$549.00*",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-13900T&id=5154",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
@@ -3095,15 +3095,6 @@
     },
     {
       "rank": 344,
-      "name": "Intel Xeon Gold 6526Y",
-      "score": 42195,
-      "relativeScore": 21,
-      "priceUsd": "$1,715.95*",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Xeon+Gold+6526Y&id=5979",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
-      "rank": 345,
       "name": "AMD EPYC 7D12",
       "score": 42155,
       "relativeScore": 21,
@@ -3112,7 +3103,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 346,
+      "rank": 345,
       "name": "Intel Xeon Gold 6338N @ 2.20GHz",
       "score": 42086,
       "relativeScore": 21,
@@ -3121,12 +3112,21 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 347,
+      "rank": 346,
       "name": "Intel Xeon Gold 6330 @ 2.00GHz",
       "score": 42072,
       "relativeScore": 21,
       "priceUsd": "$1,488.50",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Xeon+Gold+6330+%40+2.00GHz&id=4513",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
+      "rank": 347,
+      "name": "Intel Xeon Gold 6526Y",
+      "score": 41900,
+      "relativeScore": 21,
+      "priceUsd": "$1,715.95*",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Xeon+Gold+6526Y&id=5979",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
@@ -3152,7 +3152,7 @@
       "name": "Intel Core i7-13790F",
       "score": 41652,
       "relativeScore": 21,
-      "priceUsd": "$383.15",
+      "priceUsd": "$337.28",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-13790F&id=5611",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -3186,7 +3186,7 @@
     {
       "rank": 354,
       "name": "Intel Core i9-13900HX",
-      "score": 41447,
+      "score": 41435,
       "relativeScore": 21,
       "priceUsd": "$668.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-13900HX&id=5205",
@@ -3213,7 +3213,7 @@
     {
       "rank": 357,
       "name": "AMD Ryzen 7 9850X3D",
-      "score": 41301,
+      "score": 41305,
       "relativeScore": 20,
       "priceUsd": "$484.00",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+9850X3D&id=7074",
@@ -3222,9 +3222,9 @@
     {
       "rank": 358,
       "name": "Intel Core i7-14700F",
-      "score": 41278,
+      "score": 41277,
       "relativeScore": 20,
-      "priceUsd": "$328.80",
+      "priceUsd": "$325.26",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-14700F&id=5834",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -3240,7 +3240,7 @@
     {
       "rank": 360,
       "name": "Intel Core i9-12900K",
-      "score": 41106,
+      "score": 41105,
       "relativeScore": 20,
       "priceUsd": "$415.99",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-12900K&id=4597",
@@ -3303,7 +3303,7 @@
     {
       "rank": 367,
       "name": "Intel Core i9-12900KF",
-      "score": 40484,
+      "score": 40479,
       "relativeScore": 20,
       "priceUsd": "$335.00",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-12900KF&id=4611",
@@ -3321,7 +3321,7 @@
     {
       "rank": 369,
       "name": "Intel Core i9-13950HX",
-      "score": 40347,
+      "score": 40360,
       "relativeScore": 20,
       "priceUsd": "$590.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-13950HX&id=5214",
@@ -3339,7 +3339,7 @@
     {
       "rank": 371,
       "name": "Intel Core i7-14700",
-      "score": 40246,
+      "score": 40243,
       "relativeScore": 20,
       "priceUsd": "$379.98",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-14700&id=5852",
@@ -3377,7 +3377,7 @@
       "name": "AMD Ryzen 7 9800X3D",
       "score": 39927,
       "relativeScore": 20,
-      "priceUsd": "$449.00",
+      "priceUsd": "$439.99",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+9800X3D&id=6344",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -3476,12 +3476,21 @@
       "name": "AMD Ryzen 9 5900X",
       "score": 38886,
       "relativeScore": 19,
-      "priceUsd": "$256.07",
+      "priceUsd": "$266.41",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+9+5900X&id=3870",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
       "rank": 387,
+      "name": "AMD Ryzen AI 9 HX 475 with Radeon 890M",
+      "score": 38807,
+      "relativeScore": 19,
+      "priceUsd": "NA",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+AI+9+HX+475+with+Radeon+890M&id=7448",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
+      "rank": 388,
       "name": "AMD Ryzen 7 PRO 9755",
       "score": 38751,
       "relativeScore": 19,
@@ -3490,7 +3499,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 388,
+      "rank": 389,
       "name": "Intel Xeon Platinum 8174 @ 3.10GHz",
       "score": 38638,
       "relativeScore": 19,
@@ -3499,7 +3508,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 389,
+      "rank": 390,
       "name": "Intel Xeon Gold 6450C",
       "score": 38571,
       "relativeScore": 19,
@@ -3508,7 +3517,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 390,
+      "rank": 391,
       "name": "Intel Xeon 634",
       "score": 38515,
       "relativeScore": 19,
@@ -3517,7 +3526,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 391,
+      "rank": 392,
       "name": "Intel Xeon 6505P",
       "score": 38460,
       "relativeScore": 19,
@@ -3526,7 +3535,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 392,
+      "rank": 393,
       "name": "AMD Ryzen 9 3950X",
       "score": 38401,
       "relativeScore": 19,
@@ -3535,16 +3544,16 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 393,
+      "rank": 394,
       "name": "Intel Core i5-14600K",
-      "score": 38394,
+      "score": 38397,
       "relativeScore": 19,
       "priceUsd": "$249.99",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-14600K&id=5720",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 394,
+      "rank": 395,
       "name": "Intel Core Ultra 5 235A",
       "score": 38392,
       "relativeScore": 19,
@@ -3553,7 +3562,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 395,
+      "rank": 396,
       "name": "Apple M4 Max 14 Core",
       "score": 38391,
       "relativeScore": 19,
@@ -3562,21 +3571,12 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 396,
+      "rank": 397,
       "name": "Intel Xeon Gold 6354 @ 3.00GHz",
       "score": 38332,
       "relativeScore": 19,
       "priceUsd": "$2,998.95",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Xeon+Gold+6354+%40+3.00GHz&id=4627",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
-      "rank": 397,
-      "name": "AMD Ryzen AI 9 HX 475 with Radeon 890M",
-      "score": 38273,
-      "relativeScore": 19,
-      "priceUsd": "NA",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+AI+9+HX+475+with+Radeon+890M&id=7448",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
@@ -3611,14 +3611,14 @@
       "name": "AMD EPYC 7551P",
       "score": 38111,
       "relativeScore": 19,
-      "priceUsd": "$329.95*",
+      "priceUsd": "$329.95",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+EPYC+7551P&id=3215",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
       "rank": 402,
       "name": "Intel Core Ultra 5 245HX",
-      "score": 38069,
+      "score": 38029,
       "relativeScore": 19,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+5+245HX&id=6782",
@@ -3636,9 +3636,9 @@
     {
       "rank": 404,
       "name": "Intel Core Ultra 5 235",
-      "score": 37938,
+      "score": 37939,
       "relativeScore": 19,
-      "priceUsd": "$278.69",
+      "priceUsd": "$281.21",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+5+235&id=6526",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -3654,9 +3654,9 @@
     {
       "rank": 406,
       "name": "Intel Core i7-13700F",
-      "score": 37754,
+      "score": 37753,
       "relativeScore": 19,
-      "priceUsd": "$366.34",
+      "priceUsd": "$312.12",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-13700F&id=5163",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -3674,7 +3674,7 @@
       "name": "Intel Xeon Gold 5320 @ 2.20GHz",
       "score": 37558,
       "relativeScore": 19,
-      "priceUsd": "$1,749.94",
+      "priceUsd": "$1,834.45",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Xeon+Gold+5320+%40+2.20GHz&id=4594",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -3717,7 +3717,7 @@
     {
       "rank": 413,
       "name": "Intel Core i5-13600KF",
-      "score": 37311,
+      "score": 37306,
       "relativeScore": 18,
       "priceUsd": "$365.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-13600KF&id=5059",
@@ -3753,7 +3753,7 @@
     {
       "rank": 417,
       "name": "Intel Core Ultra 7 265T",
-      "score": 37034,
+      "score": 37012,
       "relativeScore": 18,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+7+265T&id=6687",
@@ -3761,15 +3761,24 @@
     },
     {
       "rank": 418,
+      "name": "AMD Ryzen AI 9 HX 470",
+      "score": 36971,
+      "relativeScore": 18,
+      "priceUsd": "NA",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+AI+9+HX+470&id=7087",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
+      "rank": 419,
       "name": "AMD Ryzen 7 9700X",
-      "score": 36941,
+      "score": 36939,
       "relativeScore": 18,
       "priceUsd": "$294.99",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+9700X&id=6205",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 419,
+      "rank": 420,
       "name": "Intel Core 7 253PQE",
       "score": 36930,
       "relativeScore": 18,
@@ -3778,18 +3787,9 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 420,
-      "name": "AMD Ryzen AI 9 HX 470",
-      "score": 36884,
-      "relativeScore": 18,
-      "priceUsd": "NA",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+AI+9+HX+470&id=7087",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
       "rank": 421,
       "name": "Intel Core i7-14700HX",
-      "score": 36448,
+      "score": 36447,
       "relativeScore": 18,
       "priceUsd": "$495.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-14700HX&id=5697",
@@ -3797,6 +3797,15 @@
     },
     {
       "rank": 422,
+      "name": "Intel Core Ultra X9 388H",
+      "score": 36401,
+      "relativeScore": 18,
+      "priceUsd": "NA",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+X9+388H&id=7150",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
+      "rank": 423,
       "name": "AMD Ryzen 7 9700F",
       "score": 36396,
       "relativeScore": 18,
@@ -3805,7 +3814,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 423,
+      "rank": 424,
       "name": "Intel Xeon w5-3425",
       "score": 36365,
       "relativeScore": 18,
@@ -3814,21 +3823,12 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 424,
+      "rank": 425,
       "name": "Intel Xeon Gold 6330N @ 2.20GHz",
       "score": 36360,
       "relativeScore": 18,
       "priceUsd": "$1,798.35*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Xeon+Gold+6330N+%40+2.20GHz&id=4865",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
-      "rank": 425,
-      "name": "Intel Core Ultra X9 388H",
-      "score": 36293,
-      "relativeScore": 18,
-      "priceUsd": "NA",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+X9+388H&id=7150",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
@@ -3897,7 +3897,7 @@
     {
       "rank": 433,
       "name": "Intel Core i7-13850HX",
-      "score": 36056,
+      "score": 36057,
       "relativeScore": 18,
       "priceUsd": "$428.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-13850HX&id=5288",
@@ -3906,7 +3906,7 @@
     {
       "rank": 434,
       "name": "Intel Core Ultra 9 386H",
-      "score": 35954,
+      "score": 35961,
       "relativeScore": 18,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+9+386H&id=7186",
@@ -3915,23 +3915,14 @@
     {
       "rank": 435,
       "name": "Intel Core i7-13700",
-      "score": 35848,
+      "score": 35850,
       "relativeScore": 18,
-      "priceUsd": "$498.00",
+      "priceUsd": "$466.60",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-13700&id=4992",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
       "rank": 436,
-      "name": "AMD Ryzen AI 9 HX PRO 470",
-      "score": 35842,
-      "relativeScore": 18,
-      "priceUsd": "NA",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+AI+9+HX+PRO+470&id=7130",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
-      "rank": 437,
       "name": "Intel Core i5-14600",
       "score": 35827,
       "relativeScore": 18,
@@ -3940,21 +3931,30 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 438,
-      "name": "Intel Core i9-12900F",
-      "score": 35809,
-      "relativeScore": 18,
-      "priceUsd": "$449.62",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-12900F&id=4694",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
-      "rank": 439,
+      "rank": 437,
       "name": "Intel Xeon Gold 6338T @ 2.10GHz",
       "score": 35801,
       "relativeScore": 18,
       "priceUsd": "$3,139.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Xeon+Gold+6338T+%40+2.10GHz&id=6780",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
+      "rank": 438,
+      "name": "Intel Core i9-12900F",
+      "score": 35799,
+      "relativeScore": 18,
+      "priceUsd": "$399.00",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-12900F&id=4694",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
+      "rank": 439,
+      "name": "AMD Ryzen AI 9 HX PRO 470",
+      "score": 35668,
+      "relativeScore": 18,
+      "priceUsd": "NA",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+AI+9+HX+PRO+470&id=7130",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
@@ -3969,7 +3969,7 @@
     {
       "rank": 441,
       "name": "AMD Ryzen 7 7700X",
-      "score": 35483,
+      "score": 35482,
       "relativeScore": 18,
       "priceUsd": "$234.59",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+7700X&id=5036",
@@ -4014,7 +4014,7 @@
     {
       "rank": 446,
       "name": "AMD Ryzen AI 9 HX 370",
-      "score": 34946,
+      "score": 34941,
       "relativeScore": 17,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+AI+9+HX+370&id=6143",
@@ -4113,16 +4113,16 @@
     {
       "rank": 457,
       "name": "AMD Ryzen 7 7800X3D",
-      "score": 34279,
+      "score": 34280,
       "relativeScore": 17,
-      "priceUsd": "$289.23",
+      "priceUsd": "$299.99",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+7800X3D&id=5299",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
       "rank": 458,
       "name": "Intel Core i7-12700K",
-      "score": 34249,
+      "score": 34247,
       "relativeScore": 17,
       "priceUsd": "$409.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-12700K&id=4609",
@@ -4131,7 +4131,7 @@
     {
       "rank": 459,
       "name": "Intel Core Ultra 9 285H",
-      "score": 34201,
+      "score": 34194,
       "relativeScore": 17,
       "priceUsd": "$651.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+9+285H&id=6444",
@@ -4140,7 +4140,7 @@
     {
       "rank": 460,
       "name": "Intel Core Ultra 7 356H",
-      "score": 34127,
+      "score": 34140,
       "relativeScore": 17,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+7+356H&id=7104",
@@ -4157,15 +4157,6 @@
     },
     {
       "rank": 462,
-      "name": "Intel Core Ultra 7 366H",
-      "score": 33989,
-      "relativeScore": 17,
-      "priceUsd": "NA",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+7+366H&id=7072",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
-      "rank": 463,
       "name": "Intel Xeon Platinum 8260M @ 2.30GHz",
       "score": 33970,
       "relativeScore": 17,
@@ -4174,30 +4165,39 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 464,
+      "rank": 463,
       "name": "Intel Core Ultra 7 265H",
-      "score": 33963,
+      "score": 33968,
       "relativeScore": 17,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+7+265H&id=6660",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 465,
+      "rank": 464,
       "name": "AMD Ryzen 9 5900",
-      "score": 33937,
+      "score": 33956,
       "relativeScore": 17,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+9+5900&id=4272",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 466,
+      "rank": 465,
       "name": "Intel Core i7-12700KF",
-      "score": 33917,
+      "score": 33918,
       "relativeScore": 17,
-      "priceUsd": "$284.99",
+      "priceUsd": "$279.99",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-12700KF&id=4608",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
+      "rank": 466,
+      "name": "Intel Core Ultra 7 366H",
+      "score": 33890,
+      "relativeScore": 17,
+      "priceUsd": "NA",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+7+366H&id=7072",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
@@ -4238,20 +4238,20 @@
     },
     {
       "rank": 471,
-      "name": "Intel Core Ultra X7 358H",
-      "score": 33737,
-      "relativeScore": 17,
-      "priceUsd": "NA",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+X7+358H&id=7032",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
-      "rank": 472,
       "name": "AMD Ryzen AI 9 HX PRO 375",
       "score": 33730,
       "relativeScore": 17,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+AI+9+HX+PRO+375&id=6456",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
+      "rank": 472,
+      "name": "Intel Core Ultra X7 358H",
+      "score": 33673,
+      "relativeScore": 17,
+      "priceUsd": "NA",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+X7+358H&id=7032",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
@@ -4266,7 +4266,7 @@
     {
       "rank": 474,
       "name": "Intel Core i9-12900",
-      "score": 33615,
+      "score": 33617,
       "relativeScore": 17,
       "priceUsd": "$499.00",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-12900&id=4729",
@@ -4320,7 +4320,7 @@
     {
       "rank": 480,
       "name": "Intel Core i7-14650HX",
-      "score": 33396,
+      "score": 33404,
       "relativeScore": 16,
       "priceUsd": "$495.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-14650HX&id=5844",
@@ -4376,7 +4376,7 @@
       "name": "Intel Xeon Gold 5318Y @ 2.10GHz",
       "score": 33139,
       "relativeScore": 16,
-      "priceUsd": "$1,350.88*",
+      "priceUsd": "$1,350.88",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Xeon+Gold+5318Y+%40+2.10GHz&id=4703",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -4394,7 +4394,7 @@
       "name": "Intel Xeon Platinum 8168 @ 2.70GHz",
       "score": 32976,
       "relativeScore": 16,
-      "priceUsd": "$1,298.95*",
+      "priceUsd": "$1,298.95",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Xeon+Platinum+8168+%40+2.70GHz&id=3111",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -4437,7 +4437,7 @@
     {
       "rank": 493,
       "name": "Intel Core i9-12900HX",
-      "score": 32715,
+      "score": 32730,
       "relativeScore": 16,
       "priceUsd": "$606.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-12900HX&id=4895",
@@ -4446,7 +4446,7 @@
     {
       "rank": 494,
       "name": "Apple M4 Pro 12 Core",
-      "score": 32706,
+      "score": 32703,
       "relativeScore": 16,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Apple+M4+Pro+12+Core&id=6346",
@@ -4466,7 +4466,7 @@
       "name": "AMD Ryzen 9 3900X",
       "score": 32470,
       "relativeScore": 16,
-      "priceUsd": "$168.56",
+      "priceUsd": "$135.36",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+9+3900X&id=3493",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -4491,7 +4491,7 @@
     {
       "rank": 499,
       "name": "AMD Ryzen 7 7745HX",
-      "score": 32324,
+      "score": 32321,
       "relativeScore": 16,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+7745HX&id=5437",
@@ -4502,7 +4502,7 @@
       "name": "Intel Core Ultra 5 230F",
       "score": 32293,
       "relativeScore": 16,
-      "priceUsd": "NA",
+      "priceUsd": "$159.00",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+5+230F&id=7036",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -4527,7 +4527,7 @@
     {
       "rank": 503,
       "name": "AMD Ryzen Threadripper 2990WX",
-      "score": 32081,
+      "score": 32040,
       "relativeScore": 16,
       "priceUsd": "$2,698.95*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+Threadripper+2990WX&id=3309",
@@ -4545,9 +4545,9 @@
     {
       "rank": 505,
       "name": "Intel Core i9-10980XE @ 3.00GHz",
-      "score": 31924,
+      "score": 31926,
       "relativeScore": 16,
-      "priceUsd": "$740.00",
+      "priceUsd": "$740.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-10980XE+%40+3.00GHz&id=3630",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -4617,7 +4617,7 @@
     {
       "rank": 513,
       "name": "Intel Core i7-13700HX",
-      "score": 31588,
+      "score": 31589,
       "relativeScore": 16,
       "priceUsd": "$485.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-13700HX&id=5238",
@@ -4635,7 +4635,7 @@
     {
       "rank": 515,
       "name": "AMD Ryzen 7 8700G",
-      "score": 31479,
+      "score": 31480,
       "relativeScore": 15,
       "priceUsd": "$264.99",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+8700G&id=5836",
@@ -4644,7 +4644,7 @@
     {
       "rank": 516,
       "name": "AMD Ryzen 7 8745HX",
-      "score": 31464,
+      "score": 31463,
       "relativeScore": 15,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+8745HX&id=6906",
@@ -4724,15 +4724,6 @@
     },
     {
       "rank": 525,
-      "name": "AMD Ryzen 7 PRO 8700G",
-      "score": 31119,
-      "relativeScore": 15,
-      "priceUsd": "NA",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+PRO+8700G&id=6027",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
-      "rank": 526,
       "name": "Intel Xeon W-3245 @ 3.20GHz",
       "score": 31085,
       "relativeScore": 15,
@@ -4741,7 +4732,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 527,
+      "rank": 526,
       "name": "Intel Core i7-12800HX",
       "score": 31077,
       "relativeScore": 15,
@@ -4750,9 +4741,18 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
+      "rank": 527,
+      "name": "AMD Ryzen 7 PRO 8700G",
+      "score": 31066,
+      "relativeScore": 15,
+      "priceUsd": "NA",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+PRO+8700G&id=6027",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
       "rank": 528,
       "name": "Intel Core i9-12950HX",
-      "score": 31013,
+      "score": 31024,
       "relativeScore": 15,
       "priceUsd": "$590.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-12950HX&id=4860",
@@ -4761,7 +4761,7 @@
     {
       "rank": 529,
       "name": "Intel Core Ultra 5 225F",
-      "score": 31008,
+      "score": 31013,
       "relativeScore": 15,
       "priceUsd": "$143.00",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+5+225F&id=6457",
@@ -4788,9 +4788,9 @@
     {
       "rank": 532,
       "name": "AMD Ryzen 7 8700F",
-      "score": 30886,
+      "score": 30881,
       "relativeScore": 15,
-      "priceUsd": "$178.71",
+      "priceUsd": "$180.24",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+8700F&id=6104",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -4823,11 +4823,11 @@
     },
     {
       "rank": 536,
-      "name": "Intel Core Ultra 5 245T",
-      "score": 30806,
+      "name": "Intel Core Ultra 5 235T",
+      "score": 30805,
       "relativeScore": 15,
-      "priceUsd": "$270.00*",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+5+245T&id=6637",
+      "priceUsd": "$247.00*",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+5+235T&id=6650",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
@@ -4841,15 +4841,6 @@
     },
     {
       "rank": 538,
-      "name": "Intel Core Ultra 5 235T",
-      "score": 30756,
-      "relativeScore": 15,
-      "priceUsd": "$247.00*",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+5+235T&id=6650",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
-      "rank": 539,
       "name": "Intel Core Ultra 7 255H",
       "score": 30748,
       "relativeScore": 15,
@@ -4858,25 +4849,25 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 540,
+      "rank": 539,
       "name": "Intel Core i5-13500",
       "score": 30739,
       "relativeScore": 15,
-      "priceUsd": "$324.74",
+      "priceUsd": "$293.47",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-13500&id=4993",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 541,
+      "rank": 540,
       "name": "Intel Core i5-14500",
-      "score": 30731,
+      "score": 30730,
       "relativeScore": 15,
-      "priceUsd": "$287.65",
+      "priceUsd": "$275.46",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-14500&id=5835",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 542,
+      "rank": 541,
       "name": "AMD EPYC 9015",
       "score": 30689,
       "relativeScore": 15,
@@ -4885,7 +4876,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 543,
+      "rank": 542,
       "name": "Intel Core i7-14700T",
       "score": 30673,
       "relativeScore": 15,
@@ -4894,7 +4885,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 544,
+      "rank": 543,
       "name": "AMD Ryzen 9 3900",
       "score": 30546,
       "relativeScore": 15,
@@ -4903,7 +4894,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 545,
+      "rank": 544,
       "name": "AMD EPYC Embedded 7292P",
       "score": 30542,
       "relativeScore": 15,
@@ -4912,7 +4903,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 546,
+      "rank": 545,
       "name": "Intel Xeon Gold 5220R @ 2.20GHz",
       "score": 30531,
       "relativeScore": 15,
@@ -4921,16 +4912,16 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 547,
+      "rank": 546,
       "name": "Intel Core i7-12850HX",
-      "score": 30511,
+      "score": 30512,
       "relativeScore": 15,
       "priceUsd": "$428.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-12850HX&id=4913",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 548,
+      "rank": 547,
       "name": "Intel Core 5 221E",
       "score": 30510,
       "relativeScore": 15,
@@ -4939,7 +4930,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 549,
+      "rank": 548,
       "name": "Intel Xeon Silver 4514Y",
       "score": 30500,
       "relativeScore": 15,
@@ -4948,16 +4939,16 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 550,
+      "rank": 549,
       "name": "Intel Core Ultra 5 225",
-      "score": 30477,
+      "score": 30479,
       "relativeScore": 15,
-      "priceUsd": "$169.99",
+      "priceUsd": "$178.55",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+5+225&id=6469",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 551,
+      "rank": 550,
       "name": "Intel Xeon Gold 6246R @ 3.40GHz",
       "score": 30468,
       "relativeScore": 15,
@@ -4966,7 +4957,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 552,
+      "rank": 551,
       "name": "AMD Ryzen AI 7 450G",
       "score": 30422,
       "relativeScore": 15,
@@ -4975,16 +4966,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 553,
-      "name": "AMD Ryzen AI 9 PRO 465",
-      "score": 30402,
-      "relativeScore": 15,
-      "priceUsd": "NA",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+AI+9+PRO+465&id=7388",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
-      "rank": 554,
+      "rank": 552,
       "name": "AMD EPYC 7282",
       "score": 30359,
       "relativeScore": 15,
@@ -4993,16 +4975,16 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 555,
+      "rank": 553,
       "name": "AMD Ryzen 9 PRO 8945HS",
-      "score": 30358,
+      "score": 30343,
       "relativeScore": 15,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+9+PRO+8945HS&id=6136",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 556,
+      "rank": 554,
       "name": "Intel Xeon 6369P",
       "score": 30323,
       "relativeScore": 15,
@@ -5011,16 +4993,16 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 557,
+      "rank": 555,
       "name": "AMD Ryzen AI 9 365",
-      "score": 30317,
+      "score": 30320,
       "relativeScore": 15,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+AI+9+365&id=6180",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 558,
+      "rank": 556,
       "name": "Intel Core i9-14901E",
       "score": 30298,
       "relativeScore": 15,
@@ -5029,7 +5011,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 559,
+      "rank": 557,
       "name": "Intel Xeon Platinum 8260 @ 2.40GHz",
       "score": 30162,
       "relativeScore": 15,
@@ -5038,7 +5020,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 560,
+      "rank": 558,
       "name": "Intel Core i9-9990XE @ 4.00GHz",
       "score": 30162,
       "relativeScore": 15,
@@ -5047,16 +5029,25 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 561,
+      "rank": 559,
       "name": "Intel Core i7-12700F",
-      "score": 30153,
+      "score": 30152,
       "relativeScore": 15,
       "priceUsd": "$342.50",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-12700F&id=4692",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 562,
+      "rank": 560,
+      "name": "Intel Core Ultra 5 245T",
+      "score": 30132,
+      "relativeScore": 15,
+      "priceUsd": "$270.00*",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+5+245T&id=6637",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
+      "rank": 561,
       "name": "Intel Xeon Gold 6262V @ 1.90GHz",
       "score": 30116,
       "relativeScore": 15,
@@ -5065,7 +5056,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 563,
+      "rank": 562,
       "name": "Intel Xeon W-3265 @ 2.70GHz",
       "score": 30105,
       "relativeScore": 15,
@@ -5074,16 +5065,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 564,
-      "name": "Intel Core Ultra 5 235H",
-      "score": 30095,
-      "relativeScore": 15,
-      "priceUsd": "NA",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+5+235H&id=6370",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
-      "rank": 565,
+      "rank": 563,
       "name": "Snapdragon X Elite - X1E001DE - Qualcomm Or",
       "score": 30085,
       "relativeScore": 15,
@@ -5092,7 +5074,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 566,
+      "rank": 564,
       "name": "AMD Ryzen 9 8945H",
       "score": 30079,
       "relativeScore": 15,
@@ -5101,16 +5083,25 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 567,
+      "rank": 565,
       "name": "AMD Ryzen 5 9600X",
-      "score": 30065,
+      "score": 30062,
       "relativeScore": 15,
-      "priceUsd": "$171.95",
+      "priceUsd": "$172.95",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+5+9600X&id=6199",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 568,
+      "rank": 566,
+      "name": "Intel Core Ultra 5 235H",
+      "score": 30054,
+      "relativeScore": 15,
+      "priceUsd": "NA",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+5+235H&id=6370",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
+      "rank": 567,
       "name": "Intel Core 7 251TE",
       "score": 30022,
       "relativeScore": 15,
@@ -5119,16 +5110,16 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 569,
+      "rank": 568,
       "name": "Intel Core i7-13650HX",
-      "score": 29988,
+      "score": 29973,
       "relativeScore": 15,
       "priceUsd": "$485.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-13650HX&id=5253",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 570,
+      "rank": 569,
       "name": "Intel Xeon Gold 6534",
       "score": 29912,
       "relativeScore": 15,
@@ -5137,12 +5128,21 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 571,
+      "rank": 570,
       "name": "ARM Neoverse-N1 96 Core 2800 MHz",
       "score": 29890,
       "relativeScore": 15,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=ARM+Neoverse-N1+96+Core+2800+MHz&id=6308",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
+      "rank": 571,
+      "name": "AMD Ryzen AI 9 PRO 465",
+      "score": 29877,
+      "relativeScore": 15,
+      "priceUsd": "NA",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+AI+9+PRO+465&id=7388",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
@@ -5166,7 +5166,7 @@
     {
       "rank": 574,
       "name": "Intel Core i7-12700",
-      "score": 29778,
+      "score": 29777,
       "relativeScore": 15,
       "priceUsd": "$338.27",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-12700&id=4669",
@@ -5175,7 +5175,7 @@
     {
       "rank": 575,
       "name": "AMD Ryzen 9 7940HS",
-      "score": 29768,
+      "score": 29757,
       "relativeScore": 15,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+9+7940HS&id=5454",
@@ -5222,7 +5222,7 @@
       "name": "Intel Core i9-9960X @ 3.10GHz",
       "score": 29532,
       "relativeScore": 14,
-      "priceUsd": "$219.56",
+      "priceUsd": "$299.00",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-9960X+%40+3.10GHz&id=3405",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -5240,7 +5240,7 @@
       "name": "Intel Core i9-7980XE @ 2.60GHz",
       "score": 29482,
       "relativeScore": 14,
-      "priceUsd": "$480.00*",
+      "priceUsd": "$471.95",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-7980XE+%40+2.60GHz&id=3092",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -5264,20 +5264,20 @@
     },
     {
       "rank": 585,
-      "name": "AMD Ryzen AI 9 465",
-      "score": 29363,
-      "relativeScore": 14,
-      "priceUsd": "NA",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+AI+9+465&id=7204",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
-      "rank": 586,
       "name": "AMD Ryzen AI 7 PRO 450G with Radeon 860M",
       "score": 29358,
       "relativeScore": 14,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+AI+7+PRO+450G+with+Radeon+860M&id=7436",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
+      "rank": 586,
+      "name": "AMD Ryzen AI 9 465",
+      "score": 29331,
+      "relativeScore": 14,
+      "priceUsd": "NA",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+AI+9+465&id=7204",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
@@ -5300,20 +5300,20 @@
     },
     {
       "rank": 589,
-      "name": "Intel Core 7 253PE",
-      "score": 29302,
-      "relativeScore": 14,
-      "priceUsd": "NA",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+7+253PE&id=7146",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
-      "rank": 590,
       "name": "Intel Xeon Gold 5318H @ 2.50GHz",
       "score": 29301,
       "relativeScore": 14,
       "priceUsd": "$1,273.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Xeon+Gold+5318H+%40+2.50GHz&id=6196",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
+      "rank": 590,
+      "name": "Intel Core 7 253PE",
+      "score": 29300,
+      "relativeScore": 14,
+      "priceUsd": "NA",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+7+253PE&id=7146",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
@@ -5327,15 +5327,6 @@
     },
     {
       "rank": 592,
-      "name": "Intel Arc G3 Extreme",
-      "score": 29193,
-      "relativeScore": 14,
-      "priceUsd": "NA",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Arc+G3+Extreme&id=7300",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
-      "rank": 593,
       "name": "Intel Xeon Silver 4510T",
       "score": 29119,
       "relativeScore": 14,
@@ -5344,16 +5335,16 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 594,
+      "rank": 593,
       "name": "AMD Ryzen 7 8745H",
-      "score": 29061,
+      "score": 29066,
       "relativeScore": 14,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+8745H&id=6289",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 595,
+      "rank": 594,
       "name": "Intel Xeon Gold 6238 @ 2.10GHz",
       "score": 29057,
       "relativeScore": 14,
@@ -5362,7 +5353,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 596,
+      "rank": 595,
       "name": "Intel Xeon Gold 6266C @ 3.00GHz",
       "score": 29049,
       "relativeScore": 14,
@@ -5371,7 +5362,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 597,
+      "rank": 596,
       "name": "AMD Ryzen 9 H 270",
       "score": 29010,
       "relativeScore": 14,
@@ -5380,7 +5371,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 598,
+      "rank": 597,
       "name": "Intel Core i7-13645HX",
       "score": 28995,
       "relativeScore": 14,
@@ -5389,7 +5380,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 599,
+      "rank": 598,
       "name": "Intel Core i9-12900T",
       "score": 28964,
       "relativeScore": 14,
@@ -5398,16 +5389,16 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 600,
+      "rank": 599,
       "name": "Intel Core Ultra 9 185H",
-      "score": 28963,
+      "score": 28960,
       "relativeScore": 14,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+9+185H&id=5815",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 601,
+      "rank": 600,
       "name": "AMD Ryzen 9 270",
       "score": 28938,
       "relativeScore": 14,
@@ -5416,16 +5407,16 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 602,
+      "rank": 601,
       "name": "Intel Xeon Gold 6248 @ 2.50GHz",
       "score": 28897,
       "relativeScore": 14,
-      "priceUsd": "$99.00*",
+      "priceUsd": "$99.00",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Xeon+Gold+6248+%40+2.50GHz&id=3517",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 603,
+      "rank": 602,
       "name": "Intel Xeon Gold 6210U @ 2.50GHz",
       "score": 28861,
       "relativeScore": 14,
@@ -5434,7 +5425,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 604,
+      "rank": 603,
       "name": "Snapdragon X2 Elite - X2E84100 - Qualcomm Oryo",
       "score": 28848,
       "relativeScore": 14,
@@ -5443,12 +5434,21 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 605,
+      "rank": 604,
       "name": "AMD Ryzen 7 255",
-      "score": 28723,
+      "score": 28728,
       "relativeScore": 14,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+255&id=6715",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
+      "rank": 605,
+      "name": "Intel Arc G3 Extreme",
+      "score": 28717,
+      "relativeScore": 14,
+      "priceUsd": "NA",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Arc+G3+Extreme&id=7300",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
@@ -5463,7 +5463,7 @@
     {
       "rank": 607,
       "name": "AMD Ryzen 7 PRO 8845HS",
-      "score": 28594,
+      "score": 28593,
       "relativeScore": 14,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+PRO+8845HS&id=6086",
@@ -5508,7 +5508,7 @@
     {
       "rank": 612,
       "name": "AMD Ryzen 7 8745HS",
-      "score": 28541,
+      "score": 28546,
       "relativeScore": 14,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+8745HS&id=6353",
@@ -5579,24 +5579,15 @@
     },
     {
       "rank": 620,
-      "name": "Intel Core 9 270H",
-      "score": 28296,
-      "relativeScore": 14,
-      "priceUsd": "NA",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+9+270H&id=6718",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
-      "rank": 621,
       "name": "AMD Ryzen 7 5800X3D",
-      "score": 28288,
+      "score": 28287,
       "relativeScore": 14,
       "priceUsd": "$349.00",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+5800X3D&id=4823",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 622,
+      "rank": 621,
       "name": "AMD Ryzen 7 8845HS",
       "score": 28286,
       "relativeScore": 14,
@@ -5605,7 +5596,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 623,
+      "rank": 622,
       "name": "Virtual @ 4.03GHz",
       "score": 28277,
       "relativeScore": 14,
@@ -5614,25 +5605,25 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 624,
+      "rank": 623,
       "name": "AMD Ryzen 5 7600X",
       "score": 28269,
       "relativeScore": 14,
-      "priceUsd": "$169.99",
+      "priceUsd": "$163.00",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+5+7600X&id=5033",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 625,
+      "rank": 624,
       "name": "AMD Ryzen 7 7840HS",
-      "score": 28262,
+      "score": 28261,
       "relativeScore": 14,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+7840HS&id=5258",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 626,
+      "rank": 625,
       "name": "Intel Xeon 6975P-C",
       "score": 28252,
       "relativeScore": 14,
@@ -5641,7 +5632,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 627,
+      "rank": 626,
       "name": "AMD Ryzen 7 H 260",
       "score": 28197,
       "relativeScore": 14,
@@ -5650,7 +5641,34 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
+      "rank": 627,
+      "name": "Snapdragon X2 Elite - X2E80100 - Qualcomm Oryo",
+      "score": 28160,
+      "relativeScore": 14,
+      "priceUsd": "NA",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Snapdragon+X2+Elite+-+X2E80100+-+Qualcomm+Oryo&id=7385",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
       "rank": 628,
+      "name": "Intel Core 9 270H",
+      "score": 28156,
+      "relativeScore": 14,
+      "priceUsd": "NA",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+9+270H&id=6718",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
+      "rank": 629,
+      "name": "AMD Ryzen 7 H 255",
+      "score": 28151,
+      "relativeScore": 14,
+      "priceUsd": "NA",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+H+255&id=6817",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
+      "rank": 630,
       "name": "Intel Xeon Platinum 8252C @ 3.80GHz",
       "score": 28147,
       "relativeScore": 14,
@@ -5659,16 +5677,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 629,
-      "name": "AMD Ryzen 7 H 255",
-      "score": 28146,
-      "relativeScore": 14,
-      "priceUsd": "NA",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+H+255&id=6817",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
-      "rank": 630,
+      "rank": 631,
       "name": "Intel Core Ultra X9 378H",
       "score": 28119,
       "relativeScore": 14,
@@ -5677,7 +5686,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 631,
+      "rank": 632,
       "name": "AMD Ryzen AI 9 H 465",
       "score": 28105,
       "relativeScore": 14,
@@ -5686,21 +5695,12 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 632,
+      "rank": 633,
       "name": "Ryzen AI Embedded P174",
       "score": 28105,
       "relativeScore": 14,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Ryzen+AI+Embedded+P174&id=7444",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
-      "rank": 633,
-      "name": "Intel Core Ultra 5 225H",
-      "score": 28098,
-      "relativeScore": 14,
-      "priceUsd": "NA",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+5+225H&id=6525",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
@@ -5714,15 +5714,24 @@
     },
     {
       "rank": 635,
+      "name": "Intel Core Ultra 5 225H",
+      "score": 28089,
+      "relativeScore": 14,
+      "priceUsd": "NA",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+5+225H&id=6525",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
+      "rank": 636,
       "name": "AMD Ryzen 5 9500F",
-      "score": 28069,
+      "score": 28087,
       "relativeScore": 14,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+5+9500F&id=7079",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 636,
+      "rank": 637,
       "name": "AMD Ryzen 7 PRO 8700GE",
       "score": 28052,
       "relativeScore": 14,
@@ -5731,7 +5740,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 637,
+      "rank": 638,
       "name": "Intel Xeon W-2195 @ 2.30GHz",
       "score": 28050,
       "relativeScore": 14,
@@ -5740,21 +5749,12 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 638,
+      "rank": 639,
       "name": "ARM Neoverse-N1 64 Core 0 MHz",
       "score": 28040,
       "relativeScore": 14,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=ARM+Neoverse-N1+64+Core+0+MHz&id=4167",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
-      "rank": 639,
-      "name": "Snapdragon X2 Elite - X2E80100 - Qualcomm Oryo",
-      "score": 28028,
-      "relativeScore": 14,
-      "priceUsd": "NA",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Snapdragon+X2+Elite+-+X2E80100+-+Qualcomm+Oryo&id=7385",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
@@ -5769,7 +5769,7 @@
     {
       "rank": 641,
       "name": "AMD Ryzen 7 5800XT",
-      "score": 28022,
+      "score": 28024,
       "relativeScore": 14,
       "priceUsd": "$239.00",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+5800XT&id=6307",
@@ -5777,20 +5777,20 @@
     },
     {
       "rank": 642,
-      "name": "Intel Xeon Gold 6434",
-      "score": 28012,
+      "name": "Intel Core i9-9940X @ 3.30GHz",
+      "score": 28019,
       "relativeScore": 14,
-      "priceUsd": "$2,464.45",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Xeon+Gold+6434&id=5891",
+      "priceUsd": "$230.40*",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-9940X+%40+3.30GHz&id=3358",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
       "rank": 643,
-      "name": "Intel Core i9-9940X @ 3.30GHz",
+      "name": "Intel Xeon Gold 6434",
       "score": 28012,
       "relativeScore": 14,
-      "priceUsd": "$230.40*",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-9940X+%40+3.30GHz&id=3358",
+      "priceUsd": "$2,464.45*",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Xeon+Gold+6434&id=5891",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
@@ -5805,7 +5805,7 @@
     {
       "rank": 645,
       "name": "AMD Ryzen 7 260",
-      "score": 27963,
+      "score": 27968,
       "relativeScore": 14,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+260&id=6658",
@@ -5841,7 +5841,7 @@
     {
       "rank": 649,
       "name": "Intel Core Ultra 5 336H",
-      "score": 27898,
+      "score": 27915,
       "relativeScore": 14,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+5+336H&id=7174",
@@ -5879,7 +5879,7 @@
       "name": "AMD EPYC 7401P",
       "score": 27836,
       "relativeScore": 14,
-      "priceUsd": "$345.00",
+      "priceUsd": "$345.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+EPYC+7401P&id=3118",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -5942,7 +5942,7 @@
       "name": "AMD Ryzen 7 5800X",
       "score": 27660,
       "relativeScore": 14,
-      "priceUsd": "$246.08",
+      "priceUsd": "$188.34",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+5800X&id=3869",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -5958,9 +5958,9 @@
     {
       "rank": 662,
       "name": "Intel Core i9-10940X @ 3.30GHz",
-      "score": 27648,
+      "score": 27645,
       "relativeScore": 14,
-      "priceUsd": "$348.04",
+      "priceUsd": "$590.43",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-10940X+%40+3.30GHz&id=3639",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -5987,26 +5987,26 @@
       "name": "Intel Core i9-7960X @ 2.80GHz",
       "score": 27547,
       "relativeScore": 13,
-      "priceUsd": "$209.86",
+      "priceUsd": "$172.84",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-7960X+%40+2.80GHz&id=3096",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
       "rank": 666,
-      "name": "Intel Core i5-12600K",
-      "score": 27503,
+      "name": "Intel Core i5-12600KF",
+      "score": 27505,
       "relativeScore": 13,
-      "priceUsd": "$349.99*",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-12600K&id=4603",
+      "priceUsd": "$189.99",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-12600KF&id=4625",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
       "rank": 667,
-      "name": "Intel Core i5-12600KF",
-      "score": 27503,
+      "name": "Intel Core i5-12600K",
+      "score": 27504,
       "relativeScore": 13,
-      "priceUsd": "$189.99",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-12600KF&id=4625",
+      "priceUsd": "$349.99*",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-12600K&id=4603",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
@@ -6030,7 +6030,7 @@
     {
       "rank": 670,
       "name": "Intel Core i5-13500HX",
-      "score": 27397,
+      "score": 27407,
       "relativeScore": 13,
       "priceUsd": "$326.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-13500HX&id=5484",
@@ -6039,7 +6039,7 @@
     {
       "rank": 671,
       "name": "AMD Ryzen 7 7840H",
-      "score": 27325,
+      "score": 27320,
       "relativeScore": 13,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+7840H&id=5558",
@@ -6120,7 +6120,7 @@
     {
       "rank": 680,
       "name": "Intel Core i9-13900H",
-      "score": 27052,
+      "score": 27046,
       "relativeScore": 13,
       "priceUsd": "$617.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-13900H&id=5210",
@@ -6146,20 +6146,20 @@
     },
     {
       "rank": 683,
-      "name": "AMD Ryzen 9 PRO 7940HS",
-      "score": 26981,
+      "name": "AMD Ryzen 5 7600",
+      "score": 26967,
       "relativeScore": 13,
-      "priceUsd": "NA",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+9+PRO+7940HS&id=5560",
+      "priceUsd": "$226.24",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+5+7600&id=5172",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
       "rank": 684,
-      "name": "AMD Ryzen 5 7600",
-      "score": 26967,
+      "name": "AMD Ryzen 9 PRO 7940HS",
+      "score": 26962,
       "relativeScore": 13,
-      "priceUsd": "$226.25",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+5+7600&id=5172",
+      "priceUsd": "NA",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+9+PRO+7940HS&id=5560",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
@@ -6192,7 +6192,7 @@
     {
       "rank": 688,
       "name": "Apple M2 Max 12 Core 3680 MHz",
-      "score": 26834,
+      "score": 26832,
       "relativeScore": 13,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Apple+M2+Max+12+Core+3680+MHz&id=5183",
@@ -6203,12 +6203,21 @@
       "name": "Intel Xeon Gold 6240 @ 2.60GHz",
       "score": 26826,
       "relativeScore": 13,
-      "priceUsd": "$523.74*",
+      "priceUsd": "$399.00",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Xeon+Gold+6240+%40+2.60GHz&id=3613",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
       "rank": 690,
+      "name": "AMD Ryzen 7 PRO 7840HS",
+      "score": 26821,
+      "relativeScore": 13,
+      "priceUsd": "NA",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+PRO+7840HS&id=5470",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
+      "rank": 691,
       "name": "AMD Ryzen 9 6980HX",
       "score": 26817,
       "relativeScore": 13,
@@ -6217,20 +6226,11 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 691,
-      "name": "AMD Ryzen 7 PRO 7840HS",
-      "score": 26805,
-      "relativeScore": 13,
-      "priceUsd": "NA",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+PRO+7840HS&id=5470",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
       "rank": 692,
       "name": "Intel Xeon Gold 6252 @ 2.10GHz",
       "score": 26797,
       "relativeScore": 13,
-      "priceUsd": "$1,190.00",
+      "priceUsd": "$1,552.95",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Xeon+Gold+6252+%40+2.10GHz&id=3532",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -6255,7 +6255,7 @@
     {
       "rank": 695,
       "name": "Apple M5 10 Core",
-      "score": 26738,
+      "score": 26739,
       "relativeScore": 13,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Apple+M5+10+Core&id=6981",
@@ -6264,7 +6264,7 @@
     {
       "rank": 696,
       "name": "Apple M2 Pro 12 Core 3480 MHz",
-      "score": 26731,
+      "score": 26735,
       "relativeScore": 13,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Apple+M2+Pro+12+Core+3480+MHz&id=5189",
@@ -6327,7 +6327,7 @@
     {
       "rank": 703,
       "name": "AMD Ryzen 7 5700X",
-      "score": 26556,
+      "score": 26557,
       "relativeScore": 13,
       "priceUsd": "$154.98",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+5700X&id=4814",
@@ -6336,7 +6336,7 @@
     {
       "rank": 704,
       "name": "Intel Core i9-12900H",
-      "score": 26553,
+      "score": 26554,
       "relativeScore": 13,
       "priceUsd": "$617.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-12900H&id=4728",
@@ -6354,9 +6354,9 @@
     {
       "rank": 706,
       "name": "AMD Ryzen 5 7500F",
-      "score": 26521,
+      "score": 26522,
       "relativeScore": 13,
-      "priceUsd": "$163.54",
+      "priceUsd": "$177.24",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+5+7500F&id=5648",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -6407,6 +6407,15 @@
     },
     {
       "rank": 712,
+      "name": "AMD Ryzen AI 7 450",
+      "score": 26324,
+      "relativeScore": 13,
+      "priceUsd": "NA",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+AI+7+450&id=7268",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
+      "rank": 713,
       "name": "Intel Core i7-12800HE",
       "score": 26307,
       "relativeScore": 13,
@@ -6415,7 +6424,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 713,
+      "rank": 714,
       "name": "AMD Ryzen 7 5700X3D",
       "score": 26305,
       "relativeScore": 13,
@@ -6424,7 +6433,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 714,
+      "rank": 715,
       "name": "Intel Xeon Gold 6230 @ 2.10GHz",
       "score": 26285,
       "relativeScore": 13,
@@ -6433,7 +6442,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 715,
+      "rank": 716,
       "name": "Intel CoreT i7-13705H",
       "score": 26249,
       "relativeScore": 13,
@@ -6442,7 +6451,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 716,
+      "rank": 717,
       "name": "AMD Ryzen AI 7 H 350",
       "score": 26212,
       "relativeScore": 13,
@@ -6451,21 +6460,12 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 717,
+      "rank": 718,
       "name": "Intel Core Ultra 3 205",
       "score": 26167,
       "relativeScore": 13,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+3+205&id=7250",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
-      "rank": 718,
-      "name": "AMD Ryzen AI 7 450",
-      "score": 26165,
-      "relativeScore": 13,
-      "priceUsd": "NA",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+AI+7+450&id=7268",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
@@ -6480,7 +6480,7 @@
     {
       "rank": 720,
       "name": "Intel Xeon w3-2435",
-      "score": 26093,
+      "score": 26095,
       "relativeScore": 13,
       "priceUsd": "$669.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Xeon+w3-2435&id=5501",
@@ -6489,7 +6489,7 @@
     {
       "rank": 721,
       "name": "Intel Core i7-13800H",
-      "score": 26082,
+      "score": 26068,
       "relativeScore": 13,
       "priceUsd": "$457.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-13800H&id=5246",
@@ -6570,7 +6570,7 @@
     {
       "rank": 730,
       "name": "AMD Ryzen 5 7600X3D",
-      "score": 25859,
+      "score": 25860,
       "relativeScore": 13,
       "priceUsd": "$298.49",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+5+7600X3D&id=6249",
@@ -6588,7 +6588,7 @@
     {
       "rank": 732,
       "name": "Intel Core Ultra 7 165H",
-      "score": 25836,
+      "score": 25840,
       "relativeScore": 13,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+7+165H&id=5816",
@@ -6597,7 +6597,7 @@
     {
       "rank": 733,
       "name": "Intel Core i7-13700H",
-      "score": 25809,
+      "score": 25810,
       "relativeScore": 13,
       "priceUsd": "$502.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-13700H&id=5226",
@@ -6617,7 +6617,7 @@
       "name": "AMD EPYC 7272",
       "score": 25771,
       "relativeScore": 13,
-      "priceUsd": "$482.02",
+      "priceUsd": "$482.02*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+EPYC+7272&id=3731",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -6635,7 +6635,7 @@
       "name": "Intel Core i9-10920X @ 3.50GHz",
       "score": 25721,
       "relativeScore": 13,
-      "priceUsd": "$282.00",
+      "priceUsd": "$272.54",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-10920X+%40+3.50GHz&id=3632",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -6678,7 +6678,7 @@
     {
       "rank": 742,
       "name": "AMD Ryzen 5 7400F",
-      "score": 25637,
+      "score": 25632,
       "relativeScore": 13,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+5+7400F&id=6603",
@@ -6705,7 +6705,7 @@
     {
       "rank": 745,
       "name": "Intel Core i5-14400F",
-      "score": 25441,
+      "score": 25439,
       "relativeScore": 12,
       "priceUsd": "$179.99",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-14400F&id=5837",
@@ -6812,15 +6812,6 @@
     },
     {
       "rank": 757,
-      "name": "AMD Ryzen AI 7 PRO 450",
-      "score": 25097,
-      "relativeScore": 12,
-      "priceUsd": "NA",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+AI+7+PRO+450&id=7123",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
-      "rank": 758,
       "name": "Intel Xeon Gold 5218R @ 2.10GHz",
       "score": 25076,
       "relativeScore": 12,
@@ -6829,18 +6820,27 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
+      "rank": 758,
+      "name": "AMD Ryzen AI 7 PRO 450",
+      "score": 25056,
+      "relativeScore": 12,
+      "priceUsd": "NA",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+AI+7+PRO+450&id=7123",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
       "rank": 759,
       "name": "Intel Core i5-14400",
-      "score": 25053,
+      "score": 25052,
       "relativeScore": 12,
-      "priceUsd": "$209.00",
+      "priceUsd": "$203.30",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-14400&id=5868",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
       "rank": 760,
       "name": "AMD Ryzen 7 250",
-      "score": 25047,
+      "score": 25046,
       "relativeScore": 12,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+250&id=6493",
@@ -6858,9 +6858,9 @@
     {
       "rank": 762,
       "name": "AMD Ryzen 5 7500X3D",
-      "score": 24992,
+      "score": 24989,
       "relativeScore": 12,
-      "priceUsd": "$259.85",
+      "priceUsd": "$259.00",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+5+7500X3D&id=7041",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -6876,7 +6876,7 @@
     {
       "rank": 764,
       "name": "Intel Core i7-12700H",
-      "score": 24953,
+      "score": 24951,
       "relativeScore": 12,
       "priceUsd": "$457.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-12700H&id=4721",
@@ -6885,7 +6885,7 @@
     {
       "rank": 765,
       "name": "AMD Ryzen AI 7 350",
-      "score": 24937,
+      "score": 24946,
       "relativeScore": 12,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+AI+7+350&id=6397",
@@ -6912,9 +6912,9 @@
     {
       "rank": 768,
       "name": "Intel Core i9-11900K @ 3.50GHz",
-      "score": 24903,
+      "score": 24901,
       "relativeScore": 12,
-      "priceUsd": "$459.80",
+      "priceUsd": "$443.09",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-11900K+%40+3.50GHz&id=3904",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -7028,15 +7028,6 @@
     },
     {
       "rank": 781,
-      "name": "AMD Ryzen 7 8840HS",
-      "score": 24593,
-      "relativeScore": 12,
-      "priceUsd": "NA",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+8840HS&id=6016",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
-      "rank": 782,
       "name": "AMD EPYC 7351P",
       "score": 24587,
       "relativeScore": 12,
@@ -7045,12 +7036,21 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 783,
+      "rank": 782,
       "name": "AMD Ryzen Z1 Extreme",
       "score": 24585,
       "relativeScore": 12,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+Z1+Extreme&id=5508",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
+      "rank": 783,
+      "name": "AMD Ryzen 7 8840HS",
+      "score": 24584,
+      "relativeScore": 12,
+      "priceUsd": "NA",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+8840HS&id=6016",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
@@ -7083,7 +7083,7 @@
     {
       "rank": 787,
       "name": "Intel Core i9-11900KF @ 3.50GHz",
-      "score": 24505,
+      "score": 24506,
       "relativeScore": 12,
       "priceUsd": "$399.00",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-11900KF+%40+3.50GHz&id=4240",
@@ -7119,7 +7119,7 @@
     {
       "rank": 791,
       "name": "Intel Core i5-13450HX",
-      "score": 24419,
+      "score": 24417,
       "relativeScore": 12,
       "priceUsd": "$326.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-13450HX&id=5483",
@@ -7139,14 +7139,14 @@
       "name": "AMD Ryzen 5 8400F",
       "score": 24381,
       "relativeScore": 12,
-      "priceUsd": "$121.60",
+      "priceUsd": "$121.61",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+5+8400F&id=6056",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
       "rank": 794,
       "name": "Intel Core i5-12600HX",
-      "score": 24380,
+      "score": 24373,
       "relativeScore": 12,
       "priceUsd": "$284.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-12600HX&id=4912",
@@ -7155,7 +7155,7 @@
     {
       "rank": 795,
       "name": "AMD Ryzen 7 PRO 7840U",
-      "score": 24359,
+      "score": 24357,
       "relativeScore": 12,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+PRO+7840U&id=5319",
@@ -7191,9 +7191,9 @@
     {
       "rank": 799,
       "name": "AMD Ryzen 7 5700G",
-      "score": 24219,
+      "score": 24218,
       "relativeScore": 12,
-      "priceUsd": "$169.80",
+      "priceUsd": "$160.71",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+5700G&id=4323",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -7202,7 +7202,7 @@
       "name": "AMD Ryzen 7 5700",
       "score": 24197,
       "relativeScore": 12,
-      "priceUsd": "$167.95",
+      "priceUsd": "$164.95",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+5700&id=4968",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -7235,20 +7235,20 @@
     },
     {
       "rank": 804,
+      "name": "Apple M3 Pro 12 Core",
+      "score": 24055,
+      "relativeScore": 12,
+      "priceUsd": "NA",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Apple+M3+Pro+12+Core&id=5750",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
+      "rank": 805,
       "name": "Intel Core 9 273PTE",
       "score": 24054,
       "relativeScore": 12,
       "priceUsd": "$549.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+9+273PTE&id=7259",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
-      "rank": 805,
-      "name": "Apple M3 Pro 12 Core",
-      "score": 24052,
-      "relativeScore": 12,
-      "priceUsd": "NA",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Apple+M3+Pro+12+Core&id=5750",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
@@ -7281,7 +7281,7 @@
     {
       "rank": 809,
       "name": "AMD Ryzen AI 7 PRO 350",
-      "score": 24008,
+      "score": 24001,
       "relativeScore": 12,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+AI+7+PRO+350&id=6513",
@@ -7289,20 +7289,20 @@
     },
     {
       "rank": 810,
-      "name": "Intel Core 7 240H",
-      "score": 24008,
-      "relativeScore": 12,
-      "priceUsd": "NA",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+7+240H&id=6481",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
-      "rank": 811,
       "name": "Embedded Ryzen V4728X",
       "score": 24000,
       "relativeScore": 12,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Embedded+Ryzen+V4728X&id=6927",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
+      "rank": 811,
+      "name": "Intel Core 7 240H",
+      "score": 23998,
+      "relativeScore": 12,
+      "priceUsd": "NA",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+7+240H&id=6481",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
@@ -7317,9 +7317,9 @@
     {
       "rank": 813,
       "name": "Intel Core i5-13400",
-      "score": 23900,
+      "score": 23896,
       "relativeScore": 12,
-      "priceUsd": "$753.78*",
+      "priceUsd": "$748.88",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-13400&id=4994",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -7389,7 +7389,7 @@
     {
       "rank": 821,
       "name": "Intel Core i5-14450HX",
-      "score": 23657,
+      "score": 23670,
       "relativeScore": 12,
       "priceUsd": "$337.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-14450HX&id=6241",
@@ -7398,7 +7398,7 @@
     {
       "rank": 822,
       "name": "Intel Core i7-12800H",
-      "score": 23640,
+      "score": 23639,
       "relativeScore": 12,
       "priceUsd": "$457.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-12800H&id=4778",
@@ -7416,7 +7416,7 @@
     {
       "rank": 824,
       "name": "Apple M4 10 Core",
-      "score": 23598,
+      "score": 23592,
       "relativeScore": 11,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Apple+M4+10+Core&id=6040",
@@ -7443,7 +7443,7 @@
     {
       "rank": 827,
       "name": "Intel Core i9-7920X @ 2.90GHz",
-      "score": 23545,
+      "score": 23547,
       "relativeScore": 11,
       "priceUsd": "$207.00",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-7920X+%40+2.90GHz&id=3082",
@@ -7514,20 +7514,20 @@
     },
     {
       "rank": 835,
-      "name": "AMD Ryzen 7 3800XT",
-      "score": 23398,
-      "relativeScore": 11,
-      "priceUsd": "$230.00*",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+3800XT&id=3797",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
-      "rank": 836,
       "name": "AMD Ryzen 7 8840U",
       "score": 23397,
       "relativeScore": 11,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+8840U&id=6003",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
+      "rank": 836,
+      "name": "AMD Ryzen 7 3800XT",
+      "score": 23397,
+      "relativeScore": 11,
+      "priceUsd": "$230.00*",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+3800XT&id=3797",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
@@ -7596,7 +7596,7 @@
     {
       "rank": 844,
       "name": "Intel Core i7-13620H",
-      "score": 23215,
+      "score": 23210,
       "relativeScore": 11,
       "priceUsd": "$502.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-13620H&id=5283",
@@ -7650,7 +7650,7 @@
     {
       "rank": 850,
       "name": "AMD Ryzen 7 3800X",
-      "score": 22960,
+      "score": 22959,
       "relativeScore": 11,
       "priceUsd": "$429.99",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+3800X&id=3499",
@@ -7659,7 +7659,7 @@
     {
       "rank": 851,
       "name": "AMD Ryzen Threadripper 1920X",
-      "score": 22953,
+      "score": 22955,
       "relativeScore": 11,
       "priceUsd": "$199.99*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+Threadripper+1920X&id=3062",
@@ -7685,20 +7685,20 @@
     },
     {
       "rank": 854,
-      "name": "Qualcomm Snapdragon X Elite - X1E-80-100",
-      "score": 22870,
+      "name": "Intel Core i5-14500T",
+      "score": 22868,
       "relativeScore": 11,
-      "priceUsd": "NA",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Qualcomm+Snapdragon+X+Elite+-+X1E-80-100&id=6110",
+      "priceUsd": "$232.00*",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-14500T&id=5889",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
       "rank": 855,
-      "name": "Intel Core i5-14500T",
-      "score": 22866,
+      "name": "Qualcomm Snapdragon X Elite - X1E-80-100",
+      "score": 22859,
       "relativeScore": 11,
-      "priceUsd": "$232.00*",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-14500T&id=5889",
+      "priceUsd": "NA",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Qualcomm+Snapdragon+X+Elite+-+X1E-80-100&id=6110",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
@@ -7758,7 +7758,7 @@
     {
       "rank": 862,
       "name": "AMD Ryzen 7 6800H",
-      "score": 22692,
+      "score": 22693,
       "relativeScore": 11,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+6800H&id=4749",
@@ -7784,20 +7784,20 @@
     },
     {
       "rank": 865,
-      "name": "AMD Ryzen 5 7640HS",
-      "score": 22666,
-      "relativeScore": 11,
-      "priceUsd": "NA",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+5+7640HS&id=5594",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
-      "rank": 866,
       "name": "AMD Ryzen 5 240",
       "score": 22664,
       "relativeScore": 11,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+5+240&id=6615",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
+      "rank": 866,
+      "name": "AMD Ryzen 5 7640HS",
+      "score": 22664,
+      "relativeScore": 11,
+      "priceUsd": "NA",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+5+7640HS&id=5594",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
@@ -7830,7 +7830,7 @@
     {
       "rank": 870,
       "name": "AMD Ryzen 7 7435HS",
-      "score": 22599,
+      "score": 22595,
       "relativeScore": 11,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+7435HS&id=6067",
@@ -7874,20 +7874,20 @@
     },
     {
       "rank": 875,
-      "name": "Intel Core i5-13500T",
-      "score": 22450,
-      "relativeScore": 11,
-      "priceUsd": "$277.67*",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-13500T&id=5239",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
-      "rank": 876,
       "name": "Intel Xeon E5-2698 v4 @ 2.20GHz",
       "score": 22447,
       "relativeScore": 11,
       "priceUsd": "$908.70*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Xeon+E5-2698+v4+%40+2.20GHz&id=2806",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
+      "rank": 876,
+      "name": "Intel Core i5-13500T",
+      "score": 22446,
+      "relativeScore": 11,
+      "priceUsd": "$242.79",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-13500T&id=5239",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
@@ -7904,7 +7904,7 @@
       "name": "AMD Ryzen 7 3700X",
       "score": 22382,
       "relativeScore": 11,
-      "priceUsd": "$106.69",
+      "priceUsd": "$102.39",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+3700X&id=3485",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -7955,28 +7955,28 @@
     },
     {
       "rank": 884,
+      "name": "Intel Core i9-10900X @ 3.70GHz",
+      "score": 22274,
+      "relativeScore": 11,
+      "priceUsd": "$264.48",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-10900X+%40+3.70GHz&id=3633",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
+      "rank": 885,
       "name": "AMD Ryzen 7 6800HS",
-      "score": 22275,
+      "score": 22273,
       "relativeScore": 11,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+6800HS&id=4843",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 885,
-      "name": "Intel Core i9-10900X @ 3.70GHz",
-      "score": 22273,
-      "relativeScore": 11,
-      "priceUsd": "$291.88",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-10900X+%40+3.70GHz&id=3633",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
       "rank": 886,
       "name": "Intel Core i9-10900K @ 3.70GHz",
-      "score": 22230,
+      "score": 22231,
       "relativeScore": 11,
-      "priceUsd": "$590.46",
+      "priceUsd": "$599.00",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-10900K+%40+3.70GHz&id=3730",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -7992,7 +7992,7 @@
     {
       "rank": 888,
       "name": "AMD Ryzen 7 7735HS",
-      "score": 22165,
+      "score": 22164,
       "relativeScore": 11,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+7735HS&id=5138",
@@ -8082,7 +8082,7 @@
     {
       "rank": 898,
       "name": "AMD Ryzen 9 5900HX",
-      "score": 21986,
+      "score": 21984,
       "relativeScore": 11,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+9+5900HX&id=3903",
@@ -8109,7 +8109,7 @@
     {
       "rank": 901,
       "name": "Intel Core Ultra 5 135H",
-      "score": 21937,
+      "score": 21942,
       "relativeScore": 11,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+5+135H&id=5817",
@@ -8163,16 +8163,16 @@
     {
       "rank": 907,
       "name": "AMD Ryzen 5 5600X3D",
-      "score": 21881,
+      "score": 21883,
       "relativeScore": 11,
-      "priceUsd": "NA",
+      "priceUsd": "$219.99",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+5+5600X3D&id=5573",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
       "rank": 908,
       "name": "Intel Core i9-11980HK @ 2.60GHz",
-      "score": 21880,
+      "score": 21877,
       "relativeScore": 11,
       "priceUsd": "$583.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-11980HK+%40+2.60GHz&id=4355",
@@ -8190,9 +8190,9 @@
     {
       "rank": 910,
       "name": "Intel Core i9-10850K @ 3.60GHz",
-      "score": 21866,
+      "score": 21865,
       "relativeScore": 11,
-      "priceUsd": "$235.00",
+      "priceUsd": "$258.24",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-10850K+%40+3.60GHz&id=3824",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -8208,9 +8208,9 @@
     {
       "rank": 912,
       "name": "AMD Ryzen 5 5600X",
-      "score": 21824,
+      "score": 21823,
       "relativeScore": 11,
-      "priceUsd": "$133.99",
+      "priceUsd": "$126.99",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+5+5600X&id=3859",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -8264,7 +8264,7 @@
       "name": "Intel Xeon Gold 5218 @ 2.30GHz",
       "score": 21669,
       "relativeScore": 11,
-      "priceUsd": "$542.63",
+      "priceUsd": "$574.40",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Xeon+Gold+5218+%40+2.30GHz&id=3536",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -8316,7 +8316,7 @@
     {
       "rank": 924,
       "name": "Intel Xeon E5-2697A v4 @ 2.60GHz",
-      "score": 21545,
+      "score": 21541,
       "relativeScore": 10,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Xeon+E5-2697A+v4+%40+2.60GHz&id=2814",
@@ -8325,9 +8325,9 @@
     {
       "rank": 925,
       "name": "Intel Core i9-9900X @ 3.50GHz",
-      "score": 21535,
+      "score": 21516,
       "relativeScore": 10,
-      "priceUsd": "$239.50",
+      "priceUsd": "$223.43",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-9900X+%40+3.50GHz&id=3376",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -8345,7 +8345,7 @@
       "name": "AMD Ryzen 5 5600",
       "score": 21490,
       "relativeScore": 10,
-      "priceUsd": "$122.84",
+      "priceUsd": "$127.89",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+5+5600&id=4811",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -8370,7 +8370,7 @@
     {
       "rank": 930,
       "name": "Qualcomm Snapdragon X Plus X1P-64-100",
-      "score": 21436,
+      "score": 21443,
       "relativeScore": 10,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Qualcomm+Snapdragon+X+Plus+X1P-64-100&id=6063",
@@ -8396,20 +8396,20 @@
     },
     {
       "rank": 933,
-      "name": "AMD Ryzen 5 8500G",
-      "score": 21374,
-      "relativeScore": 10,
-      "priceUsd": "$146.99*",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+5+8500G&id=5841",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
-      "rank": 934,
       "name": "Intel Core i5-14401EF",
       "score": 21367,
       "relativeScore": 10,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-14401EF&id=7291",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
+      "rank": 934,
+      "name": "AMD Ryzen 5 8500G",
+      "score": 21363,
+      "relativeScore": 10,
+      "priceUsd": "$146.99*",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+5+8500G&id=5841",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
@@ -8424,7 +8424,7 @@
     {
       "rank": 936,
       "name": "Intel Xeon E5-2697 v4 @ 2.30GHz",
-      "score": 21341,
+      "score": 21342,
       "relativeScore": 10,
       "priceUsd": "$1,277.90*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Xeon+E5-2697+v4+%40+2.30GHz&id=2783",
@@ -8450,38 +8450,38 @@
     },
     {
       "rank": 939,
-      "name": "AMD Ryzen 7 6800HS Creator Edition",
-      "score": 21270,
-      "relativeScore": 10,
-      "priceUsd": "NA",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+6800HS+Creator+Edition&id=4935",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
-      "rank": 940,
       "name": "Intel Core i5-12600",
-      "score": 21269,
+      "score": 21271,
       "relativeScore": 10,
       "priceUsd": "$345.00*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-12600&id=4688",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 941,
-      "name": "Intel Core i7-12650H",
-      "score": 21250,
+      "rank": 940,
+      "name": "AMD Ryzen 7 6800HS Creator Edition",
+      "score": 21265,
       "relativeScore": 10,
-      "priceUsd": "$457.00*",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-12650H&id=4771",
+      "priceUsd": "NA",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+6800HS+Creator+Edition&id=4935",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
+      "rank": 941,
+      "name": "Intel Core i7-11700B @ 3.20GHz",
+      "score": 21253,
+      "relativeScore": 10,
+      "priceUsd": "NA",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-11700B+%40+3.20GHz&id=4601",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
       "rank": 942,
-      "name": "Intel Core i7-11700B @ 3.20GHz",
-      "score": 21250,
+      "name": "Intel Core i7-12650H",
+      "score": 21249,
       "relativeScore": 10,
-      "priceUsd": "NA",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-11700B+%40+3.20GHz&id=4601",
+      "priceUsd": "$457.00*",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-12650H&id=4771",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
@@ -8505,7 +8505,7 @@
     {
       "rank": 945,
       "name": "Intel Xeon E5-2696 v3 @ 2.30GHz",
-      "score": 21213,
+      "score": 21210,
       "relativeScore": 10,
       "priceUsd": "$546.99*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Xeon+E5-2696+v3+%40+2.30GHz&id=2526",
@@ -8531,15 +8531,6 @@
     },
     {
       "rank": 948,
-      "name": "Intel Core i7-12700T",
-      "score": 21151,
-      "relativeScore": 10,
-      "priceUsd": "$339.00*",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-12700T&id=4830",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
-      "rank": 949,
       "name": "Intel Xeon E-2378G @ 2.80GHz",
       "score": 21146,
       "relativeScore": 10,
@@ -8548,9 +8539,18 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
+      "rank": 949,
+      "name": "Intel Core i7-12700T",
+      "score": 21146,
+      "relativeScore": 10,
+      "priceUsd": "$339.00*",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-12700T&id=4830",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
       "rank": 950,
       "name": "AMD Ryzen 5 8500GE",
-      "score": 21105,
+      "score": 21103,
       "relativeScore": 10,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+5+8500GE&id=6246",
@@ -8595,7 +8595,7 @@
     {
       "rank": 955,
       "name": "AMD Ryzen 9 5900HS",
-      "score": 21000,
+      "score": 20997,
       "relativeScore": 10,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+9+5900HS&id=3905",
@@ -8613,7 +8613,7 @@
     {
       "rank": 957,
       "name": "Intel Core i5-13500H",
-      "score": 20908,
+      "score": 20909,
       "relativeScore": 10,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-13500H&id=5151",
@@ -8660,7 +8660,7 @@
       "name": "Intel Core i9-7900X @ 3.30GHz",
       "score": 20786,
       "relativeScore": 10,
-      "priceUsd": "$193.00",
+      "priceUsd": "$187.21",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-7900X+%40+3.30GHz&id=3035",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -8676,7 +8676,7 @@
     {
       "rank": 964,
       "name": "Intel Core i7-11700F @ 2.50GHz",
-      "score": 20748,
+      "score": 20749,
       "relativeScore": 10,
       "priceUsd": "$240.99*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-11700F+%40+2.50GHz&id=4264",
@@ -8693,24 +8693,15 @@
     },
     {
       "rank": 966,
-      "name": "AMD Ryzen 7 170",
-      "score": 20722,
-      "relativeScore": 10,
-      "priceUsd": "NA",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+170&id=7171",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
-      "rank": 967,
       "name": "AMD Ryzen 7 6800U",
-      "score": 20703,
+      "score": 20701,
       "relativeScore": 10,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+6800U&id=4923",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 968,
+      "rank": 967,
       "name": "Snapdragon X Elite - X1E80100 - Qualcomm Or",
       "score": 20697,
       "relativeScore": 10,
@@ -8719,7 +8710,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 969,
+      "rank": 968,
       "name": "Snapdragon X Elite - X1E84100 - Qualcomm Or",
       "score": 20677,
       "relativeScore": 10,
@@ -8728,7 +8719,7 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 970,
+      "rank": 969,
       "name": "Apple M4 8 Core",
       "score": 20671,
       "relativeScore": 10,
@@ -8737,12 +8728,21 @@
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
-      "rank": 971,
-      "name": "Snapdragon X2 Plus @ 4.03 GHz",
-      "score": 20666,
+      "rank": 970,
+      "name": "AMD Ryzen 7 170",
+      "score": 20659,
       "relativeScore": 10,
       "priceUsd": "NA",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Snapdragon+X2+Plus+%40+4.03+GHz&id=7424",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+170&id=7171",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
+      "rank": 971,
+      "name": "AMD Ryzen 9 6900HS Creator Edition",
+      "score": 20650,
+      "relativeScore": 10,
+      "priceUsd": "NA",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+9+6900HS+Creator+Edition&id=4961",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
@@ -8750,7 +8750,7 @@
       "name": "Intel Xeon Silver 4310T @ 2.30GHz",
       "score": 20641,
       "relativeScore": 10,
-      "priceUsd": "$1,498.95",
+      "priceUsd": "$1,325.99",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Xeon+Silver+4310T+%40+2.30GHz&id=4534",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -8775,7 +8775,7 @@
     {
       "rank": 975,
       "name": "Intel Core Ultra 7 365",
-      "score": 20624,
+      "score": 20622,
       "relativeScore": 10,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+Ultra+7+365&id=7078",
@@ -8783,19 +8783,19 @@
     },
     {
       "rank": 976,
-      "name": "AMD Ryzen 9 6900HS Creator Edition",
-      "score": 20612,
+      "name": "Snapdragon X2 Plus @ 4.03 GHz",
+      "score": 20618,
       "relativeScore": 10,
       "priceUsd": "NA",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+9+6900HS+Creator+Edition&id=4961",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Snapdragon+X2+Plus+%40+4.03+GHz&id=7424",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
       "rank": 977,
       "name": "Intel Core i7-11700 @ 2.50GHz",
-      "score": 20595,
+      "score": 20596,
       "relativeScore": 10,
-      "priceUsd": "$316.29",
+      "priceUsd": "$285.76",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-11700+%40+2.50GHz&id=3947",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -8813,7 +8813,7 @@
       "name": "Intel Core i9-9820X @ 3.30GHz",
       "score": 20565,
       "relativeScore": 10,
-      "priceUsd": "$139.35",
+      "priceUsd": "$180.39",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i9-9820X+%40+3.30GHz&id=3369",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
@@ -8847,7 +8847,7 @@
     {
       "rank": 983,
       "name": "AMD Ryzen 7 PRO 6850U",
-      "score": 20510,
+      "score": 20506,
       "relativeScore": 10,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+PRO+6850U&id=4826",
@@ -8865,7 +8865,7 @@
     {
       "rank": 985,
       "name": "AMD Ryzen 7 5800H",
-      "score": 20468,
+      "score": 20466,
       "relativeScore": 10,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+5800H&id=3907",
@@ -8910,7 +8910,7 @@
     {
       "rank": 990,
       "name": "Intel Xeon W-2150B @ 3.00GHz",
-      "score": 20416,
+      "score": 20409,
       "relativeScore": 10,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Xeon+W-2150B+%40+3.00GHz&id=3162",
@@ -8936,29 +8936,29 @@
     },
     {
       "rank": 993,
-      "name": "Intel Core i5-12490F",
-      "score": 20331,
+      "name": "Intel Core i5-12600H",
+      "score": 20340,
       "relativeScore": 10,
-      "priceUsd": "$147.99",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-12490F&id=4903",
+      "priceUsd": "$311.00*",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-12600H&id=4835",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
       "rank": 994,
+      "name": "Intel Core i5-12490F",
+      "score": 20331,
+      "relativeScore": 10,
+      "priceUsd": "$149.99",
+      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-12490F&id=4903",
+      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
+    },
+    {
+      "rank": 995,
       "name": "AMD Ryzen 5 PRO 5650G",
       "score": 20330,
       "relativeScore": 10,
       "priceUsd": "NA",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+5+PRO+5650G&id=4381",
-      "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
-    },
-    {
-      "rank": 995,
-      "name": "Intel Core i5-12600H",
-      "score": 20328,
-      "relativeScore": 10,
-      "priceUsd": "$311.00*",
-      "url": "https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-12600H&id=4835",
       "sourcePage": "https://www.cpubenchmark.net/high_end_cpus.html"
     },
     {
@@ -8982,7 +8982,7 @@
     {
       "rank": 998,
       "name": "AMD Ryzen 5 5500X3D",
-      "score": 20317,
+      "score": 20318,
       "relativeScore": 10,
       "priceUsd": "$224.49*",
       "url": "https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+5+5500X3D&id=6850",
