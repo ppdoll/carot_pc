@@ -2,14 +2,14 @@
   "kind": "gpu",
   "source": "PassMark",
   "chart": "high_end",
-  "capturedAt": "2026-09-28T09:33:56.550Z",
+  "capturedAt": "2026-10-05T10:13:00.749Z",
   "updatedAtText": null,
-  "itemCount": 757,
+  "itemCount": 758,
   "items": [
     {
       "rank": 1,
       "name": "GeForce RTX 5090 D",
-      "score": 42042,
+      "score": 42260,
       "relativeScore": 86,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+5090+D&id=5898",
@@ -18,7 +18,7 @@
     {
       "rank": 2,
       "name": "GeForce RTX 5090",
-      "score": 39021,
+      "score": 39007,
       "relativeScore": 80,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+5090&id=5725",
@@ -27,7 +27,7 @@
     {
       "rank": 3,
       "name": "GeForce RTX 4090",
-      "score": 38039,
+      "score": 38035,
       "relativeScore": 78,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+4090&id=4606",
@@ -36,7 +36,7 @@
     {
       "rank": 4,
       "name": "RTX PRO 6000 Blackwell Workstation Edition",
-      "score": 37620,
+      "score": 37608,
       "relativeScore": 77,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+PRO+6000+Blackwell+Workstation+Edition&id=6307",
@@ -45,7 +45,7 @@
     {
       "rank": 5,
       "name": "GeForce RTX 5080",
-      "score": 35633,
+      "score": 35629,
       "relativeScore": 73,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+5080&id=5721",
@@ -54,8 +54,8 @@
     {
       "rank": 6,
       "name": "GeForce RTX 4080",
-      "score": 34438,
-      "relativeScore": 71,
+      "score": 34437,
+      "relativeScore": 70,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+4080&id=4622",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -63,7 +63,7 @@
     {
       "rank": 7,
       "name": "GeForce RTX 4080 SUPER",
-      "score": 34206,
+      "score": 34208,
       "relativeScore": 70,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+4080+SUPER&id=4984",
@@ -73,27 +73,27 @@
       "rank": 8,
       "name": "GeForce RTX 5090 D v2",
       "score": 33472,
-      "relativeScore": 69,
+      "relativeScore": 68,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+5090+D+v2&id=7099",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
       "rank": 9,
+      "name": "RTX PRO 4500 Blackwell",
+      "score": 33405,
+      "relativeScore": 68,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+PRO+4500+Blackwell&id=6820",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 10,
       "name": "nVidia L40-48Q",
       "score": 33270,
       "relativeScore": 68,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=nVidia+L40-48Q&id=7645",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 10,
-      "name": "RTX PRO 4500 Blackwell",
-      "score": 33246,
-      "relativeScore": 68,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+PRO+4500+Blackwell&id=6820",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
@@ -108,8 +108,8 @@
     {
       "rank": 12,
       "name": "RTX PRO 5000 Blackwell",
-      "score": 32459,
-      "relativeScore": 67,
+      "score": 32550,
+      "relativeScore": 66,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+PRO+5000+Blackwell&id=6999",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -118,7 +118,7 @@
       "rank": 13,
       "name": "RTX PRO 6000 Blackwell Max-Q Workstation Edition",
       "score": 32438,
-      "relativeScore": 67,
+      "relativeScore": 66,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+PRO+6000+Blackwell+Max-Q+Workstation+Edition&id=6527",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -126,7 +126,7 @@
     {
       "rank": 14,
       "name": "GeForce RTX 5070 Ti",
-      "score": 32332,
+      "score": 32329,
       "relativeScore": 66,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+5070+Ti&id=5878",
@@ -136,7 +136,7 @@
       "rank": 15,
       "name": "Insignia USB3.0 to dual HDMI Adapter",
       "score": 31963,
-      "relativeScore": 66,
+      "relativeScore": 65,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Insignia+USB3.0+to+dual+HDMI+Adapter&id=5664",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -144,7 +144,7 @@
     {
       "rank": 16,
       "name": "GeForce RTX 4070 Ti SUPER",
-      "score": 31840,
+      "score": 31841,
       "relativeScore": 65,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+4070+Ti+SUPER&id=4980",
@@ -153,8 +153,8 @@
     {
       "rank": 17,
       "name": "GeForce RTX 4070 Ti",
-      "score": 31507,
-      "relativeScore": 65,
+      "score": 31510,
+      "relativeScore": 64,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+4070+Ti&id=4699",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -162,8 +162,8 @@
     {
       "rank": 18,
       "name": "Radeon RX 7900 XTX",
-      "score": 31462,
-      "relativeScore": 65,
+      "score": 31470,
+      "relativeScore": 64,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+7900+XTX&id=4644",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -172,7 +172,7 @@
       "rank": 19,
       "name": "RTX PRO 6000 Blackwell Server Edition",
       "score": 31099,
-      "relativeScore": 64,
+      "relativeScore": 63,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+PRO+6000+Blackwell+Server+Edition&id=6962",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -180,8 +180,8 @@
     {
       "rank": 20,
       "name": "RTX 5000 Ada Generation",
-      "score": 30950,
-      "relativeScore": 64,
+      "score": 30988,
+      "relativeScore": 63,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+5000+Ada+Generation&id=4935",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -190,7 +190,7 @@
       "rank": 21,
       "name": "GeForce RTX 4090 D",
       "score": 30560,
-      "relativeScore": 63,
+      "relativeScore": 62,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+4090+D&id=5012",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -198,7 +198,7 @@
     {
       "rank": 22,
       "name": "GeForce RTX 4070 SUPER",
-      "score": 29939,
+      "score": 29940,
       "relativeScore": 61,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+4070+SUPER&id=4973",
@@ -216,7 +216,7 @@
     {
       "rank": 24,
       "name": "GeForce RTX 3090 Ti",
-      "score": 29205,
+      "score": 29204,
       "relativeScore": 60,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+3090+Ti&id=4524",
@@ -225,59 +225,50 @@
     {
       "rank": 25,
       "name": "Radeon RX 7900 XT",
-      "score": 29124,
-      "relativeScore": 60,
+      "score": 29117,
+      "relativeScore": 59,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+7900+XT&id=4646",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
       "rank": 26,
-      "name": "TURZX Display",
-      "score": 29111,
-      "relativeScore": 60,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=TURZX+Display&id=6688",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 27,
       "name": "RTX 6000 Ada Generation",
-      "score": 28683,
+      "score": 28716,
       "relativeScore": 59,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+6000+Ada+Generation&id=4768",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 28,
+      "rank": 27,
       "name": "GeForce RTX 5070",
-      "score": 28654,
-      "relativeScore": 59,
+      "score": 28663,
+      "relativeScore": 58,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+5070&id=5940",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 29,
+      "rank": 28,
       "name": "GeForce RTX 5090 Laptop GPU",
-      "score": 28367,
+      "score": 28391,
       "relativeScore": 58,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+5090+Laptop+GPU&id=5754",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 30,
+      "rank": 29,
       "name": "Radeon RX 6950 XT",
-      "score": 28059,
-      "relativeScore": 58,
+      "score": 28065,
+      "relativeScore": 57,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+6950+XT&id=4540",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 31,
+      "rank": 30,
       "name": "RTX 4500 Ada Generation",
       "score": 28026,
       "relativeScore": 57,
@@ -286,34 +277,34 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 32,
+      "rank": 31,
       "name": "RTX PRO 4000 Blackwell",
-      "score": 27986,
+      "score": 28006,
       "relativeScore": 57,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+PRO+4000+Blackwell&id=7095",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 33,
+      "rank": 32,
       "name": "Radeon PRO W7900",
       "score": 27689,
-      "relativeScore": 57,
+      "relativeScore": 56,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+PRO+W7900&id=4833",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 34,
+      "rank": 33,
       "name": "Radeon RX 7900 GRE",
-      "score": 27453,
+      "score": 27462,
       "relativeScore": 56,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+7900+GRE&id=4906",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 35,
+      "rank": 34,
       "name": "nVidia L40",
       "score": 27355,
       "relativeScore": 56,
@@ -322,25 +313,25 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 36,
+      "rank": 35,
       "name": "Radeon AI PRO R9700",
-      "score": 27283,
+      "score": 27315,
       "relativeScore": 56,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+AI+PRO+R9700&id=6850",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 37,
+      "rank": 36,
       "name": "GeForce RTX 4090 Laptop GPU",
-      "score": 27029,
+      "score": 27032,
       "relativeScore": 55,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+4090+Laptop+GPU&id=4737",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 38,
+      "rank": 37,
       "name": "Radeon PRO W7800",
       "score": 26997,
       "relativeScore": 55,
@@ -349,43 +340,43 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 39,
+      "rank": 38,
       "name": "Radeon RX 9070 XT",
-      "score": 26912,
+      "score": 26918,
       "relativeScore": 55,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+9070+XT&id=5956",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 40,
+      "rank": 39,
       "name": "GeForce RTX 4070",
-      "score": 26855,
+      "score": 26854,
       "relativeScore": 55,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+4070&id=4795",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 41,
+      "rank": 40,
       "name": "GeForce RTX 3080 Ti",
-      "score": 26741,
+      "score": 26739,
       "relativeScore": 55,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+3080+Ti&id=4409",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 42,
+      "rank": 41,
       "name": "Radeon RX 6900 XT",
-      "score": 26636,
-      "relativeScore": 55,
+      "score": 26638,
+      "relativeScore": 54,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+6900+XT&id=4322",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 43,
+      "rank": 42,
       "name": "GeForce RTX 3080 12GB",
       "score": 26560,
       "relativeScore": 54,
@@ -394,7 +385,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 44,
+      "rank": 43,
       "name": "Radeon Pro V620",
       "score": 26519,
       "relativeScore": 54,
@@ -403,34 +394,52 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 45,
+      "rank": 44,
       "name": "GeForce RTX 3090",
-      "score": 26474,
+      "score": 26473,
       "relativeScore": 54,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+3090&id=4284",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 46,
+      "rank": 45,
       "name": "GeForce RTX 5080 Laptop GPU",
-      "score": 26287,
+      "score": 26302,
       "relativeScore": 54,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+5080+Laptop+GPU&id=6099",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
+      "rank": 46,
+      "name": "RTX PRO 5000 72GB Blackwell",
+      "score": 25770,
+      "relativeScore": 53,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+PRO+5000+72GB+Blackwell&id=7823",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
       "rank": 47,
+      "name": "TURZX Display",
+      "score": 25497,
+      "relativeScore": 52,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=TURZX+Display&id=6688",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 48,
       "name": "Radeon RX 9070",
-      "score": 25371,
+      "score": 25386,
       "relativeScore": 52,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+9070&id=5958",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 48,
+      "rank": 49,
       "name": "AicUsbDisplay Device",
       "score": 25109,
       "relativeScore": 51,
@@ -439,16 +448,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 49,
+      "rank": 50,
       "name": "Radeon RX 6800 XT",
-      "score": 25102,
+      "score": 25105,
       "relativeScore": 51,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+6800+XT&id=4312",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 50,
+      "rank": 51,
       "name": "RTX 5880 Ada Generation",
       "score": 25096,
       "relativeScore": 51,
@@ -457,55 +466,46 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 51,
+      "rank": 52,
       "name": "GeForce RTX 3080",
-      "score": 24975,
+      "score": 24973,
       "relativeScore": 51,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+3080&id=4282",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 52,
+      "rank": 53,
       "name": "GeForce RTX 4080 Laptop GPU",
-      "score": 24745,
-      "relativeScore": 51,
+      "score": 24756,
+      "relativeScore": 50,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+4080+Laptop+GPU&id=4736",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 53,
+      "rank": 54,
       "name": "RTX PRO 5000 Blackwell Generation Laptop GPU",
-      "score": 24539,
+      "score": 24540,
       "relativeScore": 50,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+PRO+5000+Blackwell+Generation+Laptop+GPU&id=6785",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 54,
+      "rank": 55,
       "name": "Radeon RX 7800 XT",
-      "score": 24472,
+      "score": 24467,
       "relativeScore": 50,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+7800+XT&id=4917",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 55,
-      "name": "RTX PRO 5000 72GB Blackwell",
-      "score": 24362,
-      "relativeScore": 50,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+PRO+5000+72GB+Blackwell&id=7823",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
       "rank": 56,
       "name": "L20-8Q",
       "score": 24277,
-      "relativeScore": 50,
+      "relativeScore": 49,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=L20-8Q&id=8438",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -513,7 +513,7 @@
     {
       "rank": 57,
       "name": "RTX 4000 Ada Generation",
-      "score": 23646,
+      "score": 23644,
       "relativeScore": 48,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+4000+Ada+Generation&id=4942",
@@ -531,7 +531,7 @@
     {
       "rank": 59,
       "name": "Radeon RX 9070 GRE",
-      "score": 23512,
+      "score": 23471,
       "relativeScore": 48,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+9070+GRE&id=6421",
@@ -541,7 +541,7 @@
       "rank": 60,
       "name": "RTX6000-Ada-6Q",
       "score": 23236,
-      "relativeScore": 48,
+      "relativeScore": 47,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX6000-Ada-6Q&id=7554",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -549,7 +549,7 @@
     {
       "rank": 61,
       "name": "RTX 5000 Ada Generation Laptop GPU",
-      "score": 23188,
+      "score": 23209,
       "relativeScore": 47,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+5000+Ada+Generation+Laptop+GPU&id=4807",
@@ -585,7 +585,7 @@
     {
       "rank": 65,
       "name": "RTX PRO 4000 Blackwell Generation Laptop GPU",
-      "score": 22880,
+      "score": 22886,
       "relativeScore": 47,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+PRO+4000+Blackwell+Generation+Laptop+GPU&id=6530",
@@ -594,7 +594,7 @@
     {
       "rank": 66,
       "name": "RTX A5000",
-      "score": 22842,
+      "score": 22859,
       "relativeScore": 47,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+A5000&id=4390",
@@ -604,7 +604,7 @@
       "rank": 67,
       "name": "Radeon PRO W7700",
       "score": 22826,
-      "relativeScore": 47,
+      "relativeScore": 46,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+PRO+W7700&id=4968",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -612,8 +612,8 @@
     {
       "rank": 68,
       "name": "Radeon RX 7700 XT",
-      "score": 22747,
-      "relativeScore": 47,
+      "score": 22759,
+      "relativeScore": 46,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+7700+XT&id=4919",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -621,7 +621,7 @@
     {
       "rank": 69,
       "name": "GeForce RTX 5060 Ti 16GB",
-      "score": 22609,
+      "score": 22607,
       "relativeScore": 46,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+5060+Ti+16GB&id=6160",
@@ -630,7 +630,7 @@
     {
       "rank": 70,
       "name": "RTX A6000",
-      "score": 22605,
+      "score": 22606,
       "relativeScore": 46,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+A6000&id=4337",
@@ -639,7 +639,7 @@
     {
       "rank": 71,
       "name": "GeForce RTX 4060 Ti",
-      "score": 22593,
+      "score": 22596,
       "relativeScore": 46,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+4060+Ti&id=4827",
@@ -648,7 +648,7 @@
     {
       "rank": 72,
       "name": "GeForce RTX 4060 Ti 16GB",
-      "score": 22545,
+      "score": 22546,
       "relativeScore": 46,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+4060+Ti+16GB&id=4898",
@@ -657,7 +657,7 @@
     {
       "rank": 73,
       "name": "GeForce RTX 5070 Ti Laptop GPU",
-      "score": 22474,
+      "score": 22463,
       "relativeScore": 46,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+5070+Ti+Laptop+GPU&id=6216",
@@ -675,7 +675,7 @@
     {
       "rank": 75,
       "name": "GeForce RTX 3070",
-      "score": 22071,
+      "score": 22068,
       "relativeScore": 45,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+3070&id=4283",
@@ -684,7 +684,7 @@
     {
       "rank": 76,
       "name": "Radeon RX 6800",
-      "score": 22058,
+      "score": 22059,
       "relativeScore": 45,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+6800&id=4314",
@@ -702,7 +702,7 @@
     {
       "rank": 78,
       "name": "RTX 4000 Ada Generation Laptop GPU",
-      "score": 21923,
+      "score": 21952,
       "relativeScore": 45,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+4000+Ada+Generation+Laptop+GPU&id=4819",
@@ -711,7 +711,7 @@
     {
       "rank": 79,
       "name": "GeForce RTX 5060 Ti 8GB",
-      "score": 21868,
+      "score": 21889,
       "relativeScore": 45,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+5060+Ti+8GB&id=6441",
@@ -729,7 +729,7 @@
     {
       "rank": 81,
       "name": "GeForce RTX 2080 Ti",
-      "score": 21411,
+      "score": 21407,
       "relativeScore": 44,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+2080+Ti&id=3991",
@@ -746,24 +746,6 @@
     },
     {
       "rank": 83,
-      "name": "L40S",
-      "score": 21099,
-      "relativeScore": 43,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=L40S&id=5017",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 84,
-      "name": "RTX PRO 3000 Blackwell Generation Laptop GPU",
-      "score": 21028,
-      "relativeScore": 43,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+PRO+3000+Blackwell+Generation+Laptop+GPU&id=6377",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 85,
       "name": "Radeon 610M Ryzen 7 7840HX",
       "score": 20904,
       "relativeScore": 43,
@@ -772,7 +754,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 86,
+      "rank": 84,
+      "name": "RTX PRO 3000 Blackwell Generation Laptop GPU",
+      "score": 20897,
+      "relativeScore": 42,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+PRO+3000+Blackwell+Generation+Laptop+GPU&id=6377",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 85,
       "name": "Net Control 2 Video Hook Driver VHM",
       "score": 20785,
       "relativeScore": 42,
@@ -781,7 +772,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 87,
+      "rank": 86,
       "name": "Radeon RX 6750 XT",
       "score": 20695,
       "relativeScore": 42,
@@ -790,25 +781,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 88,
-      "name": "Radeon RX 7700",
-      "score": 20641,
-      "relativeScore": 42,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+7700&id=7650",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 89,
+      "rank": 87,
       "name": "GeForce RTX 5060",
-      "score": 20622,
+      "score": 20625,
       "relativeScore": 42,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+5060&id=5602",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 90,
+      "rank": 88,
       "name": "RTX 4000 SFF Ada Generation",
       "score": 20605,
       "relativeScore": 42,
@@ -817,57 +799,75 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 91,
+      "rank": 89,
       "name": "RTX A4500",
-      "score": 20598,
+      "score": 20596,
       "relativeScore": 42,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+A4500&id=4514",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 92,
+      "rank": 90,
       "name": "Radeon RX 6750 GRE 12GB",
       "score": 20410,
-      "relativeScore": 42,
+      "relativeScore": 41,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+6750+GRE+12GB&id=4990",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 93,
+      "rank": 91,
       "name": "RTX PRO 2000 Blackwell",
-      "score": 20277,
+      "score": 20292,
       "relativeScore": 41,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+PRO+2000+Blackwell&id=6766",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 94,
+      "rank": 92,
+      "name": "Radeon RX 7700",
+      "score": 20282,
+      "relativeScore": 41,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+7700&id=7650",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 93,
       "name": "GeForce RTX 3060 Ti",
-      "score": 20217,
+      "score": 20216,
       "relativeScore": 41,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+3060+Ti&id=4318",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 95,
+      "rank": 94,
       "name": "Radeon PRO W6800",
-      "score": 20173,
+      "score": 20145,
       "relativeScore": 41,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+PRO+W6800&id=4411",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 96,
+      "rank": 95,
       "name": "Radeon RX 9060 XT 16GB",
-      "score": 20122,
+      "score": 20135,
       "relativeScore": 41,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+9060+XT+16GB&id=5957",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 96,
+      "name": "L40S",
+      "score": 20076,
+      "relativeScore": 41,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=L40S&id=5017",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
@@ -882,7 +882,7 @@
     {
       "rank": 98,
       "name": "Radeon RX 6700 XT",
-      "score": 19719,
+      "score": 19716,
       "relativeScore": 40,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+6700+XT&id=4369",
@@ -891,7 +891,7 @@
     {
       "rank": 99,
       "name": "Radeon RX 9060 XT 8GB",
-      "score": 19700,
+      "score": 19692,
       "relativeScore": 40,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+9060+XT+8GB&id=6575",
@@ -900,7 +900,7 @@
     {
       "rank": 100,
       "name": "RTX 3500 Ada Generation Laptop GPU",
-      "score": 19644,
+      "score": 19637,
       "relativeScore": 40,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+3500+Ada+Generation+Laptop+GPU&id=4800",
@@ -918,7 +918,7 @@
     {
       "rank": 102,
       "name": "GeForce RTX 4060",
-      "score": 19485,
+      "score": 19484,
       "relativeScore": 40,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+4060&id=4850",
@@ -926,15 +926,6 @@
     },
     {
       "rank": 103,
-      "name": "GeForce RTX 4070 Laptop GPU",
-      "score": 19467,
-      "relativeScore": 40,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+4070+Laptop+GPU&id=4756",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 104,
       "name": "SMI USB Display",
       "score": 19462,
       "relativeScore": 40,
@@ -943,10 +934,19 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
+      "rank": 104,
+      "name": "GeForce RTX 4070 Laptop GPU",
+      "score": 19461,
+      "relativeScore": 40,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+4070+Laptop+GPU&id=4756",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
       "rank": 105,
       "name": "GeForce RTX 2080 SUPER",
-      "score": 19392,
-      "relativeScore": 40,
+      "score": 19389,
+      "relativeScore": 39,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+2080+SUPER&id=4123",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -955,7 +955,7 @@
       "rank": 106,
       "name": "TITAN V",
       "score": 19347,
-      "relativeScore": 40,
+      "relativeScore": 39,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=TITAN+V&id=3859",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -963,7 +963,7 @@
     {
       "rank": 107,
       "name": "RTX A4000",
-      "score": 19331,
+      "score": 19321,
       "relativeScore": 39,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+A4000&id=4394",
@@ -972,7 +972,7 @@
     {
       "rank": 108,
       "name": "GeForce RTX 5070 Laptop GPU",
-      "score": 19111,
+      "score": 19122,
       "relativeScore": 39,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+5070+Laptop+GPU&id=6260",
@@ -991,7 +991,7 @@
       "rank": 110,
       "name": "Radeon RX 6750 GRE 10GB",
       "score": 18941,
-      "relativeScore": 39,
+      "relativeScore": 38,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+6750+GRE+10GB&id=5041",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -1000,7 +1000,7 @@
       "rank": 111,
       "name": "Radeon 8065S",
       "score": 18919,
-      "relativeScore": 39,
+      "relativeScore": 38,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+8065S&id=8649",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -1008,7 +1008,7 @@
     {
       "rank": 112,
       "name": "Radeon RX 6700",
-      "score": 18852,
+      "score": 18857,
       "relativeScore": 38,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+6700&id=4564",
@@ -1017,7 +1017,7 @@
     {
       "rank": 113,
       "name": "GeForce RTX 3080 Ti Laptop GPU",
-      "score": 18777,
+      "score": 18786,
       "relativeScore": 38,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+3080+Ti+Laptop+GPU&id=4491",
@@ -1026,7 +1026,7 @@
     {
       "rank": 114,
       "name": "NVIDIA TITAN Xp",
-      "score": 18754,
+      "score": 18747,
       "relativeScore": 38,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=NVIDIA+TITAN+Xp&id=3728",
@@ -1034,24 +1034,33 @@
     },
     {
       "rank": 115,
+      "name": "Intel Arc Pro B70",
+      "score": 18699,
+      "relativeScore": 38,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Intel+Arc+Pro+B70&id=8599",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 116,
       "name": "GeForce GTX 1080 Ti",
-      "score": 18600,
+      "score": 18598,
       "relativeScore": 38,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+1080+Ti&id=3699",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 116,
+      "rank": 117,
       "name": "GeForce RTX 2080",
-      "score": 18574,
+      "score": 18572,
       "relativeScore": 38,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+2080&id=3989",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 117,
+      "rank": 118,
       "name": "Quadro GV100",
       "score": 18546,
       "relativeScore": 38,
@@ -1060,21 +1069,12 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 118,
+      "rank": 119,
       "name": "TITAN Xp COLLECTORS EDITION",
       "score": 18527,
       "relativeScore": 38,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=TITAN+Xp+COLLECTORS+EDITION&id=3863",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 119,
-      "name": "Intel Arc Pro B70",
-      "score": 18503,
-      "relativeScore": 38,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Intel+Arc+Pro+B70&id=8599",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
@@ -1089,7 +1089,7 @@
     {
       "rank": 121,
       "name": "GeForce RTX 2070 SUPER",
-      "score": 18122,
+      "score": 18123,
       "relativeScore": 37,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+2070+SUPER&id=4116",
@@ -1098,7 +1098,7 @@
     {
       "rank": 122,
       "name": "Radeon 8060S",
-      "score": 18060,
+      "score": 18057,
       "relativeScore": 37,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+8060S&id=5327",
@@ -1108,7 +1108,7 @@
       "rank": 123,
       "name": "Radeon RX 7650 GRE",
       "score": 17895,
-      "relativeScore": 37,
+      "relativeScore": 36,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+7650+GRE&id=6308",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -1116,7 +1116,7 @@
     {
       "rank": 124,
       "name": "Quadro RTX 6000",
-      "score": 17730,
+      "score": 17753,
       "relativeScore": 36,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Quadro+RTX+6000&id=4015",
@@ -1134,7 +1134,7 @@
     {
       "rank": 126,
       "name": "Radeon RX 9060",
-      "score": 17569,
+      "score": 17648,
       "relativeScore": 36,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+9060&id=7294",
@@ -1153,7 +1153,7 @@
       "rank": 128,
       "name": "Radeon RX 6850M XT",
       "score": 17470,
-      "relativeScore": 36,
+      "relativeScore": 35,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+6850M+XT&id=4574",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -1162,7 +1162,7 @@
       "rank": 129,
       "name": "Radeon Pro W6900X",
       "score": 17413,
-      "relativeScore": 36,
+      "relativeScore": 35,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+Pro+W6900X&id=6001",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -1170,7 +1170,7 @@
     {
       "rank": 130,
       "name": "Radeon RX 7600 XT",
-      "score": 17344,
+      "score": 17349,
       "relativeScore": 35,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+7600+XT&id=4982",
@@ -1179,7 +1179,7 @@
     {
       "rank": 131,
       "name": "GeForce RTX 4060 Laptop GPU",
-      "score": 17332,
+      "score": 17327,
       "relativeScore": 35,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+4060+Laptop+GPU&id=4752",
@@ -1188,7 +1188,7 @@
     {
       "rank": 132,
       "name": "RTX A5500 Laptop GPU",
-      "score": 17306,
+      "score": 17289,
       "relativeScore": 35,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+A5500+Laptop+GPU&id=4562",
@@ -1197,7 +1197,7 @@
     {
       "rank": 133,
       "name": "GeForce RTX 3070 Ti Laptop GPU",
-      "score": 17257,
+      "score": 17248,
       "relativeScore": 35,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+3070+Ti+Laptop+GPU&id=4497",
@@ -1234,7 +1234,7 @@
       "rank": 137,
       "name": "TITAN V CEO Edition",
       "score": 16988,
-      "relativeScore": 35,
+      "relativeScore": 34,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=TITAN+V+CEO+Edition&id=4005",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -1242,8 +1242,8 @@
     {
       "rank": 138,
       "name": "RTX 2000 Ada Generation",
-      "score": 16935,
-      "relativeScore": 35,
+      "score": 16920,
+      "relativeScore": 34,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+2000+Ada+Generation&id=5014",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -1251,7 +1251,7 @@
     {
       "rank": 139,
       "name": "GeForce RTX 3060",
-      "score": 16881,
+      "score": 16886,
       "relativeScore": 34,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+3060&id=6498",
@@ -1269,7 +1269,7 @@
     {
       "rank": 141,
       "name": "RTX A4500 Laptop GPU",
-      "score": 16816,
+      "score": 16784,
       "relativeScore": 34,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+A4500+Laptop+GPU&id=4565",
@@ -1277,6 +1277,15 @@
     },
     {
       "rank": 142,
+      "name": "GeForce RTX 5050",
+      "score": 16769,
+      "relativeScore": 34,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+5050&id=6668",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 143,
       "name": "RTX A4000H",
       "score": 16768,
       "relativeScore": 34,
@@ -1285,18 +1294,9 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 143,
-      "name": "GeForce RTX 5050",
-      "score": 16760,
-      "relativeScore": 34,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+5050&id=6668",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
       "rank": 144,
       "name": "GeForce RTX 5060 Laptop GPU",
-      "score": 16755,
+      "score": 16764,
       "relativeScore": 34,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+5060+Laptop+GPU&id=6330",
@@ -1305,7 +1305,7 @@
     {
       "rank": 145,
       "name": "GeForce RTX 3060 12GB",
-      "score": 16705,
+      "score": 16702,
       "relativeScore": 34,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+3060+12GB&id=4345",
@@ -1323,7 +1323,7 @@
     {
       "rank": 147,
       "name": "Radeon RX 5700 XT 50th Anniversary",
-      "score": 16534,
+      "score": 16540,
       "relativeScore": 34,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+5700+XT+50th+Anniversary&id=4114",
@@ -1331,36 +1331,36 @@
     },
     {
       "rank": 148,
+      "name": "RTX PRO 2000 Blackwell Generation Laptop GPU",
+      "score": 16484,
+      "relativeScore": 33,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+PRO+2000+Blackwell+Generation+Laptop+GPU&id=6259",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 149,
       "name": "Radeon PRO W7600",
       "score": 16473,
-      "relativeScore": 34,
+      "relativeScore": 33,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+PRO+W7600&id=4889",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 149,
+      "rank": 150,
       "name": "GeForce RTX 2060 SUPER",
-      "score": 16455,
-      "relativeScore": 34,
+      "score": 16457,
+      "relativeScore": 33,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+2060+SUPER&id=4117",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 150,
-      "name": "AnyViewerIddDriver Device",
-      "score": 16453,
-      "relativeScore": 34,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=AnyViewerIddDriver+Device&id=8398",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
       "rank": 151,
       "name": "Radeon 8050S",
-      "score": 16451,
-      "relativeScore": 34,
+      "score": 16448,
+      "relativeScore": 33,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+8050S&id=5322",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -1369,7 +1369,7 @@
       "rank": 152,
       "name": "Radeon RX 7600",
       "score": 16446,
-      "relativeScore": 34,
+      "relativeScore": 33,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+7600&id=4832",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -1377,32 +1377,23 @@
     {
       "rank": 153,
       "name": "Radeon RX 6600 XT",
-      "score": 16440,
-      "relativeScore": 34,
+      "score": 16443,
+      "relativeScore": 33,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+6600+XT&id=4444",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
       "rank": 154,
-      "name": "RTX PRO 2000 Blackwell Generation Laptop GPU",
-      "score": 16440,
-      "relativeScore": 34,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+PRO+2000+Blackwell+Generation+Laptop+GPU&id=6259",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 155,
       "name": "RTX A5000 Laptop GPU",
-      "score": 16394,
+      "score": 16397,
       "relativeScore": 33,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+A5000+Laptop+GPU&id=4416",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 156,
+      "rank": 155,
       "name": "RTX PRO 2000 Blackwell Embedded GPU",
       "score": 16242,
       "relativeScore": 33,
@@ -1411,25 +1402,25 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 157,
+      "rank": 156,
       "name": "Radeon VII",
-      "score": 16179,
+      "score": 16180,
       "relativeScore": 33,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+VII&id=4050",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 158,
+      "rank": 157,
       "name": "Intel Arc B580",
-      "score": 16085,
+      "score": 16088,
       "relativeScore": 33,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Intel+Arc+B580&id=5306",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 159,
+      "rank": 158,
       "name": "Radeon RX 6650M XT",
       "score": 16081,
       "relativeScore": 33,
@@ -1438,43 +1429,43 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 160,
+      "rank": 159,
       "name": "GeForce RTX 2070",
-      "score": 16053,
+      "score": 16051,
       "relativeScore": 33,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+2070&id=4001",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
+      "rank": 160,
+      "name": "GeForce RTX 3080 Laptop GPU",
+      "score": 16030,
+      "relativeScore": 32,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+3080+Laptop+GPU&id=4332",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
       "rank": 161,
       "name": "Radeon RX 5700 XT",
-      "score": 16032,
-      "relativeScore": 33,
+      "score": 16029,
+      "relativeScore": 32,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+5700+XT&id=4111",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
       "rank": 162,
-      "name": "GeForce RTX 3080 Laptop GPU",
-      "score": 16029,
-      "relativeScore": 33,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+3080+Laptop+GPU&id=4332",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 163,
       "name": "RTX 3000 Ada Generation Laptop GPU",
       "score": 16012,
-      "relativeScore": 33,
+      "relativeScore": 32,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+3000+Ada+Generation+Laptop+GPU&id=4930",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 164,
+      "rank": 163,
       "name": "RTX Spark N1X",
       "score": 15927,
       "relativeScore": 32,
@@ -1483,9 +1474,18 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
+      "rank": 164,
+      "name": "AnyViewerIddDriver Device",
+      "score": 15911,
+      "relativeScore": 32,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=AnyViewerIddDriver+Device&id=8398",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
       "rank": 165,
       "name": "GeForce RTX 2060 12GB",
-      "score": 15915,
+      "score": 15909,
       "relativeScore": 32,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+2060+12GB&id=4602",
@@ -1512,7 +1512,7 @@
     {
       "rank": 168,
       "name": "GeForce GTX 1080",
-      "score": 15608,
+      "score": 15609,
       "relativeScore": 32,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+1080&id=3502",
@@ -1530,7 +1530,7 @@
     {
       "rank": 170,
       "name": "Radeon RX 7600S",
-      "score": 15583,
+      "score": 15556,
       "relativeScore": 32,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+7600S&id=4835",
@@ -1538,20 +1538,20 @@
     },
     {
       "rank": 171,
-      "name": "Radeon RX 7700S",
-      "score": 15466,
+      "name": "RTX 2000E Ada Generation",
+      "score": 15451,
       "relativeScore": 31,
       "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+7700S&id=4887",
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+2000E+Ada+Generation&id=5597",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
       "rank": 172,
-      "name": "RTX 2000E Ada Generation",
-      "score": 15441,
+      "name": "Radeon RX 7700S",
+      "score": 15447,
       "relativeScore": 31,
       "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+2000E+Ada+Generation&id=5597",
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+7700S&id=4887",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
@@ -1566,7 +1566,7 @@
     {
       "rank": 174,
       "name": "Quadro RTX 5000",
-      "score": 15288,
+      "score": 15284,
       "relativeScore": 31,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Quadro+RTX+5000&id=4040",
@@ -1593,7 +1593,7 @@
     {
       "rank": 177,
       "name": "GeForce RTX 3060 8GB",
-      "score": 15203,
+      "score": 15210,
       "relativeScore": 31,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+3060+8GB&id=4966",
@@ -1620,8 +1620,8 @@
     {
       "rank": 180,
       "name": "Radeon RX 6600",
-      "score": 15044,
-      "relativeScore": 31,
+      "score": 15042,
+      "relativeScore": 30,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+6600&id=4465",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -1630,7 +1630,7 @@
       "rank": 181,
       "name": "Radeon Pro V620 MxGPU",
       "score": 15016,
-      "relativeScore": 31,
+      "relativeScore": 30,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+Pro+V620+MxGPU&id=5078",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -1639,7 +1639,7 @@
       "rank": 182,
       "name": "GeForce RTX 2080 (Mobile)",
       "score": 15014,
-      "relativeScore": 31,
+      "relativeScore": 30,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+2080+%28Mobile%29&id=4084",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -1647,8 +1647,8 @@
     {
       "rank": 183,
       "name": "GeForce RTX 3070 Laptop GPU",
-      "score": 15005,
-      "relativeScore": 31,
+      "score": 15004,
+      "relativeScore": 30,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+3070+Laptop+GPU&id=4331",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -1656,7 +1656,7 @@
     {
       "rank": 184,
       "name": "Radeon RX 6700S",
-      "score": 14969,
+      "score": 14970,
       "relativeScore": 30,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+6700S&id=4510",
@@ -1665,7 +1665,7 @@
     {
       "rank": 185,
       "name": "Radeon PRO W6600",
-      "score": 14956,
+      "score": 14955,
       "relativeScore": 30,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+PRO+W6600&id=4445",
@@ -1683,7 +1683,7 @@
     {
       "rank": 187,
       "name": "Quadro RTX 4000",
-      "score": 14843,
+      "score": 14844,
       "relativeScore": 30,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Quadro+RTX+4000&id=4053",
@@ -1701,7 +1701,7 @@
     {
       "rank": 189,
       "name": "RTX 2000 Ada Generation Laptop GPU",
-      "score": 14817,
+      "score": 14824,
       "relativeScore": 30,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+2000+Ada+Generation+Laptop+GPU&id=4785",
@@ -1728,7 +1728,7 @@
     {
       "rank": 192,
       "name": "GeForce GTX 1070 Ti",
-      "score": 14676,
+      "score": 14680,
       "relativeScore": 30,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+1070+Ti&id=3842",
@@ -1737,7 +1737,7 @@
     {
       "rank": 193,
       "name": "RTX PRO 1000 Blackwell Generation Laptop GPU",
-      "score": 14568,
+      "score": 14587,
       "relativeScore": 30,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+PRO+1000+Blackwell+Generation+Laptop+GPU&id=6258",
@@ -1746,32 +1746,23 @@
     {
       "rank": 194,
       "name": "RTX A4000 Laptop GPU",
-      "score": 14508,
-      "relativeScore": 30,
+      "score": 14496,
+      "relativeScore": 29,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+A4000+Laptop+GPU&id=4421",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
       "rank": 195,
-      "name": "RadeonT RX 6850M XT",
-      "score": 14374,
-      "relativeScore": 29,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RadeonT+RX+6850M+XT&id=4849",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 196,
       "name": "Intel Arc Pro B60",
-      "score": 14370,
+      "score": 14486,
       "relativeScore": 29,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Intel+Arc+Pro+B60&id=7155",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 197,
+      "rank": 196,
       "name": "JMJWOA-Generic-GPU",
       "score": 14338,
       "relativeScore": 29,
@@ -1780,7 +1771,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 198,
+      "rank": 197,
       "name": "Radeon RX 7600M XT",
       "score": 14301,
       "relativeScore": 29,
@@ -1789,9 +1780,18 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
+      "rank": 198,
+      "name": "Radeon RX 5700",
+      "score": 14205,
+      "relativeScore": 29,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+5700&id=4107",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
       "rank": 199,
       "name": "GeForce RTX 4050 Laptop GPU",
-      "score": 14208,
+      "score": 14200,
       "relativeScore": 29,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+4050+Laptop+GPU&id=4763",
@@ -1799,42 +1799,33 @@
     },
     {
       "rank": 200,
-      "name": "Radeon RX 5700",
-      "score": 14204,
-      "relativeScore": 29,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+5700&id=4107",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 201,
       "name": "Intel Arc B570",
-      "score": 14187,
+      "score": 14134,
       "relativeScore": 29,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Intel+Arc+B570&id=5652",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 202,
-      "name": "RTX 2000 Ada Generation Embedded GPU",
-      "score": 14176,
-      "relativeScore": 29,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+2000+Ada+Generation+Embedded+GPU&id=5543",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 203,
+      "rank": 201,
       "name": "Radeon Pro W5700",
-      "score": 14131,
+      "score": 14133,
       "relativeScore": 29,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+Pro+W5700&id=4182",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 204,
+      "rank": 202,
+      "name": "RadeonT RX 6850M XT",
+      "score": 14096,
+      "relativeScore": 29,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RadeonT+RX+6850M+XT&id=4849",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 203,
       "name": "Quadro GP100",
       "score": 14096,
       "relativeScore": 29,
@@ -1843,25 +1834,25 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 205,
+      "rank": 204,
       "name": "GeForce RTX 2060",
-      "score": 14074,
-      "relativeScore": 29,
+      "score": 14075,
+      "relativeScore": 28,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+2060&id=4037",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 206,
+      "rank": 205,
       "name": "GeForce RTX 5050 Laptop GPU",
-      "score": 14023,
-      "relativeScore": 29,
+      "score": 14038,
+      "relativeScore": 28,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+5050+Laptop+GPU&id=6552",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 207,
+      "rank": 206,
       "name": "NVIDIA A40",
       "score": 13900,
       "relativeScore": 28,
@@ -1870,43 +1861,34 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 208,
+      "rank": 207,
       "name": "Radeon RX 6600 LE",
-      "score": 13900,
+      "score": 13867,
       "relativeScore": 28,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+6600+LE&id=5228",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 209,
+      "rank": 208,
       "name": "Radeon RX Vega 64",
-      "score": 13841,
+      "score": 13830,
       "relativeScore": 28,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+Vega+64&id=3808",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 210,
+      "rank": 209,
       "name": "Radeon RX 6600M",
-      "score": 13766,
+      "score": 13754,
       "relativeScore": 28,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+6600M&id=4449",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 211,
-      "name": "RTX A3000 12GB Laptop GPU",
-      "score": 13710,
-      "relativeScore": 28,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+A3000+12GB+Laptop+GPU&id=4503",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 212,
+      "rank": 210,
       "name": "Racer-Tech USB Display Device",
       "score": 13692,
       "relativeScore": 28,
@@ -1915,7 +1897,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 213,
+      "rank": 211,
       "name": "Radeon Pro Vega II Duo",
       "score": 13690,
       "relativeScore": 28,
@@ -1924,7 +1906,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 214,
+      "rank": 212,
       "name": "Radeon RX 6700M",
       "score": 13683,
       "relativeScore": 28,
@@ -1933,7 +1915,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 215,
+      "rank": 213,
       "name": "NVIDIA TITAN X",
       "score": 13660,
       "relativeScore": 28,
@@ -1942,61 +1924,70 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 216,
+      "rank": 214,
       "name": "RTX A2000 12GB",
-      "score": 13659,
+      "score": 13654,
       "relativeScore": 28,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+A2000+12GB&id=4533",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 217,
+      "rank": 215,
       "name": "GeForce GTX 980 Ti",
-      "score": 13619,
+      "score": 13617,
       "relativeScore": 28,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+980+Ti&id=3218",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 218,
+      "rank": 216,
+      "name": "RTX A3000 12GB Laptop GPU",
+      "score": 13613,
+      "relativeScore": 28,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+A3000+12GB+Laptop+GPU&id=4503",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 217,
       "name": "A10G",
       "score": 13598,
-      "relativeScore": 28,
+      "relativeScore": 27,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=A10G&id=6737",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 219,
+      "rank": 218,
       "name": "RTX 1000 Ada Generation Laptop GPU",
       "score": 13573,
-      "relativeScore": 28,
+      "relativeScore": 27,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+1000+Ada+Generation+Laptop+GPU&id=5011",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 220,
+      "rank": 219,
       "name": "Radeon RX 6600S",
       "score": 13569,
-      "relativeScore": 28,
+      "relativeScore": 27,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+6600S&id=4755",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 221,
+      "rank": 220,
       "name": "Radeon Pro VII",
       "score": 13558,
-      "relativeScore": 28,
+      "relativeScore": 27,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+Pro+VII&id=4306",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 222,
+      "rank": 221,
       "name": "GeForce GTX 1070",
       "score": 13511,
       "relativeScore": 27,
@@ -2005,7 +1996,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 223,
+      "rank": 222,
       "name": "GeForce RTX 2080 Super with Max-Q Design",
       "score": 13457,
       "relativeScore": 27,
@@ -2014,7 +2005,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 224,
+      "rank": 223,
       "name": "nVidia L20",
       "score": 13430,
       "relativeScore": 27,
@@ -2023,25 +2014,25 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 225,
+      "rank": 224,
       "name": "RTX A2000",
-      "score": 13404,
+      "score": 13398,
       "relativeScore": 27,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+A2000&id=4477",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 226,
+      "rank": 225,
       "name": "Radeon RX 5600 XT",
-      "score": 13384,
+      "score": 13383,
       "relativeScore": 27,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+5600+XT&id=4186",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 227,
+      "rank": 226,
       "name": "Radeon Pro Vega 64X",
       "score": 13369,
       "relativeScore": 27,
@@ -2050,16 +2041,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 228,
+      "rank": 227,
       "name": "Intel Arc A770",
-      "score": 13361,
+      "score": 13365,
       "relativeScore": 27,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Intel+Arc+A770&id=4605",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 229,
+      "rank": 228,
       "name": "A100-SXM4-40GB",
       "score": 13326,
       "relativeScore": 27,
@@ -2068,9 +2059,18 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
+      "rank": 229,
+      "name": "CXDisplay Device",
+      "score": 13304,
+      "relativeScore": 27,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=CXDisplay+Device&id=6130",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
       "rank": 230,
       "name": "Radeon RX 6800M",
-      "score": 13296,
+      "score": 13298,
       "relativeScore": 27,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+6800M&id=4415",
@@ -2096,15 +2096,6 @@
     },
     {
       "rank": 233,
-      "name": "GeForce RTX 2070 Super with Max-Q Design",
-      "score": 13190,
-      "relativeScore": 27,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+2070+Super+with+Max-Q+Design&id=4204",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 234,
       "name": "Radeon PRO W7900 Dual Slot",
       "score": 13182,
       "relativeScore": 27,
@@ -2113,10 +2104,19 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
+      "rank": 234,
+      "name": "GeForce RTX 2070 Super with Max-Q Design",
+      "score": 13163,
+      "relativeScore": 27,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+2070+Super+with+Max-Q+Design&id=4204",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
       "rank": 235,
       "name": "Radeon PRO W6600X",
       "score": 13113,
-      "relativeScore": 27,
+      "relativeScore": 26,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+PRO+W6600X&id=4609",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -2124,25 +2124,25 @@
     {
       "rank": 236,
       "name": "GeForce RTX 3060 Laptop GPU",
-      "score": 13098,
-      "relativeScore": 27,
+      "score": 13097,
+      "relativeScore": 26,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+3060+Laptop+GPU&id=4342",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
       "rank": 237,
-      "name": "Radeon RX Vega 56",
-      "score": 12918,
+      "name": "RTX 2000 Ada Generation Embedded GPU",
+      "score": 12992,
       "relativeScore": 26,
       "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+Vega+56&id=3821",
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+2000+Ada+Generation+Embedded+GPU&id=5543",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
       "rank": 238,
       "name": "RTX PRO 500 Blackwell Generation Laptop GPU",
-      "score": 12909,
+      "score": 12915,
       "relativeScore": 26,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+PRO+500+Blackwell+Generation+Laptop+GPU&id=6346",
@@ -2150,6 +2150,15 @@
     },
     {
       "rank": 239,
+      "name": "Radeon RX Vega 56",
+      "score": 12913,
+      "relativeScore": 26,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+Vega+56&id=3821",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 240,
       "name": "Tesla P100-PCIE-12GB",
       "score": 12887,
       "relativeScore": 26,
@@ -2158,43 +2167,52 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 240,
+      "rank": 241,
       "name": "Radeon Pro Vega 64",
-      "score": 12886,
+      "score": 12883,
       "relativeScore": 26,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+Pro+Vega+64&id=3879",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 241,
+      "rank": 242,
       "name": "Quadro RTX 5000 with Max-Q Design",
-      "score": 12736,
+      "score": 12743,
       "relativeScore": 26,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Quadro+RTX+5000+with+Max-Q+Design&id=4144",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 242,
+      "rank": 243,
       "name": "Quadro P5000",
-      "score": 12710,
+      "score": 12707,
       "relativeScore": 26,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Quadro+P5000&id=3607",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 243,
+      "rank": 244,
+      "name": "Intel Arc Pro B50",
+      "score": 12681,
+      "relativeScore": 26,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Intel+Arc+Pro+B50&id=7046",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 245,
       "name": "GeForce GTX 1660 SUPER",
-      "score": 12659,
+      "score": 12657,
       "relativeScore": 26,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+1660+SUPER&id=4159",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 244,
+      "rank": 246,
       "name": "Radeon Vega Frontier Edition",
       "score": 12656,
       "relativeScore": 26,
@@ -2203,45 +2221,27 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 245,
+      "rank": 247,
       "name": "Intel Arc A750",
-      "score": 12653,
+      "score": 12654,
       "relativeScore": 26,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Intel+Arc+A750&id=4612",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 246,
-      "name": "Intel Arc Pro B50",
-      "score": 12650,
-      "relativeScore": 26,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Intel+Arc+Pro+B50&id=7046",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 247,
+      "rank": 248,
       "name": "GRID RTX6000-1Q",
       "score": 12617,
-      "relativeScore": 26,
+      "relativeScore": 25,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GRID+RTX6000-1Q&id=6945",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 248,
-      "name": "GeForce RTX 2080 with Max-Q Design",
-      "score": 12583,
-      "relativeScore": 26,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+2080+with+Max-Q+Design&id=4041",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
       "rank": 249,
       "name": "GeForce GTX 1660 Ti",
-      "score": 12563,
+      "score": 12559,
       "relativeScore": 25,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+1660+Ti&id=4045",
@@ -2250,7 +2250,7 @@
     {
       "rank": 250,
       "name": "RTX A3000 Laptop GPU",
-      "score": 12536,
+      "score": 12532,
       "relativeScore": 25,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+A3000+Laptop+GPU&id=4414",
@@ -2258,15 +2258,24 @@
     },
     {
       "rank": 251,
+      "name": "GeForce RTX 2080 with Max-Q Design",
+      "score": 12528,
+      "relativeScore": 25,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+2080+with+Max-Q+Design&id=4041",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 252,
       "name": "GeForce GTX TITAN X",
-      "score": 12486,
+      "score": 12493,
       "relativeScore": 25,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+TITAN+X&id=3162",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 252,
+      "rank": 253,
       "name": "Quadro P5200 with Max-Q Design",
       "score": 12480,
       "relativeScore": 25,
@@ -2275,7 +2284,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 253,
+      "rank": 254,
       "name": "Radeon Pro WX 8200",
       "score": 12474,
       "relativeScore": 25,
@@ -2284,7 +2293,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 254,
+      "rank": 255,
       "name": "GeForce RTX 3050 8GB",
       "score": 12461,
       "relativeScore": 25,
@@ -2293,16 +2302,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 255,
+      "rank": 256,
       "name": "Radeon Pro 5700 XT",
-      "score": 12447,
+      "score": 12443,
       "relativeScore": 25,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+Pro+5700+XT&id=4250",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 256,
+      "rank": 257,
       "name": "GeForce RTX 2070 (Mobile)",
       "score": 12357,
       "relativeScore": 25,
@@ -2311,7 +2320,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 257,
+      "rank": 258,
       "name": "Tesla V100-PCIE-16GB",
       "score": 12328,
       "relativeScore": 25,
@@ -2320,16 +2329,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 258,
+      "rank": 259,
       "name": "Radeon RX 5600 OEM",
-      "score": 12317,
+      "score": 12309,
       "relativeScore": 25,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+5600+OEM&id=4640",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 259,
+      "rank": 260,
       "name": "Radeon RX 6850M",
       "score": 12274,
       "relativeScore": 25,
@@ -2338,21 +2347,12 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 260,
+      "rank": 261,
       "name": "Radeon Pro V520 MxGPU",
       "score": 12258,
       "relativeScore": 25,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+Pro+V520+MxGPU&id=4328",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 261,
-      "name": "Quadro RTX 4000 with Max-Q Design",
-      "score": 12091,
-      "relativeScore": 25,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Quadro+RTX+4000+with+Max-Q+Design&id=4161",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
@@ -2366,6 +2366,15 @@
     },
     {
       "rank": 263,
+      "name": "Quadro RTX 4000 with Max-Q Design",
+      "score": 12067,
+      "relativeScore": 24,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Quadro+RTX+4000+with+Max-Q+Design&id=4161",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 264,
       "name": "Radeon Pro Vega 56",
       "score": 12060,
       "relativeScore": 24,
@@ -2374,7 +2383,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 264,
+      "rank": 265,
       "name": "Radeon PRO W6600M",
       "score": 11998,
       "relativeScore": 24,
@@ -2383,7 +2392,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 265,
+      "rank": 266,
       "name": "GeForce RTX 3050 Laptop GPU",
       "score": 11966,
       "relativeScore": 24,
@@ -2392,7 +2401,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 266,
+      "rank": 267,
       "name": "Intel Arc A770M",
       "score": 11911,
       "relativeScore": 24,
@@ -2401,7 +2410,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 267,
+      "rank": 268,
       "name": "Tesla T10",
       "score": 11910,
       "relativeScore": 24,
@@ -2410,7 +2419,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 268,
+      "rank": 269,
       "name": "Radeon RX 7400",
       "score": 11897,
       "relativeScore": 24,
@@ -2419,7 +2428,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 269,
+      "rank": 270,
+      "name": "Tesla V100-SXM2-16GB",
+      "score": 11896,
+      "relativeScore": 24,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Tesla+V100-SXM2-16GB&id=4105",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 271,
       "name": "OrayIddDriver Device",
       "score": 11873,
       "relativeScore": 24,
@@ -2428,16 +2446,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 270,
+      "rank": 272,
       "name": "GeForce RTX 3050 OEM",
-      "score": 11871,
+      "score": 11870,
       "relativeScore": 24,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+3050+OEM&id=4569",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 271,
+      "rank": 273,
       "name": "GeForce GTX 1080 with Max-Q Design",
       "score": 11810,
       "relativeScore": 24,
@@ -2446,7 +2464,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 272,
+      "rank": 274,
       "name": "EIZO Quadro MED-XN91",
       "score": 11748,
       "relativeScore": 24,
@@ -2455,7 +2473,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 273,
+      "rank": 275,
       "name": "Radeon Pro WX 9100",
       "score": 11720,
       "relativeScore": 24,
@@ -2464,7 +2482,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 274,
+      "rank": 276,
       "name": "Quadro M6000",
       "score": 11715,
       "relativeScore": 24,
@@ -2473,7 +2491,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 275,
+      "rank": 277,
       "name": "Quadro RTX 4000 (Mobile)",
       "score": 11675,
       "relativeScore": 24,
@@ -2482,16 +2500,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 276,
+      "rank": 278,
       "name": "GeForce GTX 1660",
       "score": 11608,
-      "relativeScore": 24,
+      "relativeScore": 23,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+1660&id=4062",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 277,
+      "rank": 279,
       "name": "Tesla P40",
       "score": 11596,
       "relativeScore": 23,
@@ -2500,7 +2518,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 278,
+      "rank": 280,
       "name": "Radeon RX 5600",
       "score": 11544,
       "relativeScore": 23,
@@ -2509,7 +2527,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 279,
+      "rank": 281,
       "name": "Radeon Pro 5700",
       "score": 11457,
       "relativeScore": 23,
@@ -2518,7 +2536,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 280,
+      "rank": 282,
       "name": "Quadro P4200 with Max-Q Design",
       "score": 11448,
       "relativeScore": 23,
@@ -2527,7 +2545,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 281,
+      "rank": 283,
       "name": "Mirage Driver",
       "score": 11444,
       "relativeScore": 23,
@@ -2536,7 +2554,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 282,
+      "rank": 284,
       "name": "Quadro M6000 24GB",
       "score": 11442,
       "relativeScore": 23,
@@ -2545,25 +2563,25 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 283,
+      "rank": 285,
       "name": "GeForce RTX 2070 with Max-Q Design",
-      "score": 11391,
+      "score": 11397,
       "relativeScore": 23,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+2070+with+Max-Q+Design&id=4048",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 284,
+      "rank": 286,
       "name": "Quadro P4000",
-      "score": 11389,
+      "score": 11384,
       "relativeScore": 23,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Quadro+P4000&id=3719",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 285,
+      "rank": 287,
       "name": "GeForce RTX 2060 (Mobile)",
       "score": 11353,
       "relativeScore": 23,
@@ -2572,16 +2590,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 286,
-      "name": "Tesla V100-SXM2-16GB",
-      "score": 11265,
-      "relativeScore": 23,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Tesla+V100-SXM2-16GB&id=4105",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 287,
+      "rank": 288,
       "name": "Radeon Pro Vega 48",
       "score": 11257,
       "relativeScore": 23,
@@ -2590,25 +2599,25 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 288,
+      "rank": 289,
       "name": "RTX 500 Ada Generation Laptop GPU",
-      "score": 11197,
+      "score": 11194,
       "relativeScore": 23,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+500+Ada+Generation+Laptop+GPU&id=5056",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 289,
+      "rank": 290,
       "name": "Quadro P5200",
-      "score": 11147,
-      "relativeScore": 23,
+      "score": 11150,
+      "relativeScore": 22,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Quadro+P5200&id=3888",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 290,
+      "rank": 291,
       "name": "GeForce GTX 980",
       "score": 11069,
       "relativeScore": 22,
@@ -2617,7 +2626,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 291,
+      "rank": 292,
       "name": "RTX A2000 Embedded GPU",
       "score": 10990,
       "relativeScore": 22,
@@ -2626,7 +2635,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 292,
+      "rank": 293,
       "name": "Radeon Pro SSG",
       "score": 10972,
       "relativeScore": 22,
@@ -2635,7 +2644,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 293,
+      "rank": 294,
       "name": "Radeon RX 7600M",
       "score": 10937,
       "relativeScore": 22,
@@ -2644,52 +2653,52 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 294,
+      "rank": 295,
       "name": "GeForce RTX 3050 A Laptop GPU",
-      "score": 10814,
+      "score": 10832,
       "relativeScore": 22,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+3050+A+Laptop+GPU&id=5172",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 295,
+      "rank": 296,
       "name": "GeForce RTX 3050 6GB",
-      "score": 10741,
+      "score": 10740,
       "relativeScore": 22,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+3050+6GB&id=5069",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 296,
+      "rank": 297,
       "name": "RTX A1000",
-      "score": 10727,
+      "score": 10719,
       "relativeScore": 22,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+A1000&id=5118",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 297,
+      "rank": 298,
       "name": "Tesla M40 24GB",
       "score": 10641,
-      "relativeScore": 22,
+      "relativeScore": 21,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Tesla+M40+24GB&id=4450",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 298,
+      "rank": 299,
       "name": "Quadro RTX 3000",
       "score": 10639,
-      "relativeScore": 22,
+      "relativeScore": 21,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Quadro+RTX+3000&id=4119",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 299,
+      "rank": 300,
       "name": "Radeon 8040S",
       "score": 10578,
       "relativeScore": 21,
@@ -2698,21 +2707,12 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 300,
+      "rank": 301,
       "name": "L4",
       "score": 10570,
       "relativeScore": 21,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=L4&id=4922",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 301,
-      "name": "CXDisplay Device",
-      "score": 10499,
-      "relativeScore": 21,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=CXDisplay+Device&id=6130",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
@@ -2745,7 +2745,7 @@
     {
       "rank": 305,
       "name": "RTX A2000 8GB Laptop GPU",
-      "score": 10404,
+      "score": 10409,
       "relativeScore": 21,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+A2000+8GB+Laptop+GPU&id=4553",
@@ -2763,8 +2763,8 @@
     {
       "rank": 307,
       "name": "GeForce GTX 1650 SUPER",
-      "score": 10193,
-      "relativeScore": 21,
+      "score": 10194,
+      "relativeScore": 20,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+1650+SUPER&id=4167",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -2773,7 +2773,7 @@
       "rank": 308,
       "name": "Quadro P4200",
       "score": 10165,
-      "relativeScore": 21,
+      "relativeScore": 20,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Quadro+P4200&id=3959",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -2781,7 +2781,7 @@
     {
       "rank": 309,
       "name": "GeForce RTX 3050 6GB Laptop GPU",
-      "score": 10129,
+      "score": 10122,
       "relativeScore": 20,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+3050+6GB+Laptop+GPU&id=4782",
@@ -2790,7 +2790,7 @@
     {
       "rank": 310,
       "name": "GeForce GTX 1660 Ti (Mobile)",
-      "score": 10084,
+      "score": 10083,
       "relativeScore": 20,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+1660+Ti+%28Mobile%29&id=4091",
@@ -2799,7 +2799,7 @@
     {
       "rank": 311,
       "name": "GeForce RTX 3050 Ti Laptop GPU",
-      "score": 10064,
+      "score": 10061,
       "relativeScore": 20,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+3050+Ti+Laptop+GPU&id=4393",
@@ -2808,7 +2808,7 @@
     {
       "rank": 312,
       "name": "GeForce GTX 1060",
-      "score": 10021,
+      "score": 10019,
       "relativeScore": 20,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+1060&id=3548",
@@ -2816,24 +2816,33 @@
     },
     {
       "rank": 313,
+      "name": "CMP 40HX",
+      "score": 9985,
+      "relativeScore": 20,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=CMP+40HX&id=4903",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 314,
       "name": "RTX A1000 6GB Laptop GPU",
-      "score": 9961,
+      "score": 9960,
       "relativeScore": 20,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+A1000+6GB+Laptop+GPU&id=4804",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 314,
+      "rank": 315,
       "name": "GeForce GTX 1060 3GB",
-      "score": 9856,
+      "score": 9857,
       "relativeScore": 20,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+1060+3GB&id=3566",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 315,
+      "rank": 316,
       "name": "GRID P40-2B",
       "score": 9842,
       "relativeScore": 20,
@@ -2842,7 +2851,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 316,
+      "rank": 317,
       "name": "Intel Arc A730M",
       "score": 9808,
       "relativeScore": 20,
@@ -2851,7 +2860,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 317,
+      "rank": 318,
       "name": "Intel Arc Pro A60",
       "score": 9798,
       "relativeScore": 20,
@@ -2860,18 +2869,9 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 318,
-      "name": "CMP 40HX",
-      "score": 9793,
-      "relativeScore": 20,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=CMP+40HX&id=4903",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
       "rank": 319,
       "name": "GeForce GTX 1070 with Max-Q Design",
-      "score": 9773,
+      "score": 9764,
       "relativeScore": 20,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+1070+with+Max-Q+Design&id=3779",
@@ -2899,7 +2899,7 @@
       "rank": 322,
       "name": "RTX A1000 Embedded GPU",
       "score": 9705,
-      "relativeScore": 20,
+      "relativeScore": 19,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+A1000+Embedded+GPU&id=4613",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -2908,7 +2908,7 @@
       "rank": 323,
       "name": "Radeon RX 6550M",
       "score": 9682,
-      "relativeScore": 20,
+      "relativeScore": 19,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+6550M&id=4941",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -2916,7 +2916,7 @@
     {
       "rank": 324,
       "name": "Intel Arc Pro B390 GPU",
-      "score": 9653,
+      "score": 9649,
       "relativeScore": 19,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Intel+Arc+Pro+B390+GPU&id=8793",
@@ -2925,7 +2925,7 @@
     {
       "rank": 325,
       "name": "GeForce GTX 970",
-      "score": 9635,
+      "score": 9636,
       "relativeScore": 19,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+970&id=2954",
@@ -2943,7 +2943,7 @@
     {
       "rank": 327,
       "name": "Radeon RX 6500 XT",
-      "score": 9614,
+      "score": 9615,
       "relativeScore": 19,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+6500+XT&id=4488",
@@ -2952,7 +2952,7 @@
     {
       "rank": 328,
       "name": "GeForce RTX 2060 with Max-Q Design",
-      "score": 9590,
+      "score": 9588,
       "relativeScore": 19,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+2060+with+Max-Q+Design&id=4199",
@@ -3033,7 +3033,7 @@
     {
       "rank": 337,
       "name": "RTX A2000 Laptop GPU",
-      "score": 9398,
+      "score": 9400,
       "relativeScore": 19,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+A2000+Laptop+GPU&id=4438",
@@ -3042,7 +3042,7 @@
     {
       "rank": 338,
       "name": "RTX A1000 Laptop GPU",
-      "score": 9391,
+      "score": 9385,
       "relativeScore": 19,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+A1000+Laptop+GPU&id=4558",
@@ -3050,20 +3050,20 @@
     },
     {
       "rank": 339,
-      "name": "Quadro M5000",
-      "score": 9369,
+      "name": "Radeon R9 Fury X",
+      "score": 9367,
       "relativeScore": 19,
       "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Quadro+M5000&id=3369",
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+R9+Fury+X&id=3634",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
       "rank": 340,
-      "name": "Radeon R9 Fury X",
-      "score": 9368,
+      "name": "Quadro M5000",
+      "score": 9363,
       "relativeScore": 19,
       "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+R9+Fury+X&id=3634",
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Quadro+M5000&id=3369",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
@@ -3078,7 +3078,7 @@
     {
       "rank": 342,
       "name": "Radeon RX 590",
-      "score": 9278,
+      "score": 9276,
       "relativeScore": 19,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+590&id=4025",
@@ -3087,7 +3087,7 @@
     {
       "rank": 343,
       "name": "GeForce GTX 1060 5GB",
-      "score": 9232,
+      "score": 9245,
       "relativeScore": 19,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+1060+5GB&id=3923",
@@ -3097,7 +3097,7 @@
       "rank": 344,
       "name": "Quadro P3200 with Max-Q Design",
       "score": 9216,
-      "relativeScore": 19,
+      "relativeScore": 18,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Quadro+P3200+with+Max-Q+Design&id=3963",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -3106,7 +3106,7 @@
       "rank": 345,
       "name": "GRID P40-2Q",
       "score": 9201,
-      "relativeScore": 19,
+      "relativeScore": 18,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GRID+P40-2Q&id=4026",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -3115,7 +3115,7 @@
       "rank": 346,
       "name": "A10-12Q",
       "score": 9192,
-      "relativeScore": 19,
+      "relativeScore": 18,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=A10-12Q&id=5065",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -3124,7 +3124,7 @@
       "rank": 347,
       "name": "Radeon R9 390X",
       "score": 9190,
-      "relativeScore": 19,
+      "relativeScore": 18,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+R9+390X&id=3467",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -3140,20 +3140,20 @@
     },
     {
       "rank": 349,
+      "name": "Intel Arc Pro B370 GPU",
+      "score": 9145,
+      "relativeScore": 18,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Intel+Arc+Pro+B370+GPU&id=9248",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 350,
       "name": "RTX PRO 500 Blackwell Embedded GPU",
       "score": 9131,
       "relativeScore": 18,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+PRO+500+Blackwell+Embedded+GPU&id=8387",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 350,
-      "name": "Intel Arc Pro B370 GPU",
-      "score": 9117,
-      "relativeScore": 18,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Intel+Arc+Pro+B370+GPU&id=9248",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
@@ -3186,7 +3186,7 @@
     {
       "rank": 354,
       "name": "Radeon RX 5500 XT",
-      "score": 9046,
+      "score": 9047,
       "relativeScore": 18,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+5500+XT&id=4174",
@@ -3204,7 +3204,7 @@
     {
       "rank": 356,
       "name": "Intel Arc B390 GPU",
-      "score": 8978,
+      "score": 8982,
       "relativeScore": 18,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Intel+Arc+B390+GPU&id=7571",
@@ -3249,7 +3249,7 @@
     {
       "rank": 361,
       "name": "Radeon RX 5500",
-      "score": 8847,
+      "score": 8835,
       "relativeScore": 18,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+5500&id=4164",
@@ -3285,8 +3285,8 @@
     {
       "rank": 365,
       "name": "Radeon R9 390",
-      "score": 8751,
-      "relativeScore": 18,
+      "score": 8746,
+      "relativeScore": 17,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+R9+390&id=3464",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -3303,7 +3303,7 @@
     {
       "rank": 367,
       "name": "GeForce GTX 1660 Ti with Max-Q Design",
-      "score": 8593,
+      "score": 8597,
       "relativeScore": 17,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+1660+Ti+with+Max-Q+Design&id=4082",
@@ -3312,7 +3312,7 @@
     {
       "rank": 368,
       "name": "Radeon RX 480",
-      "score": 8525,
+      "score": 8524,
       "relativeScore": 17,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+480&id=3533",
@@ -3348,7 +3348,7 @@
     {
       "rank": 372,
       "name": "Intel Arc B370 GPU",
-      "score": 8433,
+      "score": 8439,
       "relativeScore": 17,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Intel+Arc+B370+GPU&id=7972",
@@ -3357,7 +3357,7 @@
     {
       "rank": 373,
       "name": "Radeon R9 290X",
-      "score": 8428,
+      "score": 8429,
       "relativeScore": 17,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+R9+290X&id=4263",
@@ -3403,7 +3403,7 @@
       "rank": 378,
       "name": "Tesla V100-PCIE-32GB",
       "score": 8260,
-      "relativeScore": 17,
+      "relativeScore": 16,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Tesla+V100-PCIE-32GB&id=4447",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -3411,8 +3411,8 @@
     {
       "rank": 379,
       "name": "GeForce GTX Titan",
-      "score": 8225,
-      "relativeScore": 17,
+      "score": 8228,
+      "relativeScore": 16,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+Titan&id=2433",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -3438,7 +3438,7 @@
     {
       "rank": 382,
       "name": "Radeon R9 290",
-      "score": 8139,
+      "score": 8132,
       "relativeScore": 16,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+R9+290&id=4259",
@@ -3456,7 +3456,7 @@
     {
       "rank": 384,
       "name": "Quadro K6000",
-      "score": 8073,
+      "score": 8075,
       "relativeScore": 16,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Quadro+K6000&id=2666",
@@ -3465,7 +3465,7 @@
     {
       "rank": 385,
       "name": "Radeon 890M",
-      "score": 8068,
+      "score": 8058,
       "relativeScore": 16,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+890M&id=5113",
@@ -3510,7 +3510,7 @@
     {
       "rank": 390,
       "name": "Radeon RX 470/570",
-      "score": 7909,
+      "score": 7908,
       "relativeScore": 16,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+470%2F570&id=3558",
@@ -3555,7 +3555,7 @@
     {
       "rank": 395,
       "name": "GeForce GTX 1060 with Max-Q Design",
-      "score": 7816,
+      "score": 7815,
       "relativeScore": 16,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+1060+with+Max-Q+Design&id=3769",
@@ -3564,7 +3564,7 @@
     {
       "rank": 396,
       "name": "NVIDIA T1200 Laptop GPU",
-      "score": 7812,
+      "score": 7814,
       "relativeScore": 16,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=NVIDIA+T1200+Laptop+GPU&id=4422",
@@ -3574,7 +3574,7 @@
       "rank": 397,
       "name": "Ryzen 7 8845HS with Radeon 780M",
       "score": 7766,
-      "relativeScore": 16,
+      "relativeScore": 15,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Ryzen+7+8845HS+with+Radeon+780M&id=6617",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -3583,7 +3583,7 @@
       "rank": 398,
       "name": "Radeon RX 6400",
       "score": 7758,
-      "relativeScore": 16,
+      "relativeScore": 15,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+6400&id=4536",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -3592,7 +3592,7 @@
       "rank": 399,
       "name": "Radeon Pro 580",
       "score": 7753,
-      "relativeScore": 16,
+      "relativeScore": 15,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+Pro+580&id=3933",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -3600,7 +3600,7 @@
     {
       "rank": 400,
       "name": "GeForce RTX 2050",
-      "score": 7728,
+      "score": 7729,
       "relativeScore": 15,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+RTX+2050&id=4501",
@@ -3609,7 +3609,7 @@
     {
       "rank": 401,
       "name": "Radeon RX 6500",
-      "score": 7718,
+      "score": 7705,
       "relativeScore": 15,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+6500&id=4843",
@@ -3618,7 +3618,7 @@
     {
       "rank": 402,
       "name": "Radeon Pro WX 7100",
-      "score": 7701,
+      "score": 7700,
       "relativeScore": 15,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+Pro+WX+7100&id=3611",
@@ -3636,7 +3636,7 @@
     {
       "rank": 404,
       "name": "NVIDIA T1000 8GB",
-      "score": 7678,
+      "score": 7680,
       "relativeScore": 15,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=NVIDIA+T1000+8GB&id=4513",
@@ -3663,7 +3663,7 @@
     {
       "rank": 407,
       "name": "Radeon RX 580 2048SP",
-      "score": 7610,
+      "score": 7609,
       "relativeScore": 15,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+580+2048SP&id=4049",
@@ -3671,6 +3671,15 @@
     },
     {
       "rank": 408,
+      "name": "Radeon 880M",
+      "score": 7603,
+      "relativeScore": 15,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+880M&id=5123",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 409,
       "name": "Radeon RX 5300",
       "score": 7603,
       "relativeScore": 15,
@@ -3679,16 +3688,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 409,
-      "name": "Radeon 880M",
-      "score": 7600,
+      "rank": 410,
+      "name": "Qualcomm Adreno X2-90 GPU",
+      "score": 7596,
       "relativeScore": 15,
       "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+880M&id=5123",
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Qualcomm+Adreno+X2-90+GPU&id=8478",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 410,
+      "rank": 411,
       "name": "EPSON Projector Support Driver for UD",
       "score": 7579,
       "relativeScore": 15,
@@ -3697,7 +3706,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 411,
+      "rank": 412,
       "name": "Radeon Pro 580X",
       "score": 7540,
       "relativeScore": 15,
@@ -3706,7 +3715,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 412,
+      "rank": 413,
       "name": "GeForce GTX 1650 Ti",
       "score": 7539,
       "relativeScore": 15,
@@ -3715,21 +3724,12 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 413,
+      "rank": 414,
       "name": "GRID P40-8Q",
       "score": 7507,
       "relativeScore": 15,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GRID+P40-8Q&id=4834",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 414,
-      "name": "Qualcomm Adreno X2-90 GPU",
-      "score": 7506,
-      "relativeScore": 15,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Qualcomm+Adreno+X2-90+GPU&id=8478",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
@@ -3753,7 +3753,7 @@
     {
       "rank": 417,
       "name": "GeForce GTX 980M",
-      "score": 7391,
+      "score": 7395,
       "relativeScore": 15,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+980M&id=2976",
@@ -3771,7 +3771,7 @@
     {
       "rank": 419,
       "name": "Radeon RX 6500M",
-      "score": 7307,
+      "score": 7314,
       "relativeScore": 15,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+6500M&id=4599",
@@ -3789,8 +3789,8 @@
     {
       "rank": 421,
       "name": "Quadro T2000",
-      "score": 7276,
-      "relativeScore": 15,
+      "score": 7274,
+      "relativeScore": 14,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Quadro+T2000&id=4113",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -3843,7 +3843,7 @@
     {
       "rank": 427,
       "name": "RadeonT 780M",
-      "score": 7043,
+      "score": 7042,
       "relativeScore": 14,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RadeonT+780M&id=4897",
@@ -3852,7 +3852,7 @@
     {
       "rank": 428,
       "name": "NVIDIA T600 Laptop GPU",
-      "score": 7019,
+      "score": 7013,
       "relativeScore": 14,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=NVIDIA+T600+Laptop+GPU&id=4424",
@@ -3869,20 +3869,20 @@
     },
     {
       "rank": 430,
-      "name": "Quadro M5000M",
-      "score": 7007,
-      "relativeScore": 14,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Quadro+M5000M&id=3408",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 431,
       "name": "Ryzen 7 4800HS with Radeon Graphics",
       "score": 6999,
       "relativeScore": 14,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Ryzen+7+4800HS+with+Radeon+Graphics&id=4249",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 431,
+      "name": "Quadro M5000M",
+      "score": 6985,
+      "relativeScore": 14,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Quadro+M5000M&id=3408",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
@@ -3925,7 +3925,7 @@
       "rank": 436,
       "name": "Ryzen 9 4900HS with Radeon Graphics",
       "score": 6791,
-      "relativeScore": 14,
+      "relativeScore": 13,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Ryzen+9+4900HS+with+Radeon+Graphics&id=4273",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -3942,7 +3942,7 @@
     {
       "rank": 438,
       "name": "P106-100",
-      "score": 6752,
+      "score": 6767,
       "relativeScore": 13,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=P106-100&id=4044",
@@ -3951,7 +3951,7 @@
     {
       "rank": 439,
       "name": "Radeon 780M",
-      "score": 6742,
+      "score": 6737,
       "relativeScore": 13,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+780M&id=4818",
@@ -3978,7 +3978,7 @@
     {
       "rank": 442,
       "name": "Radeon Pro 5500M",
-      "score": 6710,
+      "score": 6711,
       "relativeScore": 13,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+Pro+5500M&id=4165",
@@ -4050,7 +4050,7 @@
     {
       "rank": 450,
       "name": "Intel Arc 140T GPU",
-      "score": 6597,
+      "score": 6595,
       "relativeScore": 13,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Intel+Arc+140T+GPU&id=5577",
@@ -4059,7 +4059,7 @@
     {
       "rank": 451,
       "name": "Intel Arc Pro 140T GPU",
-      "score": 6596,
+      "score": 6593,
       "relativeScore": 13,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Intel+Arc+Pro+140T+GPU&id=6333",
@@ -4085,20 +4085,20 @@
     },
     {
       "rank": 454,
+      "name": "RTX A500 Laptop GPU",
+      "score": 6562,
+      "relativeScore": 13,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+A500+Laptop+GPU&id=4649",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 455,
       "name": "Radeon RX Vega M GH",
       "score": 6561,
       "relativeScore": 13,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+Vega+M+GH&id=3915",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 455,
-      "name": "RTX A500 Laptop GPU",
-      "score": 6558,
-      "relativeScore": 13,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+A500+Laptop+GPU&id=4649",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
@@ -4149,7 +4149,7 @@
     {
       "rank": 461,
       "name": "AMD Ryzen Z1 Extreme",
-      "score": 6425,
+      "score": 6421,
       "relativeScore": 13,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=AMD+Ryzen+Z1+Extreme&id=4918",
@@ -4158,7 +4158,7 @@
     {
       "rank": 462,
       "name": "GeForce GTX 1650 with Max-Q Design",
-      "score": 6378,
+      "score": 6379,
       "relativeScore": 13,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+1650+with+Max-Q+Design&id=4104",
@@ -4194,7 +4194,7 @@
     {
       "rank": 466,
       "name": "Quadro P3000",
-      "score": 6332,
+      "score": 6336,
       "relativeScore": 13,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Quadro+P3000&id=3688",
@@ -4203,7 +4203,7 @@
     {
       "rank": 467,
       "name": "Intel Arc A380",
-      "score": 6323,
+      "score": 6324,
       "relativeScore": 13,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Intel+Arc+A380&id=4568",
@@ -4213,7 +4213,7 @@
       "rank": 468,
       "name": "Intel Arc A380E",
       "score": 6290,
-      "relativeScore": 13,
+      "relativeScore": 12,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Intel+Arc+A380E&id=5936",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -4257,7 +4257,7 @@
     {
       "rank": 473,
       "name": "GeForce MX570 A",
-      "score": 6221,
+      "score": 6220,
       "relativeScore": 12,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+MX570+A&id=4595",
@@ -4311,7 +4311,7 @@
     {
       "rank": 479,
       "name": "Radeon R9 380X",
-      "score": 6125,
+      "score": 6127,
       "relativeScore": 12,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+R9+380X&id=3266",
@@ -4319,24 +4319,15 @@
     },
     {
       "rank": 480,
-      "name": "Intel Arc Pro A30M",
-      "score": 6120,
-      "relativeScore": 12,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Intel+Arc+Pro+A30M&id=4991",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 481,
       "name": "Intel Arc 130T GPU",
-      "score": 6114,
+      "score": 6113,
       "relativeScore": 12,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Intel+Arc+130T+GPU&id=5871",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 482,
+      "rank": 481,
       "name": "Ryzen 9 6900HS with Radeon Graphics",
       "score": 6110,
       "relativeScore": 12,
@@ -4345,7 +4336,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 483,
+      "rank": 482,
       "name": "FirePro W9000",
       "score": 6099,
       "relativeScore": 12,
@@ -4354,7 +4345,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 484,
+      "rank": 483,
       "name": "Quadro M4000M",
       "score": 6091,
       "relativeScore": 12,
@@ -4363,12 +4354,21 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 485,
+      "rank": 484,
       "name": "Radeon R9 280X",
-      "score": 6067,
+      "score": 6066,
       "relativeScore": 12,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+R9+280X&id=3466",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 485,
+      "name": "Intel Arc Pro A30M",
+      "score": 6063,
+      "relativeScore": 12,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Intel+Arc+Pro+A30M&id=4991",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
@@ -4410,7 +4410,7 @@
     {
       "rank": 490,
       "name": "Radeon R9 380",
-      "score": 5952,
+      "score": 5954,
       "relativeScore": 12,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+R9+380&id=3460",
@@ -4492,7 +4492,7 @@
       "rank": 499,
       "name": "Radeon Pro 5300M",
       "score": 5825,
-      "relativeScore": 12,
+      "relativeScore": 11,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+Pro+5300M&id=4172",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -4501,7 +4501,7 @@
       "rank": 500,
       "name": "Matrox LUMA A380P",
       "score": 5811,
-      "relativeScore": 12,
+      "relativeScore": 11,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Matrox+LUMA+A380P&id=4993",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
@@ -4571,17 +4571,17 @@
     },
     {
       "rank": 508,
-      "name": "RadeonT 680M Ryzen 7 7735HS",
-      "score": 5727,
+      "name": "Radeon 680M Ryzen 9 6900HX",
+      "score": 5744,
       "relativeScore": 11,
       "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RadeonT+680M+Ryzen+7+7735HS&id=4896",
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+680M+Ryzen+9+6900HX&id=6080",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
       "rank": 509,
       "name": "GeForce GTX 970M",
-      "score": 5721,
+      "score": 5722,
       "relativeScore": 11,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+970M&id=2981",
@@ -4589,6 +4589,24 @@
     },
     {
       "rank": 510,
+      "name": "RadeonT 680M Ryzen 7 7735HS",
+      "score": 5712,
+      "relativeScore": 11,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RadeonT+680M+Ryzen+7+7735HS&id=4896",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 511,
+      "name": "GeForce MX570",
+      "score": 5694,
+      "relativeScore": 11,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+MX570&id=4560",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 512,
       "name": "Radeon E9550",
       "score": 5693,
       "relativeScore": 11,
@@ -4597,7 +4615,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 511,
+      "rank": 513,
       "name": "RadeonT 680M",
       "score": 5680,
       "relativeScore": 11,
@@ -4606,16 +4624,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 512,
-      "name": "GeForce MX570",
-      "score": 5675,
-      "relativeScore": 11,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+MX570&id=4560",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 513,
+      "rank": 514,
       "name": "Eng Sample: 100-000000560-40_Y",
       "score": 5656,
       "relativeScore": 11,
@@ -4624,7 +4633,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 514,
+      "rank": 515,
       "name": "Intel Arc 140T",
       "score": 5635,
       "relativeScore": 11,
@@ -4633,7 +4642,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 515,
+      "rank": 516,
       "name": "Radeon Eng Sample: 100-000000544-40_Y",
       "score": 5630,
       "relativeScore": 11,
@@ -4642,7 +4651,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 516,
+      "rank": 517,
       "name": "Radeon Ryzen 9 PRO 6950H",
       "score": 5619,
       "relativeScore": 11,
@@ -4651,7 +4660,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 517,
+      "rank": 518,
+      "name": "GeForce GTX 680",
+      "score": 5615,
+      "relativeScore": 11,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+680&id=41",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 519,
       "name": "Qualcomm Adreno X2-85 GPU",
       "score": 5614,
       "relativeScore": 11,
@@ -4660,16 +4678,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 518,
-      "name": "GeForce GTX 680",
-      "score": 5612,
-      "relativeScore": 11,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+680&id=41",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 519,
+      "rank": 520,
       "name": "Radeon PRO Ryzen 7 PRO 6850U",
       "score": 5601,
       "relativeScore": 11,
@@ -4678,7 +4687,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 520,
+      "rank": 521,
       "name": "Barco MXRV-3100",
       "score": 5599,
       "relativeScore": 11,
@@ -4687,7 +4696,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 521,
+      "rank": 522,
       "name": "Ryzen 7 PRO 6850U",
       "score": 5581,
       "relativeScore": 11,
@@ -4696,16 +4705,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 522,
+      "rank": 523,
       "name": "Radeon TM",
-      "score": 5567,
+      "score": 5568,
       "relativeScore": 11,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+TM&id=5076",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 523,
+      "rank": 524,
       "name": "Radeon HD 7990",
       "score": 5566,
       "relativeScore": 11,
@@ -4714,7 +4723,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 524,
+      "rank": 525,
       "name": "Radeon PRO W6300",
       "score": 5560,
       "relativeScore": 11,
@@ -4723,7 +4732,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 525,
+      "rank": 526,
       "name": "Radeon R9 285 / 380",
       "score": 5550,
       "relativeScore": 11,
@@ -4732,7 +4741,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 526,
+      "rank": 527,
       "name": "GRID P40-12Q",
       "score": 5540,
       "relativeScore": 11,
@@ -4741,7 +4750,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 527,
+      "rank": 528,
       "name": "Radeon R9 280",
       "score": 5533,
       "relativeScore": 11,
@@ -4750,16 +4759,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 528,
+      "rank": 529,
       "name": "Quadro M3000M",
-      "score": 5527,
+      "score": 5528,
       "relativeScore": 11,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Quadro+M3000M&id=3394",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 529,
+      "rank": 530,
       "name": "GRID M60-8A",
       "score": 5523,
       "relativeScore": 11,
@@ -4768,18 +4777,9 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 530,
-      "name": "Radeon Ryzen 7 PRO 6850H",
-      "score": 5517,
-      "relativeScore": 11,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+Ryzen+7+PRO+6850H&id=4685",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
       "rank": 531,
       "name": "Radeon Pro WX 5100",
-      "score": 5514,
+      "score": 5520,
       "relativeScore": 11,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+Pro+WX+5100&id=3619",
@@ -4787,11 +4787,11 @@
     },
     {
       "rank": 532,
-      "name": "Radeon 680M Ryzen 9 6900HX",
-      "score": 5493,
+      "name": "Radeon Ryzen 7 PRO 6850H",
+      "score": 5517,
       "relativeScore": 11,
       "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+680M+Ryzen+9+6900HX&id=6080",
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+Ryzen+7+PRO+6850H&id=4685",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
@@ -4806,7 +4806,7 @@
     {
       "rank": 534,
       "name": "Intel Arc",
-      "score": 5476,
+      "score": 5477,
       "relativeScore": 11,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Intel+Arc&id=4955",
@@ -4850,11 +4850,11 @@
     },
     {
       "rank": 539,
-      "name": "Ryzen 9 5900HS with Radeon Graphics",
-      "score": 5401,
+      "name": "Radeon RX 6300",
+      "score": 5404,
       "relativeScore": 11,
       "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Ryzen+9+5900HS+with+Radeon+Graphics&id=4397",
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+6300&id=4939",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
@@ -4868,24 +4868,15 @@
     },
     {
       "rank": 541,
-      "name": "Radeon RX 6300",
-      "score": 5396,
-      "relativeScore": 11,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+6300&id=4939",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 542,
       "name": "GeForce GTX 670",
-      "score": 5369,
+      "score": 5370,
       "relativeScore": 11,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+670&id=35",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 543,
+      "rank": 542,
       "name": "Radeon RX 6300M",
       "score": 5363,
       "relativeScore": 11,
@@ -4894,30 +4885,39 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 544,
+      "rank": 543,
       "name": "Quadro P2000 with Max-Q Design",
-      "score": 5360,
+      "score": 5362,
       "relativeScore": 11,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Quadro+P2000+with+Max-Q+Design&id=3982",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 545,
+      "rank": 544,
       "name": "GeForce GTX 950",
-      "score": 5355,
+      "score": 5356,
       "relativeScore": 11,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+950&id=3295",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 546,
+      "rank": 545,
       "name": "Radeon Ryzen 7 6800HS Creator Edition",
       "score": 5354,
       "relativeScore": 11,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+Ryzen+7+6800HS+Creator+Edition&id=4697",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 546,
+      "name": "Ryzen 9 5900HS with Radeon Graphics",
+      "score": 5353,
+      "relativeScore": 11,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Ryzen+9+5900HS+with+Radeon+Graphics&id=4397",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
@@ -4932,7 +4932,7 @@
     {
       "rank": 548,
       "name": "GeForce GTX 1050 Ti with Max-Q Design",
-      "score": 5311,
+      "score": 5312,
       "relativeScore": 10,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+1050+Ti+with+Max-Q+Design&id=3922",
@@ -4950,7 +4950,7 @@
     {
       "rank": 550,
       "name": "Radeon 760M",
-      "score": 5303,
+      "score": 5305,
       "relativeScore": 10,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+760M&id=4902",
@@ -5102,6 +5102,15 @@
     },
     {
       "rank": 567,
+      "name": "Intel Arc 140V GPU",
+      "score": 5143,
+      "relativeScore": 10,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Intel+Arc+140V+GPU&id=5176",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 568,
       "name": "Ryzen 7 Pro 7735U with Radeon Graphics",
       "score": 5142,
       "relativeScore": 10,
@@ -5110,18 +5119,9 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 568,
-      "name": "Intel Arc 140V GPU",
-      "score": 5142,
-      "relativeScore": 10,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Intel+Arc+140V+GPU&id=5176",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
       "rank": 569,
       "name": "Ryzen 9 6900HX with Radeon Graphics",
-      "score": 5122,
+      "score": 5121,
       "relativeScore": 10,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Ryzen+9+6900HX+with+Radeon+Graphics&id=4607",
@@ -5201,6 +5201,15 @@
     },
     {
       "rank": 578,
+      "name": "L40S-3A",
+      "score": 5054,
+      "relativeScore": 10,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=L40S-3A&id=9514",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 579,
       "name": "GeForce GTX 1050",
       "score": 5052,
       "relativeScore": 10,
@@ -5209,7 +5218,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 579,
+      "rank": 580,
+      "name": "FirePro W7100",
+      "score": 5051,
+      "relativeScore": 10,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=FirePro+W7100&id=3130",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 581,
       "name": "EIZO MED-XN44",
       "score": 5049,
       "relativeScore": 10,
@@ -5218,7 +5236,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 580,
+      "rank": 582,
       "name": "A40-12Q",
       "score": 5025,
       "relativeScore": 10,
@@ -5227,16 +5245,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 581,
-      "name": "FirePro W7100",
-      "score": 5025,
-      "relativeScore": 10,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=FirePro+W7100&id=3130",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 582,
+      "rank": 583,
       "name": "EIZO Quadro MED-XN51LP",
       "score": 5012,
       "relativeScore": 10,
@@ -5245,7 +5254,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 583,
+      "rank": 584,
       "name": "Ryzen 7 6800U",
       "score": 5006,
       "relativeScore": 10,
@@ -5254,30 +5263,21 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 584,
+      "rank": 585,
       "name": "Radeon Ryzen 7 PRO 6850U",
-      "score": 4995,
+      "score": 4993,
       "relativeScore": 10,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+Ryzen+7+PRO+6850U&id=4662",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 585,
+      "rank": 586,
       "name": "RTX Pro 6000 Blackwell DC-24Q",
       "score": 4988,
       "relativeScore": 10,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX+Pro+6000+Blackwell+DC-24Q&id=7663",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 586,
-      "name": "GeForce GTX 1630",
-      "score": 4979,
-      "relativeScore": 10,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+1630&id=4571",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
@@ -5291,6 +5291,15 @@
     },
     {
       "rank": 588,
+      "name": "GeForce GTX 1630",
+      "score": 4971,
+      "relativeScore": 10,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+1630&id=4571",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 589,
       "name": "Ryzen 7 6800H with Radeon Graphics",
       "score": 4960,
       "relativeScore": 10,
@@ -5299,7 +5308,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 589,
+      "rank": 590,
       "name": "Barco MXRT 7600",
       "score": 4944,
       "relativeScore": 10,
@@ -5308,7 +5317,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 590,
+      "rank": 591,
       "name": "RTXA5000-8Q",
       "score": 4916,
       "relativeScore": 10,
@@ -5317,7 +5326,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 591,
+      "rank": 592,
       "name": "Radeon R9 M395",
       "score": 4911,
       "relativeScore": 10,
@@ -5326,7 +5335,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 592,
+      "rank": 593,
       "name": "FirePro S9050",
       "score": 4901,
       "relativeScore": 10,
@@ -5335,7 +5344,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 593,
+      "rank": 594,
+      "name": "Radeon RX 9050",
+      "score": 4898,
+      "relativeScore": 10,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+9050&id=9526",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 595,
       "name": "Intel Arc 130V GPU RI",
       "score": 4882,
       "relativeScore": 10,
@@ -5344,16 +5362,34 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 594,
-      "name": "Intel Arc A310 LP",
+      "rank": 596,
+      "name": "Radeon 860M",
       "score": 4877,
+      "relativeScore": 10,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+860M&id=5320",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 597,
+      "name": "Intel Arc A310 LP",
+      "score": 4876,
       "relativeScore": 10,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Intel+Arc+A310+LP&id=4983",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 595,
+      "rank": 598,
+      "name": "Radeon R9 270X",
+      "score": 4870,
+      "relativeScore": 10,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+R9+270X&id=2702",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 599,
       "name": "Ryzen 7 PRO 6860Z with Radeon Graphics",
       "score": 4869,
       "relativeScore": 10,
@@ -5362,61 +5398,43 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 596,
-      "name": "Radeon R9 270X",
-      "score": 4869,
-      "relativeScore": 10,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+R9+270X&id=2702",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 597,
-      "name": "Radeon 860M",
-      "score": 4869,
-      "relativeScore": 10,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+860M&id=5320",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 598,
+      "rank": 600,
       "name": "Radeon Ryzen 7 6800H",
-      "score": 4866,
+      "score": 4865,
       "relativeScore": 10,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+Ryzen+7+6800H&id=4657",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 599,
+      "rank": 601,
       "name": "L40-3Q",
       "score": 4858,
-      "relativeScore": 10,
+      "relativeScore": 9,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=L40-3Q&id=8379",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 600,
+      "rank": 602,
       "name": "DisplayLink USB Device Ryzen 9 6900HX",
       "score": 4857,
-      "relativeScore": 10,
+      "relativeScore": 9,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=DisplayLink+USB+Device+Ryzen+9+6900HX&id=7469",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 601,
+      "rank": 603,
       "name": "Intel Arc 140V GPU RI",
       "score": 4848,
-      "relativeScore": 10,
+      "relativeScore": 9,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Intel+Arc+140V+GPU+RI&id=7935",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 602,
+      "rank": 604,
       "name": "GeForce GTX 760",
       "score": 4825,
       "relativeScore": 9,
@@ -5425,7 +5443,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 603,
+      "rank": 605,
       "name": "Radeon Pro Vega 16",
       "score": 4809,
       "relativeScore": 9,
@@ -5434,7 +5452,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 604,
+      "rank": 606,
       "name": "RTXA5000-24Q",
       "score": 4803,
       "relativeScore": 9,
@@ -5443,16 +5461,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 605,
-      "name": "Radeon Ryzen 7 7735HS",
-      "score": 4778,
-      "relativeScore": 9,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+Ryzen+7+7735HS&id=4692",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 606,
+      "rank": 607,
       "name": "GRID RTX6000P-6Q",
       "score": 4777,
       "relativeScore": 9,
@@ -5461,7 +5470,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 607,
+      "rank": 608,
       "name": "A16-8Q",
       "score": 4769,
       "relativeScore": 9,
@@ -5470,7 +5479,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 608,
+      "rank": 609,
+      "name": "Radeon Ryzen 7 7735HS",
+      "score": 4769,
+      "relativeScore": 9,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+Ryzen+7+7735HS&id=4692",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 610,
       "name": "L4-24Q",
       "score": 4767,
       "relativeScore": 9,
@@ -5479,7 +5497,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 609,
+      "rank": 611,
       "name": "Radeon HD 7950 / R9 280",
       "score": 4765,
       "relativeScore": 9,
@@ -5488,7 +5506,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 610,
+      "rank": 612,
       "name": "Ryzen 7 6800U with Radeon Graphics",
       "score": 4760,
       "relativeScore": 9,
@@ -5497,7 +5515,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 611,
+      "rank": 613,
       "name": "GRID T4-8Q",
       "score": 4753,
       "relativeScore": 9,
@@ -5506,7 +5524,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 612,
+      "rank": 614,
       "name": "Radeon Ryzen Z2 Go",
       "score": 4736,
       "relativeScore": 9,
@@ -5515,7 +5533,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 613,
+      "rank": 615,
       "name": "T550 Laptop GPU",
       "score": 4735,
       "relativeScore": 9,
@@ -5524,7 +5542,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 614,
+      "rank": 616,
       "name": "FirePro S7000",
       "score": 4732,
       "relativeScore": 9,
@@ -5533,7 +5551,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 615,
+      "rank": 617,
       "name": "L4-4Q",
       "score": 4732,
       "relativeScore": 9,
@@ -5542,7 +5560,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 616,
+      "rank": 618,
       "name": "Radeon Sky 500",
       "score": 4723,
       "relativeScore": 9,
@@ -5551,7 +5569,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 617,
+      "rank": 619,
       "name": "Radeon R9 370",
       "score": 4722,
       "relativeScore": 9,
@@ -5560,7 +5578,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 618,
+      "rank": 620,
       "name": "L40-6Q",
       "score": 4718,
       "relativeScore": 9,
@@ -5569,7 +5587,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 619,
+      "rank": 621,
       "name": "Tesla K20Xm",
       "score": 4714,
       "relativeScore": 9,
@@ -5578,7 +5596,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 620,
+      "rank": 622,
       "name": "Ryzen 9 PRO 6950HS with Radeon Graphics",
       "score": 4705,
       "relativeScore": 9,
@@ -5587,7 +5605,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 621,
+      "rank": 623,
       "name": "A40-16Q",
       "score": 4685,
       "relativeScore": 9,
@@ -5596,7 +5614,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 622,
+      "rank": 624,
       "name": "L40-16Q",
       "score": 4683,
       "relativeScore": 9,
@@ -5605,7 +5623,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 623,
+      "rank": 625,
       "name": "RTXA5000-12Q",
       "score": 4681,
       "relativeScore": 9,
@@ -5614,7 +5632,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 624,
+      "rank": 626,
+      "name": "RTX6000-Ada-4Q",
+      "score": 4678,
+      "relativeScore": 9,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=RTX6000-Ada-4Q&id=9544",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 627,
       "name": "GRID V100D-2Q",
       "score": 4668,
       "relativeScore": 9,
@@ -5623,7 +5650,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 625,
+      "rank": 628,
       "name": "GeForce GTX 580",
       "score": 4630,
       "relativeScore": 9,
@@ -5632,7 +5659,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 626,
+      "rank": 629,
       "name": "GRID P100-16Q",
       "score": 4626,
       "relativeScore": 9,
@@ -5641,7 +5668,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 627,
+      "rank": 630,
       "name": "Radeon Pro WX Vega M GL",
       "score": 4618,
       "relativeScore": 9,
@@ -5650,7 +5677,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 628,
+      "rank": 631,
       "name": "Radeon Ryzen 9 6900HS Creator Edition",
       "score": 4595,
       "relativeScore": 9,
@@ -5659,16 +5686,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 629,
+      "rank": 632,
       "name": "Radeon HD 7870",
-      "score": 4569,
+      "score": 4568,
       "relativeScore": 9,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+HD+7870&id=324",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 630,
+      "rank": 633,
       "name": "B8DKMDAP",
       "score": 4557,
       "relativeScore": 9,
@@ -5677,7 +5704,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 631,
+      "rank": 634,
       "name": "Radeon Pro 465",
       "score": 4538,
       "relativeScore": 9,
@@ -5686,7 +5713,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 632,
+      "rank": 635,
       "name": "FirePro S10000",
       "score": 4537,
       "relativeScore": 9,
@@ -5695,7 +5722,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 633,
+      "rank": 636,
       "name": "Radeon Ryzen 7 PRO 6860Z",
       "score": 4536,
       "relativeScore": 9,
@@ -5704,25 +5731,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 634,
+      "rank": 637,
       "name": "Quadro P1000",
-      "score": 4530,
+      "score": 4532,
       "relativeScore": 9,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Quadro+P1000&id=3727",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 635,
-      "name": "Radeon Ryzen 7 7735U",
-      "score": 4530,
-      "relativeScore": 9,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+Ryzen+7+7735U&id=4803",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 636,
+      "rank": 638,
       "name": "Radeon Ryzen 9 PRO 6950HS",
       "score": 4523,
       "relativeScore": 9,
@@ -5731,7 +5749,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 637,
+      "rank": 639,
+      "name": "Radeon Ryzen 7 7735U",
+      "score": 4520,
+      "relativeScore": 9,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+Ryzen+7+7735U&id=4803",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 640,
       "name": "GRID RTX6000-8Q",
       "score": 4514,
       "relativeScore": 9,
@@ -5740,16 +5767,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 638,
+      "rank": 641,
       "name": "Intel Arc 130V GPU",
-      "score": 4511,
+      "score": 4514,
       "relativeScore": 9,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Intel+Arc+130V+GPU&id=5185",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 639,
+      "rank": 642,
       "name": "Tesla K40c",
       "score": 4495,
       "relativeScore": 9,
@@ -5758,7 +5785,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 640,
+      "rank": 643,
       "name": "GRID T4-16Q",
       "score": 4490,
       "relativeScore": 9,
@@ -5767,7 +5794,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 641,
+      "rank": 644,
       "name": "Radeon R7 370",
       "score": 4483,
       "relativeScore": 9,
@@ -5776,7 +5803,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 642,
+      "rank": 645,
       "name": "Radeon HD 7870 XT",
       "score": 4470,
       "relativeScore": 9,
@@ -5785,7 +5812,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 643,
+      "rank": 646,
       "name": "GeForce GTX 1050 (Mobile)",
       "score": 4463,
       "relativeScore": 9,
@@ -5794,7 +5821,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 644,
+      "rank": 647,
+      "name": "Radeon 680M Ryzen 7 7735HS",
+      "score": 4445,
+      "relativeScore": 9,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+680M+Ryzen+7+7735HS&id=4884",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 648,
       "name": "DisplayLink USB Device Ryzen 7 6800H",
       "score": 4445,
       "relativeScore": 9,
@@ -5803,16 +5839,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 645,
-      "name": "Radeon 680M Ryzen 7 7735HS",
-      "score": 4436,
-      "relativeScore": 9,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+680M+Ryzen+7+7735HS&id=4884",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 646,
+      "rank": 649,
       "name": "L4-2Q",
       "score": 4435,
       "relativeScore": 9,
@@ -5821,7 +5848,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 647,
+      "rank": 650,
       "name": "Tesla K20m",
       "score": 4432,
       "relativeScore": 9,
@@ -5830,7 +5857,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 648,
+      "rank": 651,
       "name": "GRID P6-4Q",
       "score": 4429,
       "relativeScore": 9,
@@ -5839,7 +5866,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 649,
+      "rank": 652,
       "name": "A2-4Q",
       "score": 4423,
       "relativeScore": 9,
@@ -5848,16 +5875,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 650,
+      "rank": 653,
       "name": "GeForce GTX 660 Ti",
-      "score": 4413,
+      "score": 4414,
       "relativeScore": 9,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+660+Ti&id=88",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 651,
+      "rank": 654,
       "name": "NVIDIA A40-4Q",
       "score": 4407,
       "relativeScore": 9,
@@ -5866,7 +5893,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 652,
+      "rank": 655,
       "name": "DisplayLink USB Device Ryzen 7 PRO 6850U",
       "score": 4381,
       "relativeScore": 9,
@@ -5875,25 +5902,25 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 653,
+      "rank": 656,
       "name": "L40S-3Q",
       "score": 4365,
-      "relativeScore": 9,
+      "relativeScore": 8,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=L40S-3Q&id=8606",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 654,
+      "rank": 657,
       "name": "FirePro W7000 Adapter",
       "score": 4360,
-      "relativeScore": 9,
+      "relativeScore": 8,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=FirePro+W7000+Adapter&id=2647",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 655,
+      "rank": 658,
       "name": "Radeon Eng Sample: 100-000000536-40_Y",
       "score": 4347,
       "relativeScore": 8,
@@ -5902,7 +5929,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 656,
+      "rank": 659,
       "name": "A16-8A",
       "score": 4342,
       "relativeScore": 8,
@@ -5911,7 +5938,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 657,
+      "rank": 660,
       "name": "GRID GTX P40-6",
       "score": 4340,
       "relativeScore": 8,
@@ -5920,7 +5947,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 658,
+      "rank": 661,
       "name": "PCI\\VEN_1002&DEV_164E&SUBSYS_D0001458&REV_C7 Ryzen",
       "score": 4339,
       "relativeScore": 8,
@@ -5929,7 +5956,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 659,
+      "rank": 662,
       "name": "NVIDIA A40-12Q",
       "score": 4336,
       "relativeScore": 8,
@@ -5938,7 +5965,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 660,
+      "rank": 663,
       "name": "Quadro K4200",
       "score": 4328,
       "relativeScore": 8,
@@ -5947,16 +5974,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 661,
-      "name": "GeForce MX550",
-      "score": 4324,
-      "relativeScore": 8,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+MX550&id=4493",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 662,
+      "rank": 664,
       "name": "FirePro W7000",
       "score": 4319,
       "relativeScore": 8,
@@ -5965,7 +5983,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 663,
+      "rank": 665,
+      "name": "GeForce MX550",
+      "score": 4319,
+      "relativeScore": 8,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+MX550&id=4493",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 666,
       "name": "Radeon R9 270",
       "score": 4314,
       "relativeScore": 8,
@@ -5974,7 +6001,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 664,
+      "rank": 667,
       "name": "Radeon Pro W5500M",
       "score": 4293,
       "relativeScore": 8,
@@ -5983,7 +6010,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 665,
+      "rank": 668,
       "name": "GRID RTX6000P-4Q",
       "score": 4283,
       "relativeScore": 8,
@@ -5992,7 +6019,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 666,
+      "rank": 669,
       "name": "GRID V100DX-8Q",
       "score": 4276,
       "relativeScore": 8,
@@ -6001,7 +6028,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 667,
+      "rank": 670,
       "name": "Radeon R9 270 / R7 370",
       "score": 4260,
       "relativeScore": 8,
@@ -6010,7 +6037,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 668,
+      "rank": 671,
       "name": "NVIDIA A40-8Q",
       "score": 4252,
       "relativeScore": 8,
@@ -6019,16 +6046,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 669,
+      "rank": 672,
       "name": "Quadro M2200",
-      "score": 4247,
+      "score": 4249,
       "relativeScore": 8,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Quadro+M2200&id=3732",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 670,
+      "rank": 673,
       "name": "RTXA6000-8Q",
       "score": 4237,
       "relativeScore": 8,
@@ -6037,16 +6064,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 671,
+      "rank": 674,
       "name": "Radeon Ryzen 7 6800U",
-      "score": 4234,
+      "score": 4232,
       "relativeScore": 8,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+Ryzen+7+6800U&id=4648",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 672,
+      "rank": 675,
       "name": "Eng Sample: 100-000000561-40_Y",
       "score": 4206,
       "relativeScore": 8,
@@ -6055,7 +6082,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 673,
+      "rank": 676,
       "name": "GRID RTX8000P-12A",
       "score": 4166,
       "relativeScore": 8,
@@ -6064,7 +6091,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 674,
+      "rank": 677,
       "name": "GRID V100D-8Q",
       "score": 4156,
       "relativeScore": 8,
@@ -6073,7 +6100,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 675,
+      "rank": 678,
       "name": "L4-6Q",
       "score": 4148,
       "relativeScore": 8,
@@ -6082,7 +6109,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 676,
+      "rank": 679,
       "name": "Radeon PRO Ryzen 5 PRO 6650U",
       "score": 4140,
       "relativeScore": 8,
@@ -6091,7 +6118,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 677,
+      "rank": 680,
       "name": "Winsta0\\\\Default",
       "score": 4125,
       "relativeScore": 8,
@@ -6100,16 +6127,25 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 678,
+      "rank": 681,
+      "name": "Radeon Ryzen 7 170",
+      "score": 4098,
+      "relativeScore": 8,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+Ryzen+7+170&id=8107",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 682,
       "name": "Radeon RX 460",
-      "score": 4097,
+      "score": 4096,
       "relativeScore": 8,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+460&id=3557",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 679,
+      "rank": 683,
       "name": "FirePro W8000",
       "score": 4092,
       "relativeScore": 8,
@@ -6118,7 +6154,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 680,
+      "rank": 684,
       "name": "Ryzen 7 PRO 6850HS with Radeon Graphics",
       "score": 4087,
       "relativeScore": 8,
@@ -6127,7 +6163,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 681,
+      "rank": 685,
       "name": "GeForce GTX 480",
       "score": 4078,
       "relativeScore": 8,
@@ -6136,16 +6172,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 682,
-      "name": "Radeon Ryzen 7 170",
-      "score": 4075,
-      "relativeScore": 8,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+Ryzen+7+170&id=8107",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 683,
+      "rank": 686,
       "name": "RadeonT 660M Ryzen 5 7535HS",
       "score": 4051,
       "relativeScore": 8,
@@ -6154,7 +6181,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 684,
+      "rank": 687,
       "name": "Quadro M2000",
       "score": 4048,
       "relativeScore": 8,
@@ -6163,7 +6190,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 685,
+      "rank": 688,
       "name": "GeForce GTX 660",
       "score": 4045,
       "relativeScore": 8,
@@ -6172,7 +6199,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 686,
+      "rank": 689,
       "name": "Radeon HD 7800-serie",
       "score": 4029,
       "relativeScore": 8,
@@ -6181,7 +6208,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 687,
+      "rank": 690,
       "name": "Radeon 680M",
       "score": 4016,
       "relativeScore": 8,
@@ -6190,7 +6217,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 688,
+      "rank": 691,
+      "name": "Quadro K5000",
+      "score": 4009,
+      "relativeScore": 8,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Quadro+K5000&id=2258",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 692,
       "name": "GeForce GTX 775M",
       "score": 4007,
       "relativeScore": 8,
@@ -6199,16 +6235,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 689,
-      "name": "Quadro K5000",
-      "score": 4004,
-      "relativeScore": 8,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Quadro+K5000&id=2258",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 690,
+      "rank": 693,
       "name": "Radeon 680M Ryzen 7 170",
       "score": 3978,
       "relativeScore": 8,
@@ -6217,7 +6244,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 691,
+      "rank": 694,
       "name": "Radeon Eng Sample: 100-000000263-50_Y",
       "score": 3975,
       "relativeScore": 8,
@@ -6226,7 +6253,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 692,
+      "rank": 695,
       "name": "GRID RTX8000-4Q",
       "score": 3961,
       "relativeScore": 8,
@@ -6235,25 +6262,25 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 693,
+      "rank": 696,
       "name": "GeForce GTX 570",
-      "score": 3951,
+      "score": 3954,
       "relativeScore": 8,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+570&id=15",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 694,
+      "rank": 697,
       "name": "Radeon RX Vega M GL",
-      "score": 3943,
+      "score": 3947,
       "relativeScore": 8,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+Vega+M+GL&id=3903",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 695,
+      "rank": 698,
       "name": "MacroSilicon USB Display Ryzen 7 6800U",
       "score": 3940,
       "relativeScore": 8,
@@ -6262,7 +6289,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 696,
+      "rank": 699,
       "name": "Radeon Ryzen 5 PRO 6650H",
       "score": 3937,
       "relativeScore": 8,
@@ -6271,7 +6298,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 697,
+      "rank": 700,
       "name": "GeForce GTX 780M",
       "score": 3933,
       "relativeScore": 8,
@@ -6280,7 +6307,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 698,
+      "rank": 701,
       "name": "A16-2Q",
       "score": 3926,
       "relativeScore": 8,
@@ -6289,7 +6316,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 699,
+      "rank": 702,
       "name": "GRID P6-2Q",
       "score": 3926,
       "relativeScore": 8,
@@ -6298,7 +6325,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 700,
+      "rank": 703,
       "name": "Radeon R9 M390X",
       "score": 3918,
       "relativeScore": 8,
@@ -6307,16 +6334,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 701,
+      "rank": 704,
       "name": "Radeon HD 7850",
-      "score": 3905,
+      "score": 3906,
       "relativeScore": 8,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+HD+7850&id=323",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 702,
+      "rank": 705,
       "name": "Radeon Ryzen 7 Pro 7735U",
       "score": 3905,
       "relativeScore": 8,
@@ -6325,7 +6352,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 703,
+      "rank": 706,
+      "name": "GeForce GTX 1050 with Max-Q Design",
+      "score": 3901,
+      "relativeScore": 8,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+1050+with+Max-Q+Design&id=3971",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 707,
       "name": "GeForce GTX 750 Ti",
       "score": 3900,
       "relativeScore": 8,
@@ -6334,79 +6370,70 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 704,
-      "name": "GeForce GTX 1050 with Max-Q Design",
-      "score": 3899,
-      "relativeScore": 8,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+1050+with+Max-Q+Design&id=3971",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 705,
+      "rank": 708,
       "name": "GeForce GTX 965M",
-      "score": 3884,
-      "relativeScore": 8,
+      "score": 3886,
+      "relativeScore": 7,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+965M&id=3113",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 706,
+      "rank": 709,
       "name": "GRID M60-8Q",
       "score": 3884,
-      "relativeScore": 8,
+      "relativeScore": 7,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GRID+M60-8Q&id=3716",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 707,
+      "rank": 710,
       "name": "Radeon HD 8970M",
       "score": 3876,
-      "relativeScore": 8,
+      "relativeScore": 7,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+HD+8970M&id=2865",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 708,
+      "rank": 711,
       "name": "GeForce GTX 880M",
       "score": 3874,
-      "relativeScore": 8,
+      "relativeScore": 7,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+880M&id=2850",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 709,
+      "rank": 712,
       "name": "Matrox LUMA A310F",
       "score": 3873,
-      "relativeScore": 8,
+      "relativeScore": 7,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Matrox+LUMA+A310F&id=4881",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 710,
+      "rank": 713,
       "name": "A16-16Q",
       "score": 3873,
-      "relativeScore": 8,
+      "relativeScore": 7,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=A16-16Q&id=6151",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 711,
+      "rank": 714,
       "name": "nVidia L40S-48Q",
       "score": 3869,
-      "relativeScore": 8,
+      "relativeScore": 7,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=nVidia+L40S-48Q&id=6220",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 712,
+      "rank": 715,
       "name": "P102-100",
       "score": 3855,
       "relativeScore": 7,
@@ -6415,7 +6442,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 713,
+      "rank": 716,
       "name": "A16-4Q",
       "score": 3854,
       "relativeScore": 7,
@@ -6424,7 +6451,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 714,
+      "rank": 717,
       "name": "GRID RTX8000P-2Q",
       "score": 3843,
       "relativeScore": 7,
@@ -6433,7 +6460,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 715,
+      "rank": 718,
       "name": "EIZO MED-XN43",
       "score": 3843,
       "relativeScore": 7,
@@ -6442,7 +6469,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 716,
+      "rank": 719,
       "name": "GRID P40-1Q",
       "score": 3839,
       "relativeScore": 7,
@@ -6451,7 +6478,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 717,
+      "rank": 720,
       "name": "GRID M60-4Q",
       "score": 3831,
       "relativeScore": 7,
@@ -6460,7 +6487,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 718,
+      "rank": 721,
       "name": "GRID V100-2Q",
       "score": 3811,
       "relativeScore": 7,
@@ -6469,16 +6496,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 719,
+      "rank": 722,
       "name": "T400 4GB",
-      "score": 3811,
+      "score": 3810,
       "relativeScore": 7,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=T400+4GB&id=4512",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 720,
+      "rank": 723,
       "name": "Radeon R9 M485X",
       "score": 3801,
       "relativeScore": 7,
@@ -6487,7 +6514,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 721,
+      "rank": 724,
       "name": "GeForce GTX 680MX",
       "score": 3799,
       "relativeScore": 7,
@@ -6496,7 +6523,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 722,
+      "rank": 725,
       "name": "GRID T4-2Q",
       "score": 3799,
       "relativeScore": 7,
@@ -6505,16 +6532,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 723,
-      "name": "Radeon Ryzen 5 6600HS Creator Edition",
-      "score": 3793,
-      "relativeScore": 7,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+Ryzen+5+6600HS+Creator+Edition&id=4681",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 724,
+      "rank": 726,
       "name": "Radeon Instinct MI25 MxGPU",
       "score": 3792,
       "relativeScore": 7,
@@ -6523,7 +6541,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 725,
+      "rank": 727,
+      "name": "Radeon Ryzen 5 6600HS Creator Edition",
+      "score": 3791,
+      "relativeScore": 7,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+Ryzen+5+6600HS+Creator+Edition&id=4681",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 728,
       "name": "FirePro S7150",
       "score": 3770,
       "relativeScore": 7,
@@ -6532,7 +6559,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 726,
+      "rank": 729,
       "name": "Barco MXRT 7500",
       "score": 3753,
       "relativeScore": 7,
@@ -6541,7 +6568,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 727,
+      "rank": 730,
       "name": "GRID T4-4Q",
       "score": 3751,
       "relativeScore": 7,
@@ -6550,7 +6577,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 728,
+      "rank": 731,
       "name": "Ryzen 5 Pro 7535U with Radeon Graphics",
       "score": 3750,
       "relativeScore": 7,
@@ -6559,7 +6586,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 729,
+      "rank": 732,
       "name": "Ryzen 5 PRO 6650H with Radeon Graphics",
       "score": 3727,
       "relativeScore": 7,
@@ -6568,25 +6595,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 730,
+      "rank": 733,
       "name": "Quadro P620",
-      "score": 3723,
+      "score": 3721,
       "relativeScore": 7,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Quadro+P620&id=3954",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 731,
-      "name": "GeForce MX450",
-      "score": 3713,
-      "relativeScore": 7,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+MX450&id=4296",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 732,
+      "rank": 734,
       "name": "A40-4Q",
       "score": 3712,
       "relativeScore": 7,
@@ -6595,7 +6613,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 733,
+      "rank": 735,
+      "name": "GeForce MX450",
+      "score": 3711,
+      "relativeScore": 7,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+MX450&id=4296",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 736,
       "name": "Radeon Pro WX 4100",
       "score": 3699,
       "relativeScore": 7,
@@ -6604,7 +6631,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 734,
+      "rank": 737,
       "name": "GRID M60-1Q",
       "score": 3695,
       "relativeScore": 7,
@@ -6613,7 +6640,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 735,
+      "rank": 738,
       "name": "FirePro W7170M",
       "score": 3694,
       "relativeScore": 7,
@@ -6622,7 +6649,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 736,
+      "rank": 739,
       "name": "Ryzen 5 6600HS Creator Edition",
       "score": 3691,
       "relativeScore": 7,
@@ -6631,7 +6658,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 737,
+      "rank": 740,
       "name": "Matrox LUMA A310",
       "score": 3690,
       "relativeScore": 7,
@@ -6640,7 +6667,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 738,
+      "rank": 741,
       "name": "GRID P40-1B",
       "score": 3690,
       "relativeScore": 7,
@@ -6649,16 +6676,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 739,
+      "rank": 742,
       "name": "Radeon RX 560",
-      "score": 3688,
+      "score": 3689,
       "relativeScore": 7,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+RX+560&id=3708",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 740,
+      "rank": 743,
       "name": "Ryzen 5 7535HS with Radeon Graphics",
       "score": 3680,
       "relativeScore": 7,
@@ -6667,7 +6694,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 741,
+      "rank": 744,
       "name": "Radeon Pro 560X",
       "score": 3678,
       "relativeScore": 7,
@@ -6676,16 +6703,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 742,
+      "rank": 745,
       "name": "Radeon 840M",
-      "score": 3675,
+      "score": 3667,
       "relativeScore": 7,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Radeon+840M&id=6105",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 743,
+      "rank": 746,
       "name": "L40S-12A",
       "score": 3660,
       "relativeScore": 7,
@@ -6694,7 +6721,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 744,
+      "rank": 747,
       "name": "Radeon RX 560X",
       "score": 3650,
       "relativeScore": 7,
@@ -6703,16 +6730,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 745,
+      "rank": 748,
       "name": "NVIDIA T500",
-      "score": 3614,
+      "score": 3613,
       "relativeScore": 7,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=NVIDIA+T500&id=4335",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 746,
+      "rank": 749,
       "name": "T400",
       "score": 3611,
       "relativeScore": 7,
@@ -6721,7 +6748,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 747,
+      "rank": 750,
       "name": "P104-100",
       "score": 3602,
       "relativeScore": 7,
@@ -6730,7 +6757,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 748,
+      "rank": 751,
       "name": "Ryzen 5 6600H with Radeon Graphics",
       "score": 3580,
       "relativeScore": 7,
@@ -6739,7 +6766,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 749,
+      "rank": 752,
       "name": "Quadro K2200",
       "score": 3576,
       "relativeScore": 7,
@@ -6748,7 +6775,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 750,
+      "rank": 753,
+      "name": "Qualcomm Adreno X2-45 GPU",
+      "score": 3574,
+      "relativeScore": 7,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Qualcomm+Adreno+X2-45+GPU&id=8827",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 754,
       "name": "GRID RTX8000-2Q",
       "score": 3574,
       "relativeScore": 7,
@@ -6757,7 +6793,16 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 751,
+      "rank": 755,
+      "name": "GeForce GTX 870M",
+      "score": 3569,
+      "relativeScore": 7,
+      "priceUsd": null,
+      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+870M&id=2833",
+      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
+    },
+    {
+      "rank": 756,
       "name": "GeForce GTX 680M KY_Bullet Edition",
       "score": 3569,
       "relativeScore": 7,
@@ -6766,7 +6811,7 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 752,
+      "rank": 757,
       "name": "GRID M6-8Q",
       "score": 3568,
       "relativeScore": 7,
@@ -6775,48 +6820,12 @@
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     },
     {
-      "rank": 753,
-      "name": "GeForce GTX 870M",
-      "score": 3566,
-      "relativeScore": 7,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=GeForce+GTX+870M&id=2833",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 754,
+      "rank": 758,
       "name": "VMware Horizon Indirect Display Driver",
       "score": 3565,
       "relativeScore": 7,
       "priceUsd": null,
       "url": "https://www.videocardbenchmark.net/gpu.php?gpu=VMware+Horizon+Indirect+Display+Driver&id=5706",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 755,
-      "name": "L4-12Q",
-      "score": 3544,
-      "relativeScore": 7,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=L4-12Q&id=6644",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 756,
-      "name": "Quadro K2200M",
-      "score": 3534,
-      "relativeScore": 7,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Quadro+K2200M&id=3175",
-      "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
-    },
-    {
-      "rank": 757,
-      "name": "Ryzen 5 PRO 6650U with Radeon Graphics",
-      "score": 3534,
-      "relativeScore": 7,
-      "priceUsd": null,
-      "url": "https://www.videocardbenchmark.net/gpu.php?gpu=Ryzen+5+PRO+6650U+with+Radeon+Graphics&id=4581",
       "sourcePage": "https://www.videocardbenchmark.net/high_end_gpus.html"
     }
   ]
